@@ -1,0 +1,75 @@
+/* Flutgraben — shared tokens & fonts (loaded inside each direction iframe) */
+
+@font-face {
+  font-family: "DINish";
+  src: url("../fonts/DINish-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DINish";
+  src: url("../fonts/DINish-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Flutgraben";
+  src: url("../fonts/FLUTGRABEN_variable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Flutgraben Rect";
+  src: url("../fonts/FLUTGRABEN_variableRECT.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Flutgraben Spot";
+  src: url("../fonts/FLUTGRABEN_variableSPOT.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --bg: #e5e9ed;
+  --rust: #573835;
+  --terra: #9f6861;
+  --ochre: #c17d4c;
+  --sky: #7fb8d7;
+  --paper: #efe6dc;
+  --ink: #2c1f1d;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--rust);
+  font-family: "DINish", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Pixel cursor trail — common across directions */
+html, body { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23573835' stroke='%23e5e9ed' stroke-width='0.5'/></svg>") 2 1, auto; }
+a, button, .clickable { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='0.5'/></svg>") 2 1, pointer; }
+
+.trail-ghost {
+  position: fixed;
+  pointer-events: none;
+  width: 14px;
+  height: 14px;
+  z-index: 9999;
+  image-rendering: pixelated;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.flut-display { font-family: "Flutgraben", serif; font-weight: 500; letter-spacing: -0.01em; line-height: 0.92; }
+.flut-rect    { font-family: "Flutgraben Rect", serif; font-weight: 500; line-height: 0.92; }
+.flut-spot    { font-family: "Flutgraben Spot", serif; font-weight: 500; line-height: 0.92; }
