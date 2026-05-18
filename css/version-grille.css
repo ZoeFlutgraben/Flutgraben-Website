@@ -1,0 +1,273 @@
+/* — Layout — */
+body {
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: clamp(180px, 18vw, 260px) 1fr;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+/* — Sidebar — */
+.topbar {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  overflow: hidden;
+}
+
+.logo {
+  display: block;
+  width: 110%;
+  height: auto;
+ 
+  border-bottom: 1.5px solid;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(14%) saturate(1188%) hue-rotate(317deg) brightness(93%) contrast(92%);
+  
+}
+
+.logo-active{
+      filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
+}
+
+.logo img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    display: block;
+}
+
+
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+.nav a {
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid transparent;
+  transition: color .15s, border-color .15s;
+  width: fit-content;
+}
+.nav a.is-active { color: var(--ochre); border-bottom-color: var(--ochre); }
+.nav a:hover { color: var(--ochre); }
+
+.lang-side {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.lang {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+.lang b { color: var(--rust); }
+
+.impressum {
+  margin-top: 8px;
+}
+.impressum a {
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+
+/* — Windows — */
+.windows-outer {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 0;
+  padding: 10px 20px;
+}
+.windows {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background: #c17d4c;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+  position: relative;
+}
+
+/* — Cells — */
+.cell {
+  background: var(--bg);
+  padding: 16px 18px 14px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background .15s;
+  min-width: 0;
+  min-height: 0;
+}
+.cell:hover { background: var(--paper); }
+.cell .date {
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+.cell .title {
+  font-family: "Flutgraben", serif;
+  font-size: clamp(22px, 2.8vw, 40px);
+  line-height: 0.92;
+  color: var(--rust);
+  margin: 10px 0 0;
+  letter-spacing: -0.015em;
+  max-width: 14ch;
+}
+.cell .meta {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terra);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 8px;
+}
+.cell .num {
+  position: absolute;
+  top: 16px; right: 18px;
+  font-family: "Flutgraben Rect", serif;
+  font-size: 18px;
+  color: var(--terra);
+  opacity: 0.55;
+  letter-spacing: 0;
+}
+.tag {
+  display: inline-block;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 3px 8px 2px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: var(--rust);
+}
+.tag.sky   { background: var(--sky);   border-color: var(--sky);   color: var(--rust); }
+.tag.ochre { background: var(--ochre); border-color: var(--ochre); color: var(--bg);   }
+.tag.terra { background: var(--terra); border-color: var(--terra); color: var(--bg);   }
+
+/* — Cell placement — */
+.windows article:nth-of-type(2)  { grid-column-start: 3; }
+.windows article:nth-of-type(3)  { grid-row: span 2 / span 2; grid-column-start: 4; }
+.windows article:nth-of-type(4)  { grid-column-start: 3; grid-row-start: 2; }
+.windows article:nth-of-type(5)  { grid-row: span 2 / span 2; grid-row-start: 3; }
+.windows article:nth-of-type(6)  { grid-row-start: 3; }
+.windows article:nth-of-type(7)  { grid-row-start: 3; }
+.windows article:nth-of-type(8)  { grid-row-start: 3; }
+.windows article:nth-of-type(9)  { grid-column-start: 2; grid-row-start: 4; }
+.windows article:nth-of-type(10) { grid-column: span 2 / span 2; grid-column-start: 3; grid-row-start: 4; }
+
+/* — Feature cell — */
+.cell.feature {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  background: var(--rust);
+  color: var(--bg);
+}
+.cell.feature:hover { background: #4a2f2c; }
+.cell.feature img {
+  width: 100%;
+}
+.cell.feature .date { color: var(--sky); }
+.cell.feature .title { color: var(--bg); font-size: clamp(40px, 6vw, 88px); max-width: 12ch; letter-spacing: -0.02em; }
+.cell.feature .meta { color: var(--bg); }
+.cell.feature .num { color: var(--ochre); font-size: 22px; opacity: 1; }
+
+/* — GIF cells — */
+.cell.gif { background: var(--paper); padding: 0; }
+.cell.gif:hover { background: var(--paper); }
+.cell.gif img { width: 100%; height: 100%; object-fit: contain; padding: 22px; mix-blend-mode: multiply; }
+.cell.gif .badge {
+  position: absolute;
+  bottom: 14px; left: 18px;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terra);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-grille img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
+  width: 100%;
+}
+
+header nav dl dd {
+      display: none;
+    }
+
+    header nav dl:hover dd {
+      display: block;
+    }
+
+/* — Impressum active link — */
+.impressum a.impressum-active { color: var(--ochre); }
+
+/* — Impressum page content — */
+.impressum-outer {
+  grid-column: 2;
+  grid-row: 1;
+  padding: 40px 48px 40px 24px;
+  overflow-y: auto;
+}
+
+.impressum-content {
+  max-width: 52ch;
+}
+
+.impressum-title {
+  font-family: "Flutgraben", serif;
+  font-size: clamp(40px, 5vw, 80px);
+  line-height: 0.9;
+  color: var(--rust);
+  margin: 0 0 48px;
+  letter-spacing: -0.02em;
+}
+
+.impressum-block {
+  margin-bottom: 32px;
+}
+
+.impressum-block h2 {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin: 0 0 8px;
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+}
+
+.impressum-block p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--rust);
+  margin: 0;
+}
+
+.impressum-block a { color: var(--ochre); }
+.impressum-block a:hover { color: var(--rust); }

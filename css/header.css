@@ -1,0 +1,104 @@
+/* === Sidebar / Header === */
+
+.topbar {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  overflow: hidden;
+}
+
+/* Logo — rust by default, ochre when home page is active */
+.logo {
+  display: block;
+  width: 110%;
+  height: auto;
+  border-bottom: var(--border) solid var(--rust);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+  filter: brightness(0) saturate(100%) invert(23%) sepia(14%) saturate(1188%) hue-rotate(317deg) brightness(93%) contrast(92%);
+  transition: opacity .15s;
+}
+.logo:hover { opacity: 0.75; }
+.logo.logo-active {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
+}
+.logo img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+/* Nav vertical */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: var(--rust);
+}
+
+/* Nav item — label + description stacked */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: fit-content;
+  padding-left: 8px;
+  border-left: var(--border) solid transparent;
+  transition: border-color .15s;
+}
+.nav-label {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rust);
+  transition: color .15s;
+}
+.nav-desc {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--terra);
+  transition: color .15s;
+}
+.nav-item.is-active { border-left-color: var(--ochre); }
+.nav-item.is-active .nav-label { color: var(--ochre); }
+.nav-item:hover { border-left-color: var(--ochre); }
+.nav-item:hover .nav-label { color: var(--ochre); }
+.nav-item:hover .nav-desc  { color: var(--ochre); }
+
+/* Lang — pushed to bottom, separated from nav */
+.lang-side {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: var(--border) solid var(--rust);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.lang {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.lang-item {
+  color: var(--terra);
+  transition: color .15s;
+}
+.lang-item--active { color: var(--rust); font-weight: 700; }
+.lang-item:hover { color: var(--ochre); }
+
+/* Impressum link */
+.impressum { margin-top: 8px; }
+.impressum a {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terra);
+  transition: color .15s;
+}
+.impressum a:hover { color: var(--ochre); }
+.impressum a.impressum-active { color: var(--ochre); }
+
+/* === Responsive === */
+@media (max-width: 640px) {
+  .lang-side { flex-direction: row; align-items: center; gap: 12px; }
+}

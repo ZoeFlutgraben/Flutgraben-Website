@@ -41,6 +41,8 @@
   --sky: #7fb8d7;
   --paper: #efe6dc;
   --ink: #2c1f1d;
+
+  --border: 1.5px;
 }
 
 * { box-sizing: border-box; }
