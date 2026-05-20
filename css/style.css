@@ -69,6 +69,40 @@ main {
   filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
 }
 
+/* SVG curved label inside gif-anchor — "write us →" follows the circle arc */
+.gif-anchor-label {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gif-anchor-label text {
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  fill: var(--ochre);
+  transition: fill .15s, letter-spacing .15s;
+}
+
+/* Full-circle transparent link — makes the whole gif-anchor clickable */
+.gif-anchor-link {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Hover — text shifts toward rust with slight spacing expansion */
+.gif-anchor:hover .gif-anchor-label text {
+  fill: var(--rust);
+  letter-spacing: 0.3em;
+}
+
 /* Back to top button — shared across interior pages, excludes index.html */
 /* Centered above the gif-anchor; appears after 150px of scroll */
 .back-to-top {

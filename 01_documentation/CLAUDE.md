@@ -199,11 +199,34 @@ These elements appear on every interior page (all pages except `index.html`). Th
 | Pattern | Element | File(s) | Notes |
 |---------|---------|---------|-------|
 | Background grid | `<div class="bg-grid">` + 16× `<div class="bg-cell">` | `css/style.css` | Decorative 4×4 ochre grid, `position: absolute`, `z-index: 0` |
-| GIF anchor | `<div class="gif-anchor"></div>` | `css/style.css` | Decorative animated GIF, `position: fixed` bottom-right. GIF src set via `<style>` inline in each page |
+| GIF anchor | see HTML below | `css/style.css` | Fixed circle bottom-right. GIF src set via `<style>` inline per page. Contains a curved SVG label + full-circle mailto link. |
 | Back to top | `<button class="back-to-top" aria-label="Back to top">↑</button>` | `css/style.css`, `js/back-to-top.js` | Appears after 150px scroll, centered above gif-anchor. Script auto-detects scroll container (`.page-content` or `.impressum-outer`) |
 | Residents search | `<input class="residents-search" type="search" placeholder="Search…" aria-label="Search residents">` | `css/interior.css` | **Das Haus only — Residents tab.** Lives in the right slot of `.subnav-bar`. Hidden via `.is-hidden` (visibility: hidden) when another tab is active. |
 
 When adding a new interior page: include all three elements in the HTML and add `<script src="js/back-to-top.js"></script>`.
+
+### GIF anchor — full pattern
+
+```html
+<div class="gif-anchor">
+  <svg class="gif-anchor-label" viewBox="0 0 150 150" aria-hidden="true" focusable="false">
+    <!-- Circular path along which the text travels — bottom arc, clockwise -->
+    <path id="gif-circle-path" d="M 15,75 A 60,60 0 1,1 135,75" fill="none" />
+    <text>
+      <textPath href="#gif-circle-path" startOffset="50%" text-anchor="middle">
+        write us →
+      </textPath>
+    </text>
+  </svg>
+  <a href="mailto:contact@flutgraben.org" class="gif-anchor-link" aria-label="Write us — contact@flutgraben.org"></a>
+</div>
+```
+
+- The SVG `viewBox` stays at `0 0 150 150` regardless of the rendered CSS size — it scales automatically
+- The `<textPath>` text content can vary per page (e.g. `write us →`, `contact@flutgraben.org`)
+- `.gif-anchor-link` is a transparent full-circle overlay — the entire bubble is clickable, not just the text
+- The GIF image is set via inline `<style>` in each page (`.gif-anchor::before` and `:hover::before`)
+- Hover: text shifts from ochre → rust with slight letter-spacing expansion (defined in `style.css`)
 
 ## Row item pattern
 
@@ -220,18 +243,18 @@ The expandable content row is the core UI primitive for all list-based interior 
   <!-- optional expanded content -->
   <div class="row-body">
 
-    <!-- text column — max-width: 60ch -->
+    <!-- text column — max-width: 60ch, max-height: 400px, scrollable -->
     <div class="row-text">
       <p>…</p>
     </div>
 
-    <!-- photo column — one or more <picture> elements stacked vertically -->
+    <!-- photo column — vertically scrollable, max-height: 400px, snap on each image -->
     <div class="row-photo">
       <picture>
         <source srcset="img-400w.webp 400w, img-800w.webp 800w" type="image/webp">
         <img src="img-800w.webp" alt="…" loading="lazy" decoding="async">
       </picture>
-      <!-- additional <picture> elements go here -->
+      <!-- additional <picture> elements go here — each snaps into view on scroll -->
     </div>
 
   </div>
@@ -244,11 +267,34 @@ The expandable content row is the core UI primitive for all list-based interior 
 - Never use `<h2>` inside `<summary>` — use `<span class="row-title">`
 - `.row-body` is full-width by default (matches `<summary>`)
 - `.row-body` becomes a 50/50 grid automatically when it contains `.row-photo` (via `:has(.row-photo)`)
-- `.row-text` constrains text to `max-width: 60ch` for readability
+- `.row-text` constrains text to `max-width: 60ch` and `max-height: 400px` with `overflow-y: auto` — text column scrolls when content is tall
+- Links inside `.row-text` are underlined (`text-decoration: underline` via `.row-text a`)
 - `.row-photo` is always a `<div>` container — never put `class="row-photo"` directly on `<picture>`
-- Multiple images: add multiple `<picture>` elements inside `.row-photo` — they stack vertically by default
+- `.row-photo` is a vertically scrollable column: `max-height: 400px`, `overflow-y: auto`, `scroll-snap-type: y proximity`
+- Images render at their natural proportions (`width: 100%; height: auto`) — no forced aspect ratio, no cropping
+- Multiple images stack vertically inside `.row-photo` — each `<picture>` snaps into view (`scroll-snap-align: start`)
+- Prepare responsive images at 400w/800w/1200w/1920w variants; crop to landscape when the source is portrait to avoid excessive scroll height
 - `.row-text` is always required inside `.row-body` — even when empty (use a placeholder comment)
 - Omit `.row-photo` if not needed — the layout degrades cleanly to single-column text
+- **Never duplicate links** between `row-meta` and `row-body` — links belong in `row-meta` only (always visible), not repeated inside the expanded body
+
+### `row-meta` and `row-date` — per-section conventions
+
+The meaning of `row-date` and `row-meta` varies by section. Do not assume a single usage — follow the table below.
+
+| Section | `row-date` | `row-meta` |
+|---------|-----------|------------|
+| Spree (events) | Event date (italic, left-anchored) | Tags (type/format): `.tag`, `.tag.sky`, `.tag.ochre` |
+| Das Haus — History | Year / area / label | Tag (`.tag`) |
+| Das Haus — Communs | Area in m² | Tag (floor: `.tag`) |
+| Das Haus — Residents | Studio number (e.g. `"Studio 3A"`) — **pending, currently empty** | Links only: website ↗ and/or email ↗ — no tags |
+| Das Haus — Accessibility | — | Tag (`.tag`) |
+
+**Residents-specific rules:**
+- `row-date` is reserved for studio numbers. Leave empty until studio numbers are confirmed.
+- `row-meta` contains only link spans (`<span><a href="…">label ↗</a></span>`) — no `.tag` pills
+- Tags (`.tag`, `.tag.sky`, `.tag.ochre`) are not used in the residents section
+- Keywords describing an artist's practice will be added to `row-meta` alongside links once the studio-number system is finalized
 
 ## General Rules
 

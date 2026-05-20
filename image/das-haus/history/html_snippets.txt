@@ -1,0 +1,90 @@
+<!-- ==========================================================
+     Snippets HTML — Images WebP multi-tailles
+     Généré par convert_to_webp.py
+
+     Usage :
+       1. Copiez la balise <picture> souhaitée
+       2. Collez-la dans votre HTML
+       3. Renseignez l'attribut alt= avec votre description
+       4. Ajustez le chemin si votre dossier webp/ est ailleurs
+========================================================== -->
+
+<!-- ── kunstfabrik ── original : 1240×1240px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/kunstfabrik-400w.webp 400w,
+             webp/kunstfabrik-800w.webp 800w,
+             webp/kunstfabrik-1200w.webp 1200w,
+             webp/kunstfabrik-original.webp 1240w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/kunstfabrik-original.webp"
+    alt=""
+    width="1200"
+    height="1200"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── the_building (1) ── original : 1536×918px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/the_building (1)-400w.webp 400w,
+             webp/the_building (1)-800w.webp 800w,
+             webp/the_building (1)-1200w.webp 1200w,
+             webp/the_building (1)-original.webp 1536w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/the_building (1)-original.webp"
+    alt=""
+    width="1200"
+    height="717"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── the_building (2) ── original : 2048×1372px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/the_building (2)-400w.webp 400w,
+             webp/the_building (2)-800w.webp 800w,
+             webp/the_building (2)-1200w.webp 1200w,
+             webp/the_building (2)-1920w.webp 1920w,
+             webp/the_building (2)-original.webp 2048w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1920px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/the_building (2)-original.webp"
+    alt=""
+    width="1920"
+    height="1286"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── Wachturm_LUE3 ── original : 1134×850px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/Wachturm_LUE3-400w.webp 400w,
+             webp/Wachturm_LUE3-800w.webp 800w,
+             webp/Wachturm_LUE3-original.webp 1134w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/Wachturm_LUE3-original.webp"
+    alt=""
+    width="800"
+    height="599"
+    loading="lazy"
+  />
+</picture>

@@ -83,7 +83,18 @@
 
 
   <!-- GIF anchor — bottom-right corner -->
-  <div class="gif-anchor"></div>
+  <div class="gif-anchor">
+    <svg class="gif-anchor-label" viewBox="0 0 150 150" aria-hidden="true" focusable="false">
+      <!-- Circular path along which the text travels — bottom arc, clockwise -->
+      <path id="gif-circle-path" d="M 15,75 A 60,60 0 1,1 135,75" fill="none" />
+      <text>
+        <textPath href="#gif-circle-path" startOffset="50%" text-anchor="middle">
+          contact@flutgraben.org
+        </textPath>
+      </text>
+    </svg>
+    <a href="mailto:contact@flutgraben.org" class="gif-anchor-link" aria-label="Write us — contact@flutgraben.org"></a>
+  </div>
   <button class="back-to-top" aria-label="Back to top">↑</button>
 
   <!-- Content -->
@@ -109,7 +120,7 @@
 
     <!-- Upstream — past events -->
     <section class="row-section" id="upstream">
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
         <span class="row-date">Sat 03 May · 20h</span>
         <span class="row-title">Night of open studios</span>

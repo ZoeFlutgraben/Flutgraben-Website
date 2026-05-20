@@ -85,7 +85,18 @@
   </div>
 
   <!-- GIF anchor — bottom-right corner -->
-  <div class="gif-anchor"></div>
+  <div class="gif-anchor">
+    <svg class="gif-anchor-label" viewBox="0 0 150 150" aria-hidden="true" focusable="false">
+      <!-- Circular path along which the text travels — bottom arc, clockwise -->
+      <path id="gif-circle-path" d="M 15,75 A 60,60 0 1,1 135,75" fill="none" />
+      <text>
+        <textPath href="#gif-circle-path" startOffset="50%" text-anchor="middle">
+          contact@flutgraben.org
+        </textPath>
+      </text>
+    </svg>
+    <a href="mailto:contact@flutgraben.org" class="gif-anchor-link" aria-label="Write us — contact@flutgraben.org"></a>
+  </div>
   <button class="back-to-top" aria-label="Back to top">↑</button>
 
   <!-- Content -->
@@ -115,7 +126,7 @@
     <!-- History — the building, its history, its spaces -->
     <section class="row-section is-active" id="history">
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">1997</span>
           <span class="row-title">Kunstfabrik am Flutgraben</span>
@@ -125,10 +136,28 @@
           <div class="row-text">
             <p>Founded in 1997 as "Kunstfabrik am Flutgraben", later renamed Flutgraben e.V. A former industrial building now under monument protection (denkmalgeschütztes Gebäude), located directly at the former wall border (ehemalige Mauergrenze), east of the Flutgraben — the canal separating the districts of Kreuzberg and Treptow.</p>
           </div>
+          <div class="row-photo">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="image/das-haus/history/kunstfabrik-400w.webp 400w,
+                        image/das-haus/history/kunstfabrik-800w.webp 800w,
+                        image/das-haus/history/kunstfabrik-1200w.webp 1200w,
+                        image/das-haus/history/kunstfabrik-original.webp 1240w"
+                sizes="(max-width: 600px) 90vw, 50vw">
+              <img
+                src="image/das-haus/history/kunstfabrik-800w.webp"
+                alt="Kunstfabrik am Flutgraben — the building in 1997"
+                width="1240"
+                height="1240"
+                loading="lazy"
+                decoding="async">
+            </picture>
+          </div>
         </div>
       </details>
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">~50 studios</span>
           <span class="row-title">The Building</span>
@@ -138,10 +167,45 @@
           <div class="row-text">
             <p>The building comprises approximately 50 artist studios, a Projektraum, a Mehrzweckhalle, and a Dachterrasse. It is a self-organized, non-profit space financially sustained through permanent studio rentals and temporary rental of communal spaces.</p>
           </div>
+          <div class="row-photo">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="image/das-haus/history/the_building (1)-400w.webp 400w,
+                        image/das-haus/history/the_building (1)-800w.webp 800w,
+                        image/das-haus/history/the_building (1)-1200w.webp 1200w,
+                        image/das-haus/history/the_building (1)-original.webp 1536w"
+                sizes="(max-width: 600px) 90vw, 50vw">
+              <img
+                src="image/das-haus/history/the_building (1)-800w.webp"
+                alt="Am Flutgraben 3 — exterior view of the building"
+                width="1536"
+                height="918"
+                loading="lazy"
+                decoding="async">
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="image/das-haus/history/the_building (2)-400w.webp 400w,
+                        image/das-haus/history/the_building (2)-800w.webp 800w,
+                        image/das-haus/history/the_building (2)-1200w.webp 1200w,
+                        image/das-haus/history/the_building (2)-1920w.webp 1920w,
+                        image/das-haus/history/the_building (2)-original.webp 2048w"
+                sizes="(max-width: 600px) 90vw, 50vw">
+              <img
+                src="image/das-haus/history/the_building (2)-800w.webp"
+                alt="Am Flutgraben 3 — aerial view of the building and canal"
+                width="2048"
+                height="1372"
+                loading="lazy"
+                decoding="async">
+            </picture>
+          </div>
         </div>
       </details>
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">2004</span>
           <span class="row-title">Wachturm am Schlesischen Busch</span>
@@ -150,6 +214,23 @@
         <div class="row-body">
           <div class="row-text">
             <p>Since 2004, Flutgraben e.V. also manages the former watch tower (Wachturm) at Schlesischer Busch. The space is used by the initiative The Watch for exhibitions, lectures, screenings, and residencies.</p>
+          </div>
+          <div class="row-photo">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="image/das-haus/history/Wachturm_LUE3-400w.webp 400w,
+                        image/das-haus/history/Wachturm_LUE3-800w.webp 800w,
+                        image/das-haus/history/Wachturm_LUE3-original.webp 1134w"
+                sizes="(max-width: 600px) 90vw, 50vw">
+              <img
+                src="image/das-haus/history/Wachturm_LUE3-800w.webp"
+                alt="Wachturm am Schlesischen Busch — the former watch tower managed by Flutgraben since 2004"
+                width="1134"
+                height="850"
+                loading="lazy"
+                decoding="async">
+            </picture>
           </div>
         </div>
       </details>
@@ -163,31 +244,76 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">acting from zero</span>
-          <div class="row-meta"><span class="tag sky">Collective</span></div>
+          <div class="row-meta"><span><a href="mailto:mari@nothingtalks.com">mari@nothingtalks.com ↗</a></span></div>
+       
+         
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p><strong>A=A / acting from zero / handeln vom nullpunkt</strong></p>
+            <p>radikale nonduale künstlerische Praxis – Kein Ich. Keine Bio. Kein Staat.<br>
+            radical nondual artistic practice – no ego. no bio. no government.</p>
+            <p>studioA=Ateam:<br>
+            Mari Brellochs<br>
+            <a href="https://flutgraben.org/person/sophia-elstermann/" target="_blank" rel="noopener">Sophia Elstermann</a><br>
+            <a href="https://flutgraben.org/person/darius-kolski/" target="_blank" rel="noopener">Darius Kolski</a><br>
+            <a href="https://flutgraben.org/person/claudia-mocker/" target="_blank" rel="noopener">Claudia Mocker</a></p>
+            
+            <hr>
+            <p><strong>Tschüss Olaf* – Statthalter einer besseren Praxis</strong></p>
+            <p>'Manches, was Kunst war, ist es nicht länger', schrieb Adorno im Nachhall von Faschismus und Holocaust in seinem posthum erschienenen Werktorso 'Ästhetische Theorie' aus den 40er und 50er Jahren des 20. Jahrhunderts. Wie Recht er behalten sollte, zeigte sich in den Sprengungen und Öffnungen des Kultur- und Kunstbegriffs, durch künstlerische Praxen, die auch nach seinem Tod, postmodern und post-postmodern, die Werk-, Genre-, Methoden- und Formfragen ad absurdum führten, und das Projekt der Moderne, Kunst und Kultur von der Ignoranz unfreier Vorgaben und Vorurteile zu befreien, auf den Punkt, in den Kontext und in die umfassende gesellschaftliche Erweiterung brachten.</p>
+            <p>Heute zeigt sich das Betriebsystem Kunst als eine kulturelle Echokammer, in der es den Protagonist*innen kaum noch, bis gar nicht mehr gelingen kann, gesellschaftliche und kulturelle Dynamik und Relevanz zu generieren. Eine künstlerische Realität, die sich in bitterer Weise im Prädikat 'nicht systemrelevant' in einer der größten Freiheits- und Wertekrisen unserer Zeit spiegelt und bestätigt. Eine gesellschaftliche Wertekrise, die als Gesundheitskrise die gesamte gesellschaftliche und mediale Realität in Echokammern spaltet.</p>
+            <p>Es wird eine ganze Generation ihrer Perspektiven beraubt und unsere Kinder, im wahrsten Sinne des Wortes, ihrer Spielräume. Es herrscht manipulierte politische Verwirrung, algorithmengesteuerter Populismus, Infotainment, soziale und medizinische Angst, exponentiell zerstörerische Umleitung von Finanzströmen und gefährliche Umformung und Verschärfung von Machtgefügen. Adornos Setzung wird heute in neuer erschreckend ohnmächtiger Weise relevante Realität und Wahrheit: Kunst und das, was in einem tatsächlich konsequenten Sinne als solche verstanden werden kann, kann einfach kaum noch.</p>
+            <p>Eine Krise der Kunst, vor einer Krise der Gesellschaft, vor einer noch tiefer liegenden Krise der Menschheit. – <a href="http://www.hungerstreik2021.de" target="_blank" rel="noopener">www.hungerstreik2021.de</a> – Eine Inszenierung, eine Aktion. Ein 'Bild' stattfindender sozialer Plastizität, das auf die tief liegende omnipräsente Krise der menschengemachten Erderwärmung diskursformend aktiv reagiert. Was ist das Bild, was ist der Text, was ist die Aktion. Was ist künstlerische Praxis. Was wird sichtbar, was bleibt verdeckt. Was wird durch die Sichtbarkeit verdeckt. Was wird durch Unsichtbarkeit sichtlich sichtbar. Was bleibt unsichtbar.</p>
+            <p>*) Tschüss Olaf, 18.9.21, der Hungerstreikende Jacob Heinze verabschiedet sich nach kurzem Gespräch vor dem Camp der Hungerstreikenden auf dem Gelände des Reichstagsgebäudes vom SPD-Spitzenkandidaten Olaf Scholz mit den Worten: 'Vielen Dank. Wir sehen uns hoffentlich nächsten Donnerstag, mein Lieber – Tschüss, Olaf.' Es wird der dringend notwendige Paradigmenwechsel markiert. <a href="https://www.youtube.com/watch?v=AwdwQ9B8H8g&t=1120s" target="_blank" rel="noopener">youtube.com/watch?v=AwdwQ9B8H8g</a></p>
+            <p>25.9.21, Einen Tag vor der Bundestagswahl sichert Olaf Scholz unter dem Druck, der als trockenen Hungerstreik fortgeführten Aktion, ein öffentlichen Gespräch innerhalb von vier Wochen nach der Wahl zu. Daraufhin brechen die Hungerstreikenden Lea Bonasera und Henning Jeschke den trockenen Hungerstreik ab.</p>
+            <p>Der am 24.9. im Online Magazin der Wochenzeitung Zeit veröffentlichte Essay von Raphael Thelen, 'Wie weit darf Wut gehen', der sich mit den aktuellen Formen zivilen gewaltfreien Ungehorsams und der Radikalisierung der Klimabewegung auseinandersetzt, erwähnt die Aktion nicht. <a href="https://www.zeit.de/gesellschaft/zeitgeschehen/2021-09/klimabewegung-klimakrise-fridays-for-future-friedliche-demonstration-radikalisierung-gewalt" target="_blank" rel="noopener">zeit.de – Wie weit darf Wut gehen</a></p>
+            <p>Weitere Links zur Aktion:<br>
+            <a href="https://www.youtube.com/watch?v=v4QoRHRCXbE&t=2879s" target="_blank" rel="noopener">youtube.com/watch?v=v4QoRHRCXbE</a> – 21.9.21, Bundespressekonferenz, Regierungssprecher Steffen Seibert zur Position von Angela Merkel zum Hungerstreik<br>
+            <a href="https://bit.ly/3kph3Mi" target="_blank" rel="noopener">bit.ly/3kph3Mi</a> – 10.9.21, Bundestagsabgeordneter Cem Özdemir und der Hungerstreikende Henning Jeschke<br>
+            <a href="http://hungerstreik2021.de/wp-content/uploads/2021/09/Schellnhuber-210922-Offener-Brief426.pdf" target="_blank" rel="noopener">Offener Brief von Hans Joachim Schellnhuber</a> – 22.09.21<br>
+            <a href="https://www.youtube.com/watch?v=9PT1pJ6HuFE" target="_blank" rel="noopener">youtube.com/watch?v=9PT1pJ6HuFE</a> – 24.9.21, Der Körper als Druckmittel – vollständiges Porträt des 'Hungerstreiks der letzten Generation'</p>
+            <p>#takethechair – Drei Stühle werden frei bleiben, nehmt sie euch! <a href="https://take-the-chair.com/" target="_blank" rel="noopener">take-the-chair.com</a> – Aus dem 'Hungerstreik der letzten Generation' wird der Aufbruch der Vielen.</p>
+            <p>'Kunst ist nicht nur der Statthalter einer besseren Praxis als der bis heute herrschenden, sondern ebenso Kritik von Praxis als der Herrschaft brutaler Selbsterhaltung.' — Theodor W. Adorno, Ästhetische Theorie.</p>
+            <p>Lassen wir der Theorie künstlerische Praxis folgen!<br>
+            Mari Brellochs</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Adrian Rovatkay</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://rovatkay.blogspot.com" target="_blank" rel="noopener">rovatkay.blogspot.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>The approx. 2,300 m² roof area has only been poorly repaired over the past few decades and has repeatedly shown leaks. All roof areas are insulated and re-covered. As part of the measure, the landmarked border post walkway, the attachment points of which have so far penetrated the roof membrane and caused notorious leaks, will be removed and re-installed on a building protection mat. After a detailed coordination process with the State Monuments Office (LDA), this section was commissioned and work began at the end of April so that this part of the renovation will also be completed by mid-2021.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Alfonso Moral</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://alfonsomoral.net" target="_blank" rel="noopener">alfonsomoral.net ↗</a></span><span><a href="https://anti-books.net" target="_blank" rel="noopener">anti-books.net ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>I work as a photographer and DoP (Director of Photography). In Berlin, I've created an independent platform to show photography, visual arts and films called ANTI-books.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
-          <span class="row-date">Painting</span>
+          <span class="row-date"></span>
           <span class="row-title">Almuth Baumfalk</span>
-          <div class="row-meta"><span class="tag">Artist</span></div>
+          <div class="row-meta"></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
@@ -200,24 +326,51 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">alpha nova &amp; galerie futura</span>
-          <div class="row-meta"><span class="tag sky">Gallery</span></div>
+          <div class="row-meta"><span><a href="https://galeriefutura.de" target="_blank" rel="noopener">galeriefutura.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>In my work, I am trying to visualize that nothing is ever definite, but rather in a state of motion and of continuous change.</p>
+            <p>To convert my thoughts on volatileness and transformation into painting I am using translucent paint- and photo-elements on a transparent foundation (artificial silk), which is permeable to light and thus evokes a flotation of the painting's elements in an imaginary inconceivable space.</p>
+            <p>Born in Aurich/Germany. Study of Fine Arts at the School of the Art Institute of Chicago and the Art Academy in Braunschweig, Germany. Scholarship of the German Academic Exchange Service to the USA.</p>
+            <p>Exhibitions in Museums in Berlin, Emden (Germany); Akureyri (Iceland); div. Galleries; the Goethe Institute San Francisco and the artist studio house Am Flutgraben in Berlin participating at Art Biennials in Japan, Iceland and Turkey.</p>
+            <p>Teaching Fine Arts at University Zwickau.</p>
+            <p>Artworks in collections of Berlinische Galerie; the State museum Emden, Germany and the MacArthur Foundation, Chicago.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Andres Villarreal</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://andresvillarreal.net" target="_blank" rel="noopener">andresvillarreal.net ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>alpha nova & galerie futura is a Berlin-based art space for exhibitions and cultural events with a decidedly emancipatory and feminist perspective, founded in 1986. It focuses on collaborations with women artists, creating a space for linking political intervention and artistic practice in order to develop critical standpoints for the artistic and academic communities, as well as for society at large.</p>
+            <p>Every year, up to five exhibitions with visual arts of all genres are realized in cooperation with the participating artists and other partners. Events like film screenings, performances, concerts, readings, lectures, talks and discussions as well as thematic workshops and round-table discussions for women cultural producers complement the program.</p>
+            <p>Focus: Feminisms, postcolonialism, intersectionality, conceptual and investigative approaches, collaborative work, art as knowledge production, research as an artistic format.</p>
+            <p>Artistic Directors: Katharina Koch and Sylvia Sadzinski</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Barbara Ott</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://barbaraott.com" target="_blank" rel="noopener">barbaraott.com ↗</a></span><span><a href="mailto:mail@barbaraott.com">mail@barbaraott.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Andres Villarreal is a Swedish-Colombian artist, filmmaker and writer. Andres received their MFA from the Berlin University of the Arts and has previously studied Gender Studies and Sociology and also attended the Whitney ISP in New York City.</p>
+            <p>Andres' practice interrogates how discourses emerge and are cultivated within society; explores the relationship between representation and the production of reality; and deals with questions relating to time, narration and memory. Their work is often situated in the borderland between fact and fiction.</p>
+            <p>They use a multilayered artistic approach, combining text, photography, poetry, installation and video in order to highlight how digitization and commercialization transform life and desire in contemporary society.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -226,6 +379,14 @@
           <span class="row-title">Beat Brogle</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Barbara Ott studied communication design and illustration at the Mainz University of Applied Sciences (BA), at the Académie des Beaux-Arts Bruxelles, Belgium and at the HAW Hamburg (MA).</p>
+            <p>She has been a freelance illustrator for editorial and advertising since 2014 and works for clients such as the New York Times, The New Yorker, Google, Etsy, Berliner Philharmonie, Psychologie Heute, Spiegel and many others.</p>
+            <p>She also teaches editorial illustration, for example at the Mainz University of Applied Sciences and the FHWS Würzburg.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -234,14 +395,27 @@
           <span class="row-title">Ben Cottrell</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Ben Cottrell's multi-layered, dynamic work encompasses expansive installations, sculptures, paintings, photography and drawings. An image world of ambivalent energies unfolds in his works, in which the body often serves as a representative for multiple transformations. Nature and myth, culture and cliché, creation and collapse, philosophy and pop, the improvised and the carefully developed find simultaneous expression in his works. Form, excess and jubilant chaos topple into one another, producing an atmosphere of uncertainty and openness.</p>
+            <p>Born in 1972 in Cornwall, England, lives in Berlin. He studied at Cheltenham School of Art and Design, was an artist in residence at, among other institutions, MuseumsQuartier Vienna and Meet Factory Prague. His works have been shown at Bonner Kunstverein; Cell Project Space London; Envoy Enterprises New York; Gallery Mikael Andersen Copenhagen; Garage Rotterdam; Kunst-Werke Berlin; and others.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Benedikt Rugar</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://benediktrugar.de" target="_blank" rel="noopener">benediktrugar.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Looking at Benedikt Rugar's drawings is like diving into an absurd world of liquid shapes, hard graphical contrasts and soft bubbles. Futuristic scenarios, inhabited by fragments from the worlds of comics, technical drawing, Pop Art and Abstraction. Anthropomorphic elements swirling in love dance, boring holes into each other or floating aimlessly in white space like still-lifes from a different world.</p>
+            <p>With his overload of fantasy, Rugar transforms even the banalest subjects into something surreal, telling the viewer with just minimal hints a whole lot of a crazy story that's always situated in some kind of yesterday's future.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -250,37 +424,59 @@
           <span class="row-title">Claudia Mocker</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>no wording – dance!</p>
+            <p>Encaustic</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Clément Layes / Public in Private</span>
-          <div class="row-meta"><span class="tag sky">Collective</span></div>
+          <div class="row-meta"><span><a href="https://clementlayes.com" target="_blank" rel="noopener">clementlayes.com ↗</a></span><span><a href="https://publicinprivate.com" target="_blank" rel="noopener">publicinprivate.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Clémentine M. Songe</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://clementine-mensonge.com" target="_blank" rel="noopener">clementine-mensonge.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Cornelia Herfurtner</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://corneliaherfurtner.net" target="_blank" rel="noopener">corneliaherfurtner.net ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Cornelia Herfurtner is a visual artist working both under her civil name and in various collective contexts. Recent works include a series of relief shields (What is a Weapon?, Very Project Space, 2021), the texts 'On Our Streets, in Our Blocks, Down with Cops' (Texte zur Kunst, 2020) and 'Never relinquish the Streets' (Fallsemester, 2020), and a series of photographs under the title 'freedom and control of others (including myself)' (starship #19, 2020). She works in the alliance Rheinmetall Entwaffnen [Disarm Rheinmetall] against the production and export of military weapons from Germany's largest arms producer Rheinmetall.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Dagmar Binder</span>
-          <div class="row-meta"><span class="tag">Artist</span></div>
+          <div class="row-meta"><span><a href="https://textillabor.de" target="_blank" rel="noopener">textillabor.de ↗</a></span><span><a href="mailto:dagmar@textillabor.de">dagmar@textillabor.de ↗</a></span></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
@@ -293,24 +489,44 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Daniel Franke</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://daniel-franke.com" target="_blank" rel="noopener">daniel-franke.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>I have had my studio at Flutgraben e.V. since 1998 working in the field of textile art, with a focus on felt – in all its facets. Sculptures, installations, costumes and fashionable unique items are created from wool, fibres and fabrics in the textile laboratory (textillabor). For me, working with felt is an artistic form of expression as well as a constant research process in which I try to sound out and expand the potential of the material and a craft technique that is thousands of years old. For many years I have been passing on my experience in the form of workshops at numerous national and international textile art centres.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Darius Kolski</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://soundcloud.com/kolkyer" target="_blank" rel="noopener">soundcloud/kolkyer ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Daniel Franke (* September 6th, 1982) is an artist, curator and artistic researcher living and working in Berlin. He studied visual communication and media art at the Berlin University of the Arts, completed his diploma in 2009 with Prof. Siegfried Zielinski and received his Meisterschüler in 2011.</p>
+            <p>He is currently a doctoral candidate at the Bauhaus University in Weimar and teaches at various universities, primarily in the field of AI. He is also one of the founders of LEAP (Lab for Electronic Arts and Performance), an interdisciplinary non-profit project for emerging digital media art and performance.</p>
+            <p>In his work, he challenges the understanding of the digital with the aim of examining it in the context of physical perception in the transformation process of algorithmic thinking towards the real.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Dirk Lebahn</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://oqbo.de" target="_blank" rel="noopener">oqbo.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>generative art | sound</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -319,14 +535,27 @@
           <span class="row-title">Dmitry Paranyushkin</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Lives and works in Berlin.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Dominique Hurth</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://dominiquehurth.com" target="_blank" rel="noopener">dominiquehurth.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Born in France (1985), Dominique Hurth is a visual artist working with sculpture and installation, and within the relationship between sculptural matter and printed matter. Even though her installations are often concentrated on the form, long and detailed research is strongly embedded in the development of this same form. It is by ways of archival research, journalistic investigation, writing and material experiments that the works develop, and it is by way of editing that the installation operates in the exhibition space.</p>
+            <p>Her work was exhibited in several museums, galleries and institutions internationally (Palais de Tokyo Paris; Hamburger Bahnhof Berlin; Fundació Tàpies Barcelona; Memorial of Ravensbrück; Württembergischer Kunstverein Stuttgart) and is part of several collections. She is the recipient of several awards and residencies such as The Pollock-Krasner Foundation Grant (2016–17) and Prize of the Berliner Senate at ISCP New York (2014). She publishes frequently in the format of artist editions and pamphlets.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -335,6 +564,13 @@
           <span class="row-title">Ebba Fransén Waldhör</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Ebba Fransén Waldhör is an artist and designer working in spatial installation and design research, with a primary focus on textiles. She develops temporary spatial concepts and stage designs for artists, writers, and institutions, such as Transmediale, Hebbel am Ufer Theater, KW Berlin and Sophiensaele.</p>
+            <p>Between 2016–2019 she was a part of a performance collective with artist/writer Hannah Black and musician Bonaventure, in which she created installations at MoMA PS1 New York; the ICA London; and Centre d'Art Contemporain Genève.</p>
+            <p>She currently works as a design researcher at the weißensee school of art and design, researching adaptive materials in textiles and their application to an architectural context. She is also a lecturer in Scenography and Exhibition Design at the University of Arts and Design Karlsruhe.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -357,15 +593,23 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Fehras Publishing Practices</span>
-          <div class="row-meta"><span class="tag sky">Collective</span></div>
+          <div class="row-meta"><span><a href="https://fehraspublishingpractices.org" target="_blank" rel="noopener">fehraspublishingpractices.org ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Fehras Publishing Practices (Sami Rustom, Omar Nicolas and Kenan Darwich) is an artist collective founded in 2015 in Berlin. It researches the history and presence of publishing and its entanglement in the socio-political and cultural sphere in the Eastern Mediterranean, North Africa and the Arab diaspora. It observes publishing as a possibility for creating and accumulating knowledge and initiates projects in different formats such as installations, films, publications, lectures and performances.</p>
+            <p>Selected recent exhibitions: The Mosaic Rooms London (solo, 2021); Haus der Statistik Berlin (solo, 2021); Ural Industrial Biennial (2021); Crac Occitanie Sète (2020); MMAG Foundation Amman (2020); Neuer Berliner Kunstverein (2019); Sharjah Art Foundation (solo, 2018); EMST Athens (2018); Haus der Kulturen der Welt Berlin (2017); Sharjah Biennial (2017).</p>
+            <p>The three were artists-in-residence at Delfina Foundation London; Ashkal Alwan Beirut and Villa Romana Florence.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Flutgraben Performances</span>
-          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
+          <div class="row-meta"></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
@@ -378,8 +622,17 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Frank Zucht</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://frankzucht.com" target="_blank" rel="noopener">frankzucht.com ↗</a></span><span><a href="mailto:mail@frankzucht.com">mail@frankzucht.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Flutgraben Performances is run by the artists Clément Layes, Jasna L. Vinovrški, Moritz Majce and Sandra Man. It focuses on choreography, dance, and performance in the broadest and most interdisciplinary sense of these terms. Located at former Kunstfabrik am Flutgraben, the project is dedicated to the growth of artistic works before and after their release. Flutgraben Performances aims for a more intimate, fragile as well as continuous engagement between artworks and their audience.</p>
+            <p>Every year the initiators work together with a group of Berlin-based artists.</p>
+            <p>2019: Cécile Bailly, Charlie Fouchier, Margrét Sara Guðjónsdóttir, Arantxa Martinez, Uri Turkenich, André Uerba.</p>
+            <p>2020: Asaf Aharonson, Christina Ciupke, Jefta van Dinther, Stella Geppert, Jared Gradinger, Milla Koistinen, Sergiu Matis, Ixchel Mendoza.</p>
+            <p>Funded by the Berlin Senate for Culture and Europe.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -388,22 +641,43 @@
           <span class="row-title">Freja Bäckman</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Frank Zucht studied at the State Academy of Visual Arts Karlsruhe under Horst Antes and at the University of South Australia in Adelaide. He won several prizes and has exhibited since 2006 at art- and bookfairs in Hamburg, Dornbirn/AT, Madrid/ES, Frankfurt/Main, Leipzig and Karlsruhe.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Hannah Dougherty</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://hannahdougherty.net" target="_blank" rel="noopener">hannahdougherty.net ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Hannah Dougherty starts with drawings and collage and, using carpentry and found objects, creates site-specific and installational works. She collaborates with choreographers, performance artists, and musicians to create scenography for performance-oriented spaces.</p>
+            <p>Born in Philadelphia, PA (USA). She received her BFA from the Maryland Institute College of Art in Baltimore and an MA from the Royal College of Art in London. She lives and works in Berlin since 2002.</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Harald Birck</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://harald-birck.de" target="_blank" rel="noopener">harald-birck.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Born 1960 in Heidenheim/Brenz.<br>
+            Studied 1983–89 at the Staatliche Akademie der Bildenden Künste Karlsruhe.<br>
+            Studios in Berlin, Görzke, Fahretoft and Marval (France).</p>
+            
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -418,7 +692,7 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Inverse Institution</span>
-          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
+          <div class="row-meta"></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
@@ -433,14 +707,29 @@
           <span class="row-title">Janine Eisenächer</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Critical Friends ist eine Serie von Gesprächen im Rahmen des Programms Inverse Institution. Zwischen 2011 und 2015 haben wir als Inverse Institution versucht, eine gemeinsame institutionskritische Praxis zu entwickeln, um Produktionsformen der Bildenden Kunst zu bearbeiten.</p>
+            <p>Im Rückblick haben wir begonnen, die Strategien in Zweifel zu ziehen, die wir in Inverse Institution angewendet und entwickelt haben. Die Serie Critical Friends ist als Konsequenz dieser Befragung entstanden und lädt Menschen ein, die Räume und Praxen aufgebaut haben, die die kritische Analyse von Machtverhältnissen, Ausschlüssen und Diskriminierung in Kunst und Kulturarbeit von Anfang an ins Zentrum ihrer Arbeit gestellt haben.</p>
+            <p>Critical Friends verweist auch auf den Widerspruch, dass die Einbindung von Personen mit machtkritischen Perspektiven in Institutionen oft unverbindlich bleibt.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Jasna L. Vinovrški / Public in Private</span>
-          <div class="row-meta"><span class="tag sky">Collective</span></div>
+          <div class="row-meta"><span><a href="https://jasnavinovrski.com" target="_blank" rel="noopener">jasnavinovrski.com ↗</a></span><span><a href="https://publicinprivate.com" target="_blank" rel="noopener">publicinprivate.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Jasna L. Vinovrški works as a performer, choreographer and teacher. She grew up in Zagreb but lives and works abroad since the disintegration of Yugoslavia. At the beginning of the 90s she studied in Essen, at the Folkwang Hochschule. After her graduation, for 12 years, she has been working as a professional dancer and performer for various European dance companies.</p>
+            <p>In 2006 she received the scholarship from Kunststiftung Baden-Württemberg and DanceWeb scholarship from Goethe Institute. After moving to Berlin in 2008, together with her partner Clément Layes, she founded the company Public in Private.</p>
+            <p>In 2012 Jasna gains her MA degree in choreography at the HZT University in Berlin. In 2014 she was invited by the Croatian Institute for Contemporary Dance to participate in the two-year EU-Canada project "Migrant Bodies", resulting in her solo work "Staying Alive", on tour in Europe, Canada and New York since 2016.</p>
+            <p>Public in Private was founded in 2008 in Berlin by Clément Layes and Jasna L. Vinovrški. Its goal is to broaden the borders of choreographic language. Their main working space is Studio Public in Private at Atelierhouse Flutgraben.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -449,6 +738,11 @@
           <span class="row-title">Jo Zahn</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Jo Zahn is a filmmaker, artist and musician. In his works he is developing perspectives on social, political and media issues. They are often created as collaborations, in dialogue processes and improvisation.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -463,8 +757,13 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Julia Lipinsky</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://julialipinsky.de" target="_blank" rel="noopener">julialipinsky.de ↗</a></span><span><a href="mailto:contact@julialipinsky.de">contact@julialipinsky.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Julia Lipinsky plays with a variety of materials, textures and fabrics and creates colourful, cheerful worlds with them. Originally studying fashion design and fine art sculpture, she calls herself a textile sculptress.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -479,7 +778,7 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Katja Brinkmann</span>
-          <div class="row-meta"><span class="tag">Artist</span></div>
+          <div class="row-meta"></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
@@ -500,7 +799,7 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Low Text</span>
-          <div class="row-meta"><span class="tag sky">Collective</span></div>
+          <div class="row-meta"></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
@@ -515,6 +814,12 @@
           <span class="row-title">Lydia Hamann</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>After the Eclipse is an open literary event format that provides a platform for writers, poets and artists working with text to share their work with audiences in an engaged, generous atmosphere. Originally initiated by Ebba Fransén Waldhör, Imri Kahn and Sarah M Harrison.</p>
+            <p>The cycle LOW TEXT aims to explore text production as a social practice and texts that become invisible in their ubiquity — emails, applications, manuals, automated texts. By taking a step back from individual authorship, this cycle takes a step towards it: how can we engage critically with such normative texts? Curated by Maru Mushtrieva, with co-curators Alexandra Zakharenko, Elena Vogman, Hrefna Hörn Leifsdóttir, Liudmila Saveliyeva.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -529,40 +834,67 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Marei Löllmann</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://mareirei.de" target="_blank" rel="noopener">mareirei.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Marei Löllmann works as a solo artist and as part of different interdisciplinary collectives.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">margot schmitt</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://margotschmitt.com" target="_blank" rel="noopener">margotschmitt.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>margot schmitt, born in 1954, Germany. Freelance artist, art teacher, toolmaker. Studied political science, German, art history, art education and fine arts. Lives and works in Berlin.</p>
+            <p>The exploration of psychological and social identity – one's own and that perceived as »alien« – and its inscription in bodies and things was and is the »substance« of her artistic work. Material, form and presentation decisions are mostly made during and out of the »field research« on the chosen topic. After a phase of »Landscapes, Flowers and Blossoms – no politics«, she has returned to political issues in recent years.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Maria Turik</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://mariaturik.online" target="_blank" rel="noopener">mariaturik.online ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Born in East Siberia in 1982. First University degree in Linguistics. Studied Fine Arts at Burg Giebichenstein Academy Halle, and at Weißensee Academy of Art Berlin.</p>
+            <p>In current work, combining sculptural elements with movement and sound, creating performances and installations for the stage and open-air spaces. One of the important topics of her work is the birth of non-verbal sign systems and other ways to perceive and understand one another.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Markus Draper</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://markusdraper.de" target="_blank" rel="noopener">markusdraper.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Marta Lodola</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://martalodola.wordpress.com" target="_blank" rel="noopener">martalodola.wordpress.com ↗</a></span><span><a href="https://1breaking-point.org" target="_blank" rel="noopener">1breaking-point.org ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Marta Lodola is a multidisciplinary artist, graduate in painting from the Academy of Fine Arts Brera in Milan. Her artistic work turns around the relationship between body and territory and the practice of resistance and liberation. Her work was displayed by the city of Milan, the art academy of Weissensee, GAP Gathering Around Performance and CIPAF. Her work has been funded by the European Cultural Foundation.</p>
+            <p>Ongoing project: Actions Against Borders #1 Breaking Point (2017–ongoing)</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -577,8 +909,14 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Mikala Hyldig Dal</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://mikala-dal.art" target="_blank" rel="noopener">mikala-dal.art ↗</a></span><span><a href="https://maternalfantasies.net" target="_blank" rel="noopener">maternalfantasies.net ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Mikala Hyldig Dal (1979, Denmark) is an artist and curator working in the field of new media and performance. Her work embeds critical theory in immersive digital environments and intersects artistic practice with political activism. A graduate of the Berlin University of Arts, her work has been presented at Martin Gropius Bau, House of World Cultures, Townhouse Gallery Cairo, Museum of Contemporary Art Los Angeles, Nikolaj Kunsthal Copenhagen, Flux Factory New York and Azad Gallery Tehran.</p>
+            <p>She is the editor of the anthology Images of Transition on art and activism in the Arab Uprisings of 2011, initiator of Open/Occupy Flutgraben, and a founding member of the feminist artist collective MATERNAL FANTASIES.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -593,8 +931,14 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Nicole Schuck</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://nicoleschuck.de" target="_blank" rel="noopener">nicoleschuck.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Born in Herford / Westphalia, lives in Berlin. She studied fine arts at the Braunschweig University of Fine Arts, graduating as a master student with Professor John Armleder in 2004. Since then she has worked as a freelance artist, focusing her projects on wildlife, natural and urban habitats, ecology and nature conservation.</p>
+            <p>In 2020, her book "Geschätzte Tiere / Valued Animals" was published by Hatje Cantz Verlag. Her works are represented in collections including: Collection of contemporary art of the Federal Republic of Germany; Berlinische Galerie; LWL-Museum für Kunst und Kultur Münster.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -609,8 +953,14 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Nora Al-Badri</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://nora-al-badri.de" target="_blank" rel="noopener">nora-al-badri.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Nora Al-Badri is a multi-disciplinary and conceptual media artist with a German-Iraqi background. Her works are research-based as well as paradisciplinary and as much post-colonial as post-digital. She lives and works in Berlin.</p>
+            <p>She graduated in political sciences at Johann Wolfgang Goethe University Frankfurt/Main and was the first artist-in-residence at the Swiss Federal Institute for Technology (EPFL) and its Laboratory for Experimental Museology (eM+) in 2020. Her practice focuses on the politics and the emancipatory potential of new technologies such as machine intelligence or data sculpting, non-human agency and transcendence.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -625,8 +975,15 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Open Occupy</span>
-          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
+          <div class="row-meta"><span><a href="https://openoccupy.com" target="_blank" rel="noopener">openoccupy.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Since artists started squatting in the abandoned GDR factory at Flutgraben in the early 90s, they opened their studios regularly to the public. FLUTGRABEN, since 1998 a non-profit organisation and Berlin's largest self-organized artists' studio building, continues to engage the public in an annual Open House.</p>
+            <p>Since 2018 Open House Flutgraben has increasingly turned its attention to the financialization of urban space and examines how structures of exploitation can be countered through the practice of open, solidarity-based networks, and transdisciplinary collaboration. The initiative Open/Occupy is a direct response to an ongoing process of gentrification in Berlin.</p>
+            <p>Open/Occupy believes that the city needs free and open spaces because they generate critical knowledge and create community; foster alternative visions of the future through experiential forms of discourse; facilitate open-mindedness towards the unknown and the potential of becoming.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -649,8 +1006,13 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">raumlaborberlin</span>
-          <div class="row-meta"><span class="tag sky">Collective</span></div>
+          <div class="row-meta"><span><a href="https://raumlabor.net" target="_blank" rel="noopener">raumlabor.net ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>raumlabor is a collective of nine members with a shared background in architecture. As architects, artists, performers, inventors and curators, they have tapped into different spheres of action. The group developed in 1999 from a common interest in an expanded understanding of architecture, which has since been established as Urban Practice. raumlabor's working method is situational and action-oriented, with a focus on the collaborative production of space as an open and unbiased process.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -665,16 +1027,29 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Roland Boden</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://rolandboden.de" target="_blank" rel="noopener">rolandboden.de ↗</a></span><span><a href="https://kronos-projekt.de" target="_blank" rel="noopener">kronos-projekt.de ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Die Bilder Roland Bodens basieren auf architektonischen 3D-Modellen, die als perspektivische Rohskizzen dienen. Diese zwischen Modell, Simulation und Realität angesiedelten Konstrukte verharren in einer ambivalenten Welt zwischen Vergangenheit und Zukunft: Retro/Future.</p>
+            <p>Parallel hierzu entstehen umfangreiche textbasierte Arbeiten im historischen, wissenschaftlichen und militärhistorischen Kontext, die sich mit dem Begriff der Realität auseinandersetzen und als fiktionale Recherchen bezeichnet werden.</p>
+            <p>Roland Boden, geboren 1962 in Dresden, lebt in Berlin. Ausstellungen u.a. Manifesta 3 Ljubljana, Busan Biennale, New Museum New York, ICA London, Künstlerhaus Bethanien Berlin, Westf. Landesmuseum Münster. Preise u.a. Deutsche Akademie Villa Massimo Rom 2003, Falkenrot-Preis Berlin 2020.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Ronald de Bloeme</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://ronalddebloeme.com" target="_blank" rel="noopener">ronalddebloeme.com ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Ronald de Bloeme, born 1971 in Leeuwarden (NL), studied painting & drawing at the Willem de Kooning Academy in Rotterdam (1992–1996). In his paintings and drawings, he examines several communication systems such as cutting patterns, subway plans or election results.</p>
+            <p>In 2007 he was awarded the Vattenfall Contemporary Art Prize, followed by solo exhibitions at the Berlinischen Galerie, Berlin and the Stedelijk Museum, Schiedam. His works are represented in the collections of the Berlinische Galerie, Staatliche Kunstsammlungen Dresden, Stedelijk Museum Schiedam, Museum Voorlinden and the SAFN Collection Reykjavik.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -683,6 +1058,12 @@
           <span class="row-title">Sheree Domingo</span>
           <div class="row-meta"></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Sheree Domingo, born 1989, is a freelance illustrator and comic book author. She was a finalist for the Berthold Leibinger Stiftung Comic Book Prize in 2016 with her project "Wie im Paradies," which evolved into her debut "Ferngespräch" (2019, Edition Moderne), and was awarded the Grimmelshausen Fellowship Prize in 2021. The half-autobiographical story combines the themes of labour migration, care work, and loneliness in old age.</p>
+            <p>Her feminist attitude runs through all her work. As a comic artist, she works with the Museum für Naturkunde Berlin, the University of Tübingen and others, making the ethical questions raised by genome editing accessible to a broader public.</p>
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -713,7 +1094,7 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Stefan Bernhard</span>
-          <div class="row-meta"><span class="tag">Artist</span></div>
+          <div class="row-meta"></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
@@ -726,11 +1107,12 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Stephan Kurr</span>
-          <div class="row-meta"><span class="tag">Artist</span></div>
+          <div class="row-meta"><span><a href="https://kurr.org" target="_blank" rel="noopener">kurr.org ↗</a></span><span><a href="https://bezeichnung.org" target="_blank" rel="noopener">bezeichnung.org ↗</a></span></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
-            <!-- bio à remplir -->
+            <p>Stephan Kurr studied between 1983 and 1991 at the Kunsthochschule in Kassel and the Academy of Fine Arts in Nuremberg. In 1992–93 he travelled to Yemen on a DAAD scholarship and studied architectural ornament. He was co-initiator of the Kreuzberg shop window gallery SOX36 and held residencies in Helsinki, Cali (Colombia) and Montréal.</p>
+            <p>Stephan Kurr worked at the art education program of documenta 11, taught at the Nuremberg Art Academy, and was visiting professor at Concordia University Montréal. Works of art are often created in exchange with colleagues or in collaboration with other people — with bar visitors in Helsinki, a band in Cali, a blind man in Hanoi, with young Roma, with employees of an energy company. Language is often his means of expression, in films, in texts but mainly as a visual language.</p>
           </div>
         </div>
       </details>
@@ -739,11 +1121,14 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">The Watch</span>
-          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
+          <div class="row-meta"><span><a href="https://thewatch-berlin.org" target="_blank" rel="noopener">thewatch-berlin.org ↗</a></span><span><a href="mailto:residency.wachturm@gmx.de">residency.wachturm@gmx.de ↗</a></span></div>
         </summary>
         <div class="row-body">
           <div class="row-text">
-            <!-- bio à remplir -->
+            <p>"It is difficult to be in this tower. There is nothing other than you. It is difficult even to enter, and hard to work on anything. There is no Internet connection, no one visits and, at the end of the day, no one is asking anything from you." (Clément Layes, The Watch, 2017)</p>
+            <p>A trace from the border apparatus during the division of the city, the former GDR watchtower on Schlesischer Busch has had a long tradition of cultural and artistic production ever since Reunification. Under the care of FLUTGRABEN e.V. since 2004, the building has hosted several exhibitions, talks, screenings, and residencies.</p>
+            <p>The Watch invites producers to take time to watch, observe, contemplate and inhabit the tower, to adopt the building's passivity. Every year a group of artists decides on the thematic content, formats and programming, either through direct invitations or open calls.</p>
+            <p>The Watch currently consists of Jean-Ulrick Désert, Franziska König-Paratore, Dominique Hurth, Irina Novarese and Jo Zahn.</p>
           </div>
         </div>
       </details>
@@ -760,8 +1145,13 @@
         <summary>
           <span class="row-date"></span>
           <span class="row-title">Wolfgang Schlegel</span>
-          <div class="row-meta"></div>
+          <div class="row-meta"><span><a href="https://wolfgangschlegel.eu" target="_blank" rel="noopener">wolfgangschlegel.eu ↗</a></span></div>
         </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Lives in Brandenburg an der Havel and works in Berlin since 1999. Completed studies at the Academy of Visual Arts Düsseldorf as Master of Arts at the class of Fritz Schwegler. Residencies at P.S.1 New York and Delfina Studio Trust London. Grants: Kunstfonds Bonn, Pollock Krasner Foundation USA. Exhibitions at Portikus Frankfurt, Kunsthalle Düsseldorf, Museum Kurhaus Kleve, Castello di Rivara Turin, galleries Jablonka Köln, Brose-Eiermann Berlin/Dresden, Unit London, Laura Mars Berlin.</p>
+          </div>
+        </div>
       </details>
 
     </section>
@@ -769,7 +1159,7 @@
     <!-- Communs Spaces — shared spaces in the building -->
     <section class="row-section" id="communs">
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">197.5 m²</span>
           <span class="row-title">Projektraum</span>
@@ -778,7 +1168,7 @@
         <div class="row-body">
           <div class="row-text">
             <p>A 197.5 m² hall on the first floor of the building. Movable walls allow the space to be divided into two or three smaller rooms. Used for events and exhibitions within the Flutgraben programme, and available for temporary rental for external projects.</p>
-            <p>Barrier-free access via stair lift (installed summer 2023). Accessible bathroom near the main entrance (Space A). Contact: contact@flutgraben.org</p>
+            <p>Barrier-free access via stair lift (installed summer 2023). Accessible bathroom near the main entrance (Space A)</p>
           </div>
           <div class="row-photo">
             <picture>
@@ -796,11 +1186,27 @@
                 loading="lazy"
                 decoding="async">
             </picture>
+            <picture>
+              <source
+                srcset="image/das-haus/common/flutgraben-ProR-Grundriss-1-400w.webp 400w,
+                        image/das-haus/common/flutgraben-ProR-Grundriss-1-800w.webp 800w,
+                        image/das-haus/common/flutgraben-ProR-Grundriss-1-1200w.webp 1200w,
+                        image/das-haus/common/flutgraben-ProR-Grundriss-1-1920w.webp 1920w"
+                sizes="(max-width: 600px) 90vw, 50vw"
+                type="image/webp">
+              <img
+                src="image/das-haus/common/flutgraben-ProR-Grundriss-1-800w.webp"
+                alt="Projektraum — floor plan"
+                width="2048"
+                height="1421"
+                loading="lazy"
+                decoding="async">
+            </picture>
           </div>
         </div>
       </details>
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">235 m²</span>
           <span class="row-title">Mehrzweckhalle</span>
@@ -809,48 +1215,47 @@
         <div class="row-body">
           <div class="row-text">
             <p>A 235 m² multipurpose hall on the second floor. Flexible subdivision via movable walls. Fully barrier-free with stair lift. Used for Flutgraben programme events and exhibitions, internal member meetings, performances, seminars, symposia, presentations, and rehearsals.</p>
-            <p>Available for temporary rental for external projects and events. Contact: contact@flutgraben.org</p>
+            <p>Available for temporary rental for external projects and event</p>
           </div>
-           <div class="row-photo">
-          <picture>
-            <source
-              srcset="image/das-haus/common/2021-Mehrzweckhalle-1536x1152-400w.webp 400w,
-                      image/das-haus/common/2021-Mehrzweckhalle-1536x1152-800w.webp 800w,
-                      image/das-haus/common/2021-Mehrzweckhalle-1536x1152-1200w.webp 1200w"
-              sizes="(max-width: 600px) 90vw, 60ch"
-              type="image/webp">
-            <img
-              src="image/das-haus/common/2021-Mehrzweckhalle-1536x1152-800w.webp"
-              alt="Mehrzweckhalle — the 235 m² multipurpose hall on the second floor of Flutgraben"
-              width="1536"
-              height="1152"
-              loading="lazy"
-              decoding="async">
-          </picture>
-          <picture>
-  <source
-    type="image/webp"
-    srcset="image/das-haus/common/2021-FlutgrabenHall-1-1500x750-400w.webp 400w,
-             image/das-haus/common/2021-FlutgrabenHall-1-1500x750-800w.webp 800w,
-             image/das-haus/common/2021-FlutgrabenHall-1-1500x750-1200w.webp 1200w,
-             image/das-haus/common/2021-FlutgrabenHall-1-1500x750-original.webp 1500w"
-    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
-  />
-  <!-- Fallback pour navigateurs sans support WebP -->
-  <img
-    src="webp/2021-FlutgrabenHall-1-1500x750-original.webp"
-    alt=""
-    width="1200"
-    height="600"
-    loading="lazy"
-  />
-</picture>
-
+          <div class="row-photo">
+            <picture>
+              <source
+                srcset="image/das-haus/common/2021-Mehrzweckhalle-1536x1152-400w.webp 400w,
+                        image/das-haus/common/2021-Mehrzweckhalle-1536x1152-800w.webp 800w,
+                        image/das-haus/common/2021-Mehrzweckhalle-1536x1152-1200w.webp 1200w"
+                sizes="(max-width: 600px) 90vw, 60ch"
+                type="image/webp">
+              <img
+                src="image/das-haus/common/2021-Mehrzweckhalle-1536x1152-800w.webp"
+                alt="Mehrzweckhalle — the 235 m² multipurpose hall on the second floor of Flutgraben"
+                width="1536"
+                height="1152"
+                loading="lazy"
+                decoding="async">
+            </picture>
+            <picture>
+    <source
+      type="image/webp"
+      srcset="image/das-haus/common/2021-FlutgrabenHall-1-1500x750-400w.webp 400w,
+              image/das-haus/common/2021-FlutgrabenHall-1-1500x750-800w.webp 800w,
+              image/das-haus/common/2021-FlutgrabenHall-1-1500x750-1200w.webp 1200w,
+              image/das-haus/common/2021-FlutgrabenHall-1-1500x750-original.webp 1500w"
+      sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+    />
+    <!-- Fallback pour navigateurs sans support WebP -->
+    <img
+      src="webp/2021-FlutgrabenHall-1-1500x750-original.webp"
+      alt=""
+      width="1200"
+      height="600"
+      loading="lazy"
+    />
+            </picture>
           </div>
         </div>
       </details>
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">235 m²</span>
           <span class="row-title">Dachterrasse</span>
@@ -859,6 +1264,24 @@
         <div class="row-body">
           <div class="row-text">
             <p>A 235 m² roof terrace primarily used by Flutgraben artists for large-scale outdoor projects and internal member meetings. Also available for cultural events including performances, exhibitions, seminars, and presentations.</p>
+          </div>
+          <div class="row-photo">
+            <picture>
+              <source
+                srcset="image/das-haus/common/flutgraben-IMG3391-scaled-400w.webp 400w,
+                        image/das-haus/common/flutgraben-IMG3391-scaled-800w.webp 800w,
+                        image/das-haus/common/flutgraben-IMG3391-scaled-1200w.webp 1200w,
+                        image/das-haus/common/flutgraben-IMG3391-scaled-1920w.webp 1920w"
+                sizes="(max-width: 600px) 90vw, 50vw"
+                type="image/webp">
+              <img
+                src="image/das-haus/common/flutgraben-IMG3391-scaled-800w.webp"
+                alt="Dachterrasse — the 235 m² roof terrace of Flutgraben"
+                width="1920"
+                height="1280"
+                loading="lazy"
+                decoding="async">
+            </picture>
           </div>
         </div>
       </details>
@@ -878,7 +1301,7 @@
     <!-- Accessibility — physical, sensory, financial access -->
     <section class="row-section" id="accessibility">
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">Physical</span>
           <span class="row-title">Stair lift — Projektraum</span>
@@ -891,7 +1314,7 @@
         </div>
       </details>
 
-      <details class="row-item">
+      <details class="row-item" open>
         <summary>
           <span class="row-date">Physical</span>
           <span class="row-title">Stair lift — Mehrzweckhalle</span>
