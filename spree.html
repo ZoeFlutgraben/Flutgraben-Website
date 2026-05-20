@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
 <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/spree.css" />
+<link rel="stylesheet" href="css/interior.css" />
 <style>
   .gif-anchor::before { background-image: url('gifs/cloud-fixe.png'); }
   .gif-anchor:hover::before { background-image: url('gifs/cloud.gif'); }
@@ -84,9 +84,10 @@
 
   <!-- GIF anchor — bottom-right corner -->
   <div class="gif-anchor"></div>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
 
   <!-- Content -->
-  <div class="spree-content">
+  <div class="page-content">
 
     <!-- Sub-navigation -->
     <div class="subnav-bar">
@@ -107,116 +108,140 @@
     </div>
 
     <!-- Upstream — past events -->
-    <section class="event-section" id="upstream">
-      <article class="event">
-        <span class="event-date">Sat 03 May · 20h</span>
-        <h2 class="event-title">Night of open studios</h2>
-        <div class="event-meta">
+    <section class="row-section" id="upstream">
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Sat 03 May · 20h</span>
+        <span class="row-title">Night of open studios</span>
+        <div class="row-meta">
           <span class="tag">Whole house</span>
           <span>free · all spaces</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Wed 07 May · 19h</span>
-        <h2 class="event-title">Screening: Borders & Bodies</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Wed 07 May · 19h</span>
+        <span class="row-title">Screening: Borders & Bodies</span>
+        <div class="row-meta">
           <span class="tag sky">Screening</span>
           <span>Hall 2</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Sat 10 May · 14h</span>
-        <h2 class="event-title">Canteen with Yuki T.</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Sat 10 May · 14h</span>
+        <span class="row-title">Canteen with Yuki T.</span>
+        <div class="row-meta">
           <span class="tag ochre">Kanteen</span>
           <span>kitchen · pay-what</span>
         </div>
-      </article>
+        </summary>
+      </details>
     </section>
 
     <!-- In Flutgraben — current events (active by default) -->
-    <section class="event-section is-active" id="in-flutgraben">
-      <article class="event">
-        <span class="event-date">Sat 17 May · 14–22h</span>
-        <h2 class="event-title">Open studios & summer kanteen</h2>
-        <div class="event-meta">
+    <section class="row-section is-active" id="in-flutgraben">
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Sat 17 May · 14–22h</span>
+        <span class="row-title">Open studios & summer kanteen</span>
+        <div class="row-meta">
           <span class="tag sky">Whole house</span>
           <span>free · all spaces open</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Thu 22 May · 19h</span>
-        <h2 class="event-title">Stille Wasser — performance</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Thu 22 May · 19h</span>
+        <span class="row-title">Stille Wasser — performance</span>
+        <div class="row-meta">
           <span class="tag terra">Performance</span>
           <span>Hall 3</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Tue 27 May · 19h</span>
-        <h2 class="event-title">Canteen with Aïcha N.</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Tue 27 May · 19h</span>
+        <span class="row-title">Canteen with Aïcha N.</span>
+        <div class="row-meta">
           <span class="tag ochre">Kanteen</span>
           <span>kitchen · pay-what</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Fri 30 May · 20h</span>
-        <h2 class="event-title">Rhizotype — typeface release</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Fri 30 May · 20h</span>
+        <span class="row-title">Rhizotype — typeface release</span>
+        <div class="row-meta">
           <span class="tag sky">Talk</span>
           <span>Atelier B</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Sat 31 May · 16h</span>
-        <h2 class="event-title">Spree swim & reading group</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Sat 31 May · 16h</span>
+        <span class="row-title">Spree swim & reading group</span>
+        <div class="row-meta">
           <span class="tag terra">Outside</span>
           <span>at the dock</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Sun 01 Jun · 11h</span>
-        <h2 class="event-title">Quiet morning, drawing</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Sun 01 Jun · 11h</span>
+        <span class="row-title">Quiet morning, drawing</span>
+        <div class="row-meta">
           <span class="tag">Workshop</span>
           <span>limited 12 ppl</span>
         </div>
-      </article>
+        </summary>
+      </details>
     </section>
 
     <!-- Archive — past years (placeholder) -->
-    <section class="event-section" id="archive">
+    <section class="row-section" id="archive">
       <p class="archive-placeholder">Select a year above.</p>
     </section>
 
     <!-- Downstream — upcoming events -->
-    <section class="event-section" id="downstream">
-      <article class="event">
-        <span class="event-date">Sat 07 Jun · 20h</span>
-        <h2 class="event-title">Summer gathering</h2>
-        <div class="event-meta">
+    <section class="row-section" id="downstream">
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Sat 07 Jun · 20h</span>
+        <span class="row-title">Summer gathering</span>
+        <div class="row-meta">
           <span class="tag sky">Whole house</span>
           <span>free · open to all</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Thu 12 Jun · 19h</span>
-        <h2 class="event-title">Artist talk — residency open call</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Thu 12 Jun · 19h</span>
+        <span class="row-title">Artist talk — residency open call</span>
+        <div class="row-meta">
           <span class="tag terra">Talk</span>
           <span>Atelier B</span>
         </div>
-      </article>
-      <article class="event">
-        <span class="event-date">Sat 21 Jun · 16h</span>
-        <h2 class="event-title">Sound walk along the Spree</h2>
-        <div class="event-meta">
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+        <span class="row-date">Sat 21 Jun · 16h</span>
+        <span class="row-title">Sound walk along the Spree</span>
+        <div class="row-meta">
           <span class="tag ochre">Outside</span>
           <span>meet at the dock</span>
         </div>
-      </article>
+        </summary>
+      </details>
     </section>
 
   </div>
@@ -224,6 +249,7 @@
 
 <script src="js/logo.js"></script>
 <script src="js/trail.js"></script>
+<script src="js/back-to-top.js"></script>
 <script>
   const archiveBtn = document.querySelector('[data-section="archive"]');
   const dropdown = document.querySelector('.archive-dropdown');
@@ -238,7 +264,7 @@
         archiveBtn.textContent = 'Archive ↓';
       }
       document.querySelectorAll('.subnav-item').forEach(b => b.classList.remove('is-active'));
-      document.querySelectorAll('.event-section').forEach(s => s.classList.remove('is-active'));
+      document.querySelectorAll('.row-section').forEach(s => s.classList.remove('is-active'));
       btn.classList.add('is-active');
       document.getElementById(btn.dataset.section).classList.add('is-active');
 

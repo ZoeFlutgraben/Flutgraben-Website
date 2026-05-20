@@ -64,7 +64,7 @@ The building — its architecture, people, and relationship to its environment.
 | Subpage       | Content                                               |
 |---------------|-------------------------------------------------------|
 | Overview      | The building, its history, its spaces                 |
-| Tenants       | Artists and organizations based at Flutgraben         |
+| Residents     | Artists and organizations based at Flutgraben         |
 | News          | Building-related updates                              |
 | Ecology       | Environmental practices and sustainability            |
 | Accessibility | Access information (physical, sensory, financial)     |
@@ -191,6 +191,64 @@ function scatterDots(cx, cy, radius, count) { ... }
 - Comment every function (purpose, parameters, return value if relevant)
 - Comment non-obvious logic, especially math related to rendering, grain, or geometry
 - Use `const` by default, `let` only when reassignment is needed, never `var`
+
+## Global UI Patterns
+
+These elements appear on every interior page (all pages except `index.html`). They are defined in `css/style.css` and their JS (where applicable) lives in `js/`.
+
+| Pattern | Element | File(s) | Notes |
+|---------|---------|---------|-------|
+| Background grid | `<div class="bg-grid">` + 16× `<div class="bg-cell">` | `css/style.css` | Decorative 4×4 ochre grid, `position: absolute`, `z-index: 0` |
+| GIF anchor | `<div class="gif-anchor"></div>` | `css/style.css` | Decorative animated GIF, `position: fixed` bottom-right. GIF src set via `<style>` inline in each page |
+| Back to top | `<button class="back-to-top" aria-label="Back to top">↑</button>` | `css/style.css`, `js/back-to-top.js` | Appears after 150px scroll, centered above gif-anchor. Script auto-detects scroll container (`.page-content` or `.impressum-outer`) |
+| Residents search | `<input class="residents-search" type="search" placeholder="Search…" aria-label="Search residents">` | `css/interior.css` | **Das Haus only — Residents tab.** Lives in the right slot of `.subnav-bar`. Hidden via `.is-hidden` (visibility: hidden) when another tab is active. |
+
+When adding a new interior page: include all three elements in the HTML and add `<script src="js/back-to-top.js"></script>`.
+
+## Row item pattern
+
+The expandable content row is the core UI primitive for all list-based interior pages. Use it for events, residents, spaces, or any future list.
+
+```html
+<details class="row-item">
+  <summary>
+    <span class="row-date">…</span>
+    <span class="row-title">…</span>
+    <div class="row-meta"><span class="tag">…</span></div>
+  </summary>
+
+  <!-- optional expanded content -->
+  <div class="row-body">
+
+    <!-- text column — max-width: 60ch -->
+    <div class="row-text">
+      <p>…</p>
+    </div>
+
+    <!-- photo column — one or more <picture> elements stacked vertically -->
+    <div class="row-photo">
+      <picture>
+        <source srcset="img-400w.webp 400w, img-800w.webp 800w" type="image/webp">
+        <img src="img-800w.webp" alt="…" loading="lazy" decoding="async">
+      </picture>
+      <!-- additional <picture> elements go here -->
+    </div>
+
+  </div>
+</details>
+```
+
+### Rules
+
+- All styles live in `css/interior.css`
+- Never use `<h2>` inside `<summary>` — use `<span class="row-title">`
+- `.row-body` is full-width by default (matches `<summary>`)
+- `.row-body` becomes a 50/50 grid automatically when it contains `.row-photo` (via `:has(.row-photo)`)
+- `.row-text` constrains text to `max-width: 60ch` for readability
+- `.row-photo` is always a `<div>` container — never put `class="row-photo"` directly on `<picture>`
+- Multiple images: add multiple `<picture>` elements inside `.row-photo` — they stack vertically by default
+- `.row-text` is always required inside `.row-body` — even when empty (use a placeholder comment)
+- Omit `.row-photo` if not needed — the layout degrades cleanly to single-column text
 
 ## General Rules
 

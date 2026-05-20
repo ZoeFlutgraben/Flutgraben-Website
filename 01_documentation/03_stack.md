@@ -3,7 +3,7 @@
 ## Context
 
 The current maquette is built in static HTML/CSS/JS. Before moving to production, the project needs a stack that allows:
-- Non-technical maintainers to update content (events, news, tenants, members)
+- Non-technical maintainers to update content (events, news, residents, members)
 - Preserving the custom design system entirely
 - Free and open-source tooling
 - Minimal ongoing maintenance

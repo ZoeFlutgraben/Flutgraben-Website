@@ -16,6 +16,12 @@ main {
   overflow: hidden;
 }
 
+*::selection {
+  color: var(--bg);
+  background: var(--sky);
+}
+
+
 /* Background grid — fine, decorative (shared) */
 .bg-grid {
   position: absolute;
@@ -39,7 +45,7 @@ main {
 .gif-anchor {
   position: fixed;
   bottom: 40px;
-  right: 40px;
+  right: 80px;
   width: 150px;
   height: 150px;
   z-index: 2;
@@ -61,6 +67,38 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
+}
+
+/* Back to top button — shared across interior pages, excludes index.html */
+/* Centered above the gif-anchor; appears after 150px of scroll */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  left: calc((clamp(180px, 18vw, 260px) + 100vw) / 2);
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--rust);
+  background: var(--bg);
+  border: var(--border) solid var(--rust);
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, background .12s, color .12s;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--rust);
+  color: var(--bg);
 }
 
 /* Tags */

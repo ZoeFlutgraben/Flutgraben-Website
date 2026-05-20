@@ -14,10 +14,11 @@
   display: block;
   width: 110%;
   height: auto;
-  border-bottom: var(--border) solid var(--rust);
+  border-bottom: var(--border) solid;
   padding-bottom: 16px;
   margin-bottom: 20px;
-  filter: brightness(0) saturate(100%) invert(23%) sepia(14%) saturate(1188%) hue-rotate(317deg) brightness(93%) contrast(92%);
+filter: brightness(0) saturate(100%) invert(47%) sepia(52%) saturate(349%) hue-rotate(319deg) brightness(84%) contrast(83%);
+
   transition: opacity .15s;
 }
 .logo:hover { opacity: 0.75; }

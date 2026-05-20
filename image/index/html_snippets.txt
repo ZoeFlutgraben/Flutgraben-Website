@@ -1,0 +1,51 @@
+<!-- ==========================================================
+     Snippets HTML — Images WebP multi-tailles
+     Généré par convert_to_webp.py
+
+     Usage :
+       1. Copiez la balise <picture> souhaitée
+       2. Collez-la dans votre HTML
+       3. Renseignez l'attribut alt= avec votre description
+       4. Ajustez le chemin si votre dossier webp/ est ailleurs
+========================================================== -->
+
+<!-- ── flutgraben ── original : 1400×787px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/flutgraben-400w.webp 400w,
+             webp/flutgraben-800w.webp 800w,
+             webp/flutgraben-1200w.webp 1200w,
+             webp/flutgraben-original.webp 1400w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/flutgraben-original.webp"
+    alt=""
+    width="1200"
+    height="674"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── MZHFenster ── original : 3456×2304px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/MZHFenster-400w.webp 400w,
+             webp/MZHFenster-800w.webp 800w,
+             webp/MZHFenster-1200w.webp 1200w,
+             webp/MZHFenster-1920w.webp 1920w,
+             webp/MZHFenster-original.webp 3456w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1920px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/MZHFenster-original.webp"
+    alt=""
+    width="1920"
+    height="1280"
+    loading="lazy"
+  />
+</picture>

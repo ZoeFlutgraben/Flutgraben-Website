@@ -54,8 +54,16 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../image/flutgraben.jpeg') center / cover;
+  background-image: url('../image/index/flutgraben-400w.webp');
+  background-position: center;
+  background-size: cover;
   transition: transform .3s ease;
+}
+@media (min-width: 600px) {
+  .cell.feature::before { background-image: url('../image/index/flutgraben-800w.webp'); }
+}
+@media (min-width: 1000px) {
+  .cell.feature::before { background-image: url('../image/index/flutgraben-1200w.webp'); }
 }
 .cell.feature:hover::before { transform: scale(1.1); }
 
@@ -100,9 +108,17 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('../image/MZHFenster.JPG') center / cover;
+  background-image: url('../image/index/MZHFenster-400w.webp');
+  background-position: center;
+  background-size: cover;
   transition: transform .3s ease;
   z-index: 0;
+}
+@media (min-width: 800px) {
+  .cell.center.cell-link::before { background-image: url('../image/index/MZHFenster-800w.webp'); }
+}
+@media (min-width: 1400px) {
+  .cell.center.cell-link::before { background-image: url('../image/index/MZHFenster-1200w.webp'); }
 }
 .cell.center.cell-link:hover::before { transform: scale(1.1); }
 

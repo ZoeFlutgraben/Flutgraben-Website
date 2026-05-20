@@ -83,7 +83,7 @@ The 4-column grid is maintained at all breakpoints — column widths and gutters
 - **Accueil** — home page, entry point
 - **Spree** — events and programming (Upstream / In Flutgraben / Downstream)
 - **Eddies** — what Flutgraben generates and offers (Overview, Moons, Canteen, Rhizotype, Friends)
-- **Das Haus** — the building (Overview, Tenants, News, Ecology, Accessibility)
+- **Das Haus** — the building (Overview, Residents, News, Ecology, Accessibility)
 - **About** — the organization (Overview, Mission, Structure, Members, Become a Member, Glossary, Donate)
 - **Impressum** — legal notice, footer only, not in main nav
 

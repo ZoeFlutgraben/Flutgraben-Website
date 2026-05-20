@@ -4,11 +4,14 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Das Haus — Flutgraben</title>
+<meta name="description" content="Flutgraben e.V. website, Das Haus - the building" />
+<meta name="author" content="Zoé Berthelot @Neutronzoo">
+<meta name="rights" content="Images © leurs auteurs respectifs. Reproduction interdite.">
 <link rel="icon" type="image/svg+xml" href="ico/F_ico.svg" />
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
 <link rel="stylesheet" href="css/style.css" />
-<link rel="stylesheet" href="css/spree.css" />
+<link rel="stylesheet" href="css/interior.css" />
 <style>
   .gif-anchor::before { background-image: url('gifs/car_fixe.png'); }
   .gif-anchor:hover::before { background-image: url('gifs/cars_v1.gif'); }
@@ -83,9 +86,10 @@
 
   <!-- GIF anchor — bottom-right corner -->
   <div class="gif-anchor"></div>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
 
   <!-- Content -->
-  <div class="spree-content">
+  <div class="page-content">
 
     <!-- Sub-navigation -->
     <div class="subnav-bar">
@@ -97,732 +101,832 @@
         <button class="subnav-item wip" data-section="ecology">Ecology</button>
         <button class="subnav-item" data-section="accessibility">Accessibility</button>
       </nav>
+      <!-- Search input — visible only on Residents tab -->
+      <input
+        type="search"
+        id="residents-search"
+        class="residents-search is-hidden"
+        placeholder="Search"
+        aria-label="Search residents"
+        autocomplete="off"
+      >
     </div>
 
     <!-- History — the building, its history, its spaces -->
-    <section class="event-section is-active" id="history">
+    <section class="row-section is-active" id="history">
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">1997</span>
-          <span class="event-title">Kunstfabrik am Flutgraben</span>
-          <div class="event-meta"><span class="tag">Founded</span></div>
+          <span class="row-date">1997</span>
+          <span class="row-title">Kunstfabrik am Flutgraben</span>
+          <div class="row-meta"><span class="tag">Founded</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>Founded in 1997 as "Kunstfabrik am Flutgraben", later renamed Flutgraben e.V. A former industrial building now under monument protection (denkmalgeschütztes Gebäude), located directly at the former wall border (ehemalige Mauergrenze), east of the Flutgraben — the canal separating the districts of Kreuzberg and Treptow.</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Founded in 1997 as "Kunstfabrik am Flutgraben", later renamed Flutgraben e.V. A former industrial building now under monument protection (denkmalgeschütztes Gebäude), located directly at the former wall border (ehemalige Mauergrenze), east of the Flutgraben — the canal separating the districts of Kreuzberg and Treptow.</p>
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">~50 studios</span>
-          <span class="event-title">The Building</span>
-          <div class="event-meta"><span class="tag">Am Flutgraben 3</span></div>
+          <span class="row-date">~50 studios</span>
+          <span class="row-title">The Building</span>
+          <div class="row-meta"><span class="tag">Am Flutgraben 3</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>The building comprises approximately 50 artist studios, a Projektraum, a Mehrzweckhalle, and a Dachterrasse. It is a self-organized, non-profit space financially sustained through permanent studio rentals and temporary rental of communal spaces.</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>The building comprises approximately 50 artist studios, a Projektraum, a Mehrzweckhalle, and a Dachterrasse. It is a self-organized, non-profit space financially sustained through permanent studio rentals and temporary rental of communal spaces.</p>
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">2004</span>
-          <span class="event-title">Wachturm am Schlesischen Busch</span>
-          <div class="event-meta"><span class="tag">Second site</span></div>
+          <span class="row-date">2004</span>
+          <span class="row-title">Wachturm am Schlesischen Busch</span>
+          <div class="row-meta"><span class="tag">Second site</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>Since 2004, Flutgraben e.V. also manages the former watch tower (Wachturm) at Schlesischer Busch. The space is used by the initiative The Watch for exhibitions, lectures, screenings, and residencies.</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Since 2004, Flutgraben e.V. also manages the former watch tower (Wachturm) at Schlesischer Busch. The space is used by the initiative The Watch for exhibitions, lectures, screenings, and residencies.</p>
+          </div>
         </div>
       </details>
 
     </section>
 
     <!-- Residents — artists and organizations based at Flutgraben -->
-    <section class="event-section" id="residents">
+    <section class="row-section" id="residents">
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">acting from zero</span>
-          <div class="event-meta"><span class="tag sky">Collective</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">acting from zero</span>
+          <div class="row-meta"><span class="tag sky">Collective</span></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Adrian Rovatkay</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Adrian Rovatkay</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Alfonso Moral</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Alfonso Moral</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">Painting</span>
-          <span class="event-title">Almuth Baumfalk</span>
-          <div class="event-meta"><span class="tag">Artist</span></div>
+          <span class="row-date">Painting</span>
+          <span class="row-title">Almuth Baumfalk</span>
+          <div class="row-meta"><span class="tag">Artist</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>In my work, I am trying to visualize that nothing is ever definite, but rather in a state of motion and of continuous change. To convert my thoughts on volatileness and transformation into painting I am using translucent paint- and photo-elements on a transparent foundation (artificial silk), which is permeable to light and thus evokes a flotation of the painting's elements in an imaginary inconceivable space. Born in Aurich/Germany. Study of Fine Arts at the School of the Art Institute of Chicago and the Art Academy in Braunschweig, Germany.</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>In my work, I am trying to visualize that nothing is ever definite, but rather in a state of motion and of continuous change. To convert my thoughts on volatileness and transformation into painting I am using translucent paint- and photo-elements on a transparent foundation (artificial silk), which is permeable to light and thus evokes a flotation of the painting's elements in an imaginary inconceivable space. Born in Aurich/Germany. Study of Fine Arts at the School of the Art Institute of Chicago and the Art Academy in Braunschweig, Germany.</p>
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">alpha nova &amp; galerie futura</span>
-          <div class="event-meta"><span class="tag sky">Gallery</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">alpha nova &amp; galerie futura</span>
+          <div class="row-meta"><span class="tag sky">Gallery</span></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Andres Villarreal</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Andres Villarreal</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Barbara Ott</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Barbara Ott</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Beat Brogle</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Beat Brogle</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Ben Cottrell</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Ben Cottrell</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Benedikt Rugar</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Benedikt Rugar</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Claudia Mocker</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Claudia Mocker</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Clément Layes / Public in Private</span>
-          <div class="event-meta"><span class="tag sky">Collective</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Clément Layes / Public in Private</span>
+          <div class="row-meta"><span class="tag sky">Collective</span></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Clémentine M. Songe</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Clémentine M. Songe</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Cornelia Herfurtner</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Cornelia Herfurtner</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Dagmar Binder</span>
-          <div class="event-meta"><span class="tag">Artist</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Dagmar Binder</span>
+          <div class="row-meta"><span class="tag">Artist</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Daniel Franke</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Daniel Franke</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Darius Kolski</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Darius Kolski</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Dirk Lebahn</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Dirk Lebahn</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Dmitry Paranyushkin</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Dmitry Paranyushkin</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Dominique Hurth</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Dominique Hurth</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Ebba Fransén Waldhör</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Ebba Fransén Waldhör</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Elis Hannikainen</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Elis Hannikainen</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Enrico Centonze</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Enrico Centonze</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Fehras Publishing Practices</span>
-          <div class="event-meta"><span class="tag sky">Collective</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Fehras Publishing Practices</span>
+          <div class="row-meta"><span class="tag sky">Collective</span></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Flutgraben Performances</span>
-          <div class="event-meta"><span class="tag ochre">Initiative</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Flutgraben Performances</span>
+          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Frank Zucht</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Frank Zucht</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Freja Bäckman</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Freja Bäckman</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Hannah Dougherty</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Hannah Dougherty</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Harald Birck</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Harald Birck</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Inga Zimprich</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Inga Zimprich</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Inverse Institution</span>
-          <div class="event-meta"><span class="tag ochre">Initiative</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Inverse Institution</span>
+          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Janine Eisenächer</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Janine Eisenächer</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Jasna L. Vinovrški / Public in Private</span>
-          <div class="event-meta"><span class="tag sky">Collective</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Jasna L. Vinovrški / Public in Private</span>
+          <div class="row-meta"><span class="tag sky">Collective</span></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Jo Zahn</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Jo Zahn</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Jugoslav Mitevski</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Jugoslav Mitevski</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Julia Lipinsky</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Julia Lipinsky</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Katharina Schoeller</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Katharina Schoeller</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Katja Brinkmann</span>
-          <div class="event-meta"><span class="tag">Artist</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Katja Brinkmann</span>
+          <div class="row-meta"><span class="tag">Artist</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Lap Yip</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Lap Yip</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Low Text</span>
-          <div class="event-meta"><span class="tag sky">Collective</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Low Text</span>
+          <div class="row-meta"><span class="tag sky">Collective</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Lydia Hamann</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Lydia Hamann</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Manuel Klauser</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Manuel Klauser</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Marei Löllmann</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Marei Löllmann</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">margot schmitt</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">margot schmitt</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Maria Turik</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Maria Turik</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Markus Draper</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Markus Draper</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Marta Lodola</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Marta Lodola</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Matthias Krause Hamrin</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Matthias Krause Hamrin</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Mikala Hyldig Dal</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Mikala Hyldig Dal</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Natacha Le Duff</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Natacha Le Duff</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Nicole Schuck</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Nicole Schuck</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Nino Bulling</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Nino Bulling</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Nora Al-Badri</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Nora Al-Badri</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Olaf Holzapfel</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Olaf Holzapfel</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Open Occupy</span>
-          <div class="event-meta"><span class="tag ochre">Initiative</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Open Occupy</span>
+          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Pascal Stodieck</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Pascal Stodieck</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">QUASI OBJECTS</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">QUASI OBJECTS</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">raumlaborberlin</span>
-          <div class="event-meta"><span class="tag sky">Collective</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">raumlaborberlin</span>
+          <div class="row-meta"><span class="tag sky">Collective</span></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">RILABEN</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">RILABEN</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Roland Boden</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Roland Boden</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Ronald de Bloeme</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Ronald de Bloeme</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Sheree Domingo</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Sheree Domingo</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Sönke Hallmann</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Sönke Hallmann</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Sophia Elstermann</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Sophia Elstermann</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Sphen Heinrich</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Sphen Heinrich</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Stefan Bernhard</span>
-          <div class="event-meta"><span class="tag">Artist</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Stefan Bernhard</span>
+          <div class="row-meta"><span class="tag">Artist</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Stephan Kurr</span>
-          <div class="event-meta"><span class="tag">Artist</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">Stephan Kurr</span>
+          <div class="row-meta"><span class="tag">Artist</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">The Watch</span>
-          <div class="event-meta"><span class="tag ochre">Initiative</span></div>
+          <span class="row-date"></span>
+          <span class="row-title">The Watch</span>
+          <div class="row-meta"><span class="tag ochre">Initiative</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- bio à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- bio à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Ute Ringel</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Ute Ringel</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date"></span>
-          <span class="event-title">Wolfgang Schlegel</span>
-          <div class="event-meta"></div>
+          <span class="row-date"></span>
+          <span class="row-title">Wolfgang Schlegel</span>
+          <div class="row-meta"></div>
         </summary>
       </details>
 
     </section>
 
     <!-- Communs Spaces — shared spaces in the building -->
-    <section class="event-section" id="communs">
+    <section class="row-section" id="communs">
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">197.5 m²</span>
-          <span class="event-title">Projektraum</span>
-          <div class="event-meta"><span class="tag">1st floor</span></div>
+          <span class="row-date">197.5 m²</span>
+          <span class="row-title">Projektraum</span>
+          <div class="row-meta"><span class="tag">1st floor</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>A 197.5 m² hall on the first floor of the building. Movable walls allow the space to be divided into two or three smaller rooms. Used for events and exhibitions within the Flutgraben programme, and available for temporary rental for external projects.</p>
-          <p>Barrier-free access via stair lift (installed summer 2023). Accessible bathroom near the main entrance (Space A). Contact: contact@flutgraben.org</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>A 197.5 m² hall on the first floor of the building. Movable walls allow the space to be divided into two or three smaller rooms. Used for events and exhibitions within the Flutgraben programme, and available for temporary rental for external projects.</p>
+            <p>Barrier-free access via stair lift (installed summer 2023). Accessible bathroom near the main entrance (Space A). Contact: contact@flutgraben.org</p>
+          </div>
+          <div class="row-photo">
+            <picture>
+              <source
+                srcset="image/das-haus/common/flutgraben-2023-05-Projektraum-1536x1025-400w.webp 400w,
+                        image/das-haus/common/flutgraben-2023-05-Projektraum-1536x1025-800w.webp 800w,
+                        image/das-haus/common/flutgraben-2023-05-Projektraum-1536x1025-1200w.webp 1200w"
+                sizes="(max-width: 600px) 90vw, 60ch"
+                type="image/webp">
+              <img
+                src="image/das-haus/common/flutgraben-2023-05-Projektraum-1536x1025-800w.webp"
+                alt="Projektraum — the 197.5 m² hall on the first floor of Flutgraben"
+                width="1536"
+                height="1025"
+                loading="lazy"
+                decoding="async">
+            </picture>
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">235 m²</span>
-          <span class="event-title">Mehrzweckhalle</span>
-          <div class="event-meta"><span class="tag">2nd floor</span></div>
+          <span class="row-date">235 m²</span>
+          <span class="row-title">Mehrzweckhalle</span>
+          <div class="row-meta"><span class="tag">2nd floor</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>A 235 m² multipurpose hall on the second floor. Flexible subdivision via movable walls. Fully barrier-free with stair lift. Used for Flutgraben programme events and exhibitions, internal member meetings, performances, seminars, symposia, presentations, and rehearsals.</p>
-          <p>Available for temporary rental for external projects and events. Contact: contact@flutgraben.org</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>A 235 m² multipurpose hall on the second floor. Flexible subdivision via movable walls. Fully barrier-free with stair lift. Used for Flutgraben programme events and exhibitions, internal member meetings, performances, seminars, symposia, presentations, and rehearsals.</p>
+            <p>Available for temporary rental for external projects and events. Contact: contact@flutgraben.org</p>
+          </div>
+           <div class="row-photo">
+          <picture>
+            <source
+              srcset="image/das-haus/common/2021-Mehrzweckhalle-1536x1152-400w.webp 400w,
+                      image/das-haus/common/2021-Mehrzweckhalle-1536x1152-800w.webp 800w,
+                      image/das-haus/common/2021-Mehrzweckhalle-1536x1152-1200w.webp 1200w"
+              sizes="(max-width: 600px) 90vw, 60ch"
+              type="image/webp">
+            <img
+              src="image/das-haus/common/2021-Mehrzweckhalle-1536x1152-800w.webp"
+              alt="Mehrzweckhalle — the 235 m² multipurpose hall on the second floor of Flutgraben"
+              width="1536"
+              height="1152"
+              loading="lazy"
+              decoding="async">
+          </picture>
+          <picture>
+  <source
+    type="image/webp"
+    srcset="image/das-haus/common/2021-FlutgrabenHall-1-1500x750-400w.webp 400w,
+             image/das-haus/common/2021-FlutgrabenHall-1-1500x750-800w.webp 800w,
+             image/das-haus/common/2021-FlutgrabenHall-1-1500x750-1200w.webp 1200w,
+             image/das-haus/common/2021-FlutgrabenHall-1-1500x750-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/2021-FlutgrabenHall-1-1500x750-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">235 m²</span>
-          <span class="event-title">Dachterrasse</span>
-          <div class="event-meta"><span class="tag">Roof</span></div>
+          <span class="row-date">235 m²</span>
+          <span class="row-title">Dachterrasse</span>
+          <div class="row-meta"><span class="tag">Roof</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>A 235 m² roof terrace primarily used by Flutgraben artists for large-scale outdoor projects and internal member meetings. Also available for cultural events including performances, exhibitions, seminars, and presentations.</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>A 235 m² roof terrace primarily used by Flutgraben artists for large-scale outdoor projects and internal member meetings. Also available for cultural events including performances, exhibitions, seminars, and presentations.</p>
+          </div>
         </div>
       </details>
 
     </section>
 
     <!-- News — building-related updates -->
-    <section class="event-section" id="news">
+    <section class="row-section" id="news">
       <p>Building-related updates.</p>
     </section>
 
     <!-- Ecology — environmental practices -->
-    <section class="event-section" id="ecology">
+    <section class="row-section" id="ecology">
       <p>Environmental practices and sustainability.</p>
     </section>
 
     <!-- Accessibility — physical, sensory, financial access -->
-    <section class="event-section" id="accessibility">
+    <section class="row-section" id="accessibility">
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">Physical</span>
-          <span class="event-title">Stair lift — Projektraum</span>
-          <div class="event-meta"><span class="tag">1st floor</span></div>
+          <span class="row-date">Physical</span>
+          <span class="row-title">Stair lift — Projektraum</span>
+          <div class="row-meta"><span class="tag">1st floor</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>A stair lift (Treppenlift) was installed in summer 2023, providing barrier-free access to the Projektraum on the first floor. An accessible bathroom is available near the main entrance (Space A).</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>A stair lift (Treppenlift) was installed in summer 2023, providing barrier-free access to the Projektraum on the first floor. An accessible bathroom is available near the main entrance (Space A).</p>
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">Physical</span>
-          <span class="event-title">Stair lift — Mehrzweckhalle</span>
-          <div class="event-meta"><span class="tag">2nd floor</span></div>
+          <span class="row-date">Physical</span>
+          <span class="row-title">Stair lift — Mehrzweckhalle</span>
+          <div class="row-meta"><span class="tag">2nd floor</span></div>
         </summary>
-        <div class="resident-bio">
-          <p>The Mehrzweckhalle on the second floor is fully barrier-free (vollständig barrierefrei) and equipped with a stair lift. Accessible WC near the main entrance in Space A.</p>
+        <div class="row-body">
+          <div class="row-text">
+            <p>The Mehrzweckhalle on the second floor is fully barrier-free (vollständig barrierefrei) and equipped with a stair lift. Accessible WC near the main entrance in Space A.</p>
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">Financial</span>
-          <span class="event-title">Pay-what-you-can</span>
-          <div class="event-meta"><span class="tag wip">To complete</span></div>
+          <span class="row-date">Financial</span>
+          <span class="row-title">Pay-what-you-can</span>
+          <div class="row-meta"><span class="tag wip">To complete</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- à remplir -->
+          </div>
         </div>
       </details>
 
-      <details class="resident">
+      <details class="row-item">
         <summary>
-          <span class="event-date">Sensory</span>
-          <span class="event-title">Sensory access</span>
-          <div class="event-meta"><span class="tag wip">To complete</span></div>
+          <span class="row-date">Sensory</span>
+          <span class="row-title">Sensory access</span>
+          <div class="row-meta"><span class="tag wip">To complete</span></div>
         </summary>
-        <div class="resident-bio">
-          <!-- à remplir -->
+        <div class="row-body">
+          <div class="row-text">
+            <!-- à remplir -->
+          </div>
         </div>
       </details>
 
@@ -833,14 +937,35 @@
 
 <script src="js/logo.js"></script>
 <script src="js/trail.js"></script>
+<script src="js/back-to-top.js"></script>
 <script>
-  // Switch between Das Haus sub-sections
+  const searchInput = document.getElementById('residents-search');
+
+  // Switch between Das Haus sub-sections and toggle resident search
   document.querySelectorAll('.subnav-item').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.subnav-item').forEach(b => b.classList.remove('is-active'));
-      document.querySelectorAll('.event-section').forEach(s => s.classList.remove('is-active'));
+      document.querySelectorAll('.row-section').forEach(s => s.classList.remove('is-active'));
       btn.classList.add('is-active');
       document.getElementById(btn.dataset.section).classList.add('is-active');
+
+      // Show search only on Residents tab; reset filter when leaving
+      if (btn.dataset.section === 'residents') {
+        searchInput.classList.remove('is-hidden');
+      } else {
+        searchInput.classList.add('is-hidden');
+        searchInput.value = '';
+        document.querySelectorAll('#residents details.row-item').forEach(d => d.style.display = '');
+      }
+    });
+  });
+
+  // Filter resident rows by name on each keystroke
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase().trim();
+    document.querySelectorAll('#residents details.row-item').forEach(detail => {
+      const name = detail.querySelector('.row-title').textContent.toLowerCase();
+      detail.style.display = name.includes(query) ? '' : 'none';
     });
   });
 </script>

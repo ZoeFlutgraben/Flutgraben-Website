@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /00_recherche/
+Disallow: /01_documentation/
+Disallow: /02_archives/
+Disallow: /03_data_oldwebsite/
+Disallow: /image/residents/
+Allow: /

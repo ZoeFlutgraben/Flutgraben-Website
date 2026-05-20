@@ -1,0 +1,72 @@
+<!-- ==========================================================
+     Snippets HTML — Images WebP multi-tailles
+     Généré par convert_to_webp.py
+
+     Usage :
+       1. Copiez la balise <picture> souhaitée
+       2. Collez-la dans votre HTML
+       3. Renseignez l'attribut alt= avec votre description
+       4. Ajustez le chemin si votre dossier webp/ est ailleurs
+========================================================== -->
+
+<!-- ── 2021-FlutgrabenHall-1-1500x750 ── original : 1500×750px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/2021-FlutgrabenHall-1-1500x750-400w.webp 400w,
+             webp/2021-FlutgrabenHall-1-1500x750-800w.webp 800w,
+             webp/2021-FlutgrabenHall-1-1500x750-1200w.webp 1200w,
+             webp/2021-FlutgrabenHall-1-1500x750-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/2021-FlutgrabenHall-1-1500x750-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── flutgraben-IMG3391-scaled ── original : 1920×2560px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/flutgraben-IMG3391-scaled-400w.webp 400w,
+             webp/flutgraben-IMG3391-scaled-800w.webp 800w,
+             webp/flutgraben-IMG3391-scaled-1200w.webp 1200w,
+             webp/flutgraben-IMG3391-scaled-1920w.webp 1920w,
+             webp/flutgraben-IMG3391-scaled-original.webp 1920w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1920px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/flutgraben-IMG3391-scaled-original.webp"
+    alt=""
+    width="1920"
+    height="2560"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── flutgraben-ProR-Grundriss-1 ── original : 2048×1421px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/flutgraben-ProR-Grundriss-1-400w.webp 400w,
+             webp/flutgraben-ProR-Grundriss-1-800w.webp 800w,
+             webp/flutgraben-ProR-Grundriss-1-1200w.webp 1200w,
+             webp/flutgraben-ProR-Grundriss-1-1920w.webp 1920w,
+             webp/flutgraben-ProR-Grundriss-1-original.webp 2048w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1920px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/flutgraben-ProR-Grundriss-1-original.webp"
+    alt=""
+    width="1920"
+    height="1332"
+    loading="lazy"
+  />
+</picture>

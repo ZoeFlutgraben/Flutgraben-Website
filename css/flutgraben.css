@@ -59,6 +59,25 @@
 
 * { box-sizing: border-box; }
 
+/* Global scrollbar styling */
+/* Firefox — standard scrollbar colors */
+* {
+  scrollbar-color: var(--rust) var(--bg);
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--rust);
+}
+
 html, body {
   margin: 0;
   padding: 0;
