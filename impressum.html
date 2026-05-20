@@ -6,7 +6,15 @@
 <title>Impressum — Flutgraben</title>
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/impressum.css" />
+<style>
+  .gif-anchor::before { background-image: url('gifs/stars-fixe.png'); }
+  .gif-anchor:hover::before { background-image: url('gifs/stars.gif'); }
+  @media (prefers-reduced-motion: reduce) {
+    .gif-anchor:hover::before { background-image: url('gifs/stars-fixe.png'); }
+  }
+</style>
 </head>
 <body>
 
@@ -23,11 +31,11 @@
       <span class="nav-label">Spree</span>
       <span class="nav-desc">events & programming</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="#" class="nav-item wip">
       <span class="nav-label">Eddies</span>
       <span class="nav-desc">orbit & community</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="das-haus.html" class="nav-item">
       <span class="nav-label">Das Haus</span>
       <span class="nav-desc">the building</span>
     </a>
@@ -36,6 +44,10 @@
       <span class="nav-desc">the organization</span>
     </a>
   </nav>
+
+  <div class="header-svg" data-random-svg>
+    <img>
+  </div>
 
   <div class="lang-side">
     <div class="lang">
@@ -51,6 +63,18 @@
 </header>
 
 <!-- ===================== MAIN — IMPRESSUM ===================== -->
+ <main>
+  <!-- Decorative background grid -->
+  <div class="bg-grid">
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+  </div>
 <div class="impressum-outer">
   <div class="impressum-content">
 
@@ -91,6 +115,10 @@
 
   </div>
 </div>
+
+  <!-- GIF anchor — bottom-right corner -->
+  <div class="gif-anchor"></div>
+  </main>
 
 <script src="js/logo.js"></script>
 </body>

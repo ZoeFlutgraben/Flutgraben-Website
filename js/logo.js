@@ -1,27 +1,20 @@
-// Random logo picker — selects one of the logo variants on page load.
-// Per the brief: random on every page load, logo_vide.png is valid (invisible).
+
+
 (function () {
-  const variants = [
-    "logos/v_circle.png",
-    "logos/v_cross.png",
-    "logos/v_polygone.png",
-    "logos/v_polygone8.png",
-    "logos/v_square.png",
-    "logos/v_trait.png",
-    "logos/logo_vide.png",
+  const svgs = [
+    "car.svg",
+    "idk.svg",
+    "butterfly.svg",
+    "cat.svg",
+    "elephant_souris.svg",
+    "kartofel.svg",
+    "keep_on.svg",
   ];
   function init() {
-    document.querySelectorAll("[data-random-logo]").forEach((el) => {
-      const pick = variants[Math.floor(Math.random() * variants.length)];
-      const img = document.createElement("img");
-      img.src = pick;
-      img.alt = "Flutgraben";
-      img.style.width = "100%";
-      img.style.height = "100%";
-      img.style.objectFit = "contain";
-      img.style.display = "block";
-      el.innerHTML = "";
-      el.appendChild(img);
+    document.querySelectorAll("[data-random-svg]").forEach((el) => {
+      const pick = svgs[Math.floor(Math.random() * svgs.length)];
+      const img = el.querySelector("img");
+      if (img) img.src = "image/svg/" + pick;
     });
   }
   if (document.readyState === "loading") {

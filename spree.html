@@ -3,11 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Spree — Flutgraben</title>
+<title>Spree Flutgraben</title>
+<link rel="icon" type="image/svg+xml" href="ico/F_ico.svg" />
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/spree.css" />
+<style>
+  .gif-anchor::before { background-image: url('gifs/cloud-fixe.png'); }
+  .gif-anchor:hover::before { background-image: url('gifs/cloud.gif'); }
+  @media (prefers-reduced-motion: reduce) {
+    .gif-anchor:hover::before { background-image: url('gifs/cloud-fixe.png'); }
+  }
+</style>
 </head>
 <body>
 
@@ -23,11 +31,11 @@
       <span class="nav-label">Spree</span>
       <span class="nav-desc">events & programming</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="#" class="nav-item wip">
       <span class="nav-label">Eddies</span>
       <span class="nav-desc">orbit & community</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="das-haus.html" class="nav-item">
       <span class="nav-label">Das Haus</span>
       <span class="nav-desc">the building</span>
     </a>
@@ -35,11 +43,15 @@
       <span class="nav-label">About</span>
       <span class="nav-desc">the organization</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="#" class="nav-item wip">
       <span class="nav-label">Bazar</span>
-      <span class="nav-desc">other stuff</span>
+      <span class="nav-desc">to be continued</span>
     </a>
   </nav>
+
+  <div class="header-svg" data-random-svg>
+    <img>
+  </div>
 
   <div class="lang-side">
     <div class="lang">
@@ -69,15 +81,30 @@
     <div class="bg-cell"></div><div class="bg-cell"></div>
   </div>
 
+
+  <!-- GIF anchor — bottom-right corner -->
+  <div class="gif-anchor"></div>
+
   <!-- Content -->
   <div class="spree-content">
 
     <!-- Sub-navigation -->
-    <nav class="subnav" aria-label="Spree sections">
-      <button class="subnav-item" data-section="upstream">← Upstream</button>
-      <button class="subnav-item is-active" data-section="in-flutgraben">In Flutgraben</button>
-      <button class="subnav-item" data-section="downstream">Downstream →</button>
-    </nav>
+    <div class="subnav-bar">
+      <nav class="subnav" aria-label="Spree sections">
+        <button class="subnav-item" data-section="upstream">← Upstream</button>
+        <button class="subnav-item is-active" data-section="in-flutgraben">In Flutgraben</button>
+        <button class="subnav-item" data-section="downstream">Downstream →</button>
+      </nav>
+      <div class="subnav-archive wip">
+        <button class="subnav-item" data-section="archive">Archive ↓</button>
+        <div class="archive-dropdown" aria-hidden="true">
+          <button class="archive-year" data-year="2024">2024</button>
+          <button class="archive-year" data-year="2023">2023</button>
+          <button class="archive-year" data-year="2022">2022</button>
+          <button class="archive-year" data-year="2021">2021</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Upstream — past events -->
     <section class="event-section" id="upstream">
@@ -159,6 +186,11 @@
       </article>
     </section>
 
+    <!-- Archive — past years (placeholder) -->
+    <section class="event-section" id="archive">
+      <p class="archive-placeholder">Select a year above.</p>
+    </section>
+
     <!-- Downstream — upcoming events -->
     <section class="event-section" id="downstream">
       <article class="event">
@@ -193,13 +225,39 @@
 <script src="js/logo.js"></script>
 <script src="js/trail.js"></script>
 <script>
+  const archiveBtn = document.querySelector('[data-section="archive"]');
+  const dropdown = document.querySelector('.archive-dropdown');
+
   // Switch between Spree sub-sections
   document.querySelectorAll('.subnav-item').forEach(btn => {
     btn.addEventListener('click', () => {
+      // Close archive dropdown if switching away from it
+      if (btn !== archiveBtn) {
+        dropdown.classList.remove('is-open');
+        dropdown.setAttribute('aria-hidden', 'true');
+        archiveBtn.textContent = 'Archive ↓';
+      }
       document.querySelectorAll('.subnav-item').forEach(b => b.classList.remove('is-active'));
       document.querySelectorAll('.event-section').forEach(s => s.classList.remove('is-active'));
       btn.classList.add('is-active');
       document.getElementById(btn.dataset.section).classList.add('is-active');
+
+      // Toggle archive dropdown
+      if (btn === archiveBtn) {
+        const isOpen = dropdown.classList.toggle('is-open');
+        dropdown.setAttribute('aria-hidden', String(!isOpen));
+        archiveBtn.textContent = isOpen ? 'Archive ↑' : 'Archive ↓';
+      }
+    });
+  });
+
+  // Select a year from archive dropdown
+  document.querySelectorAll('.archive-year').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.archive-year').forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      archiveBtn.textContent = btn.dataset.year + ' ↑';
+      // Future: load events for selected year
     });
   });
 </script>

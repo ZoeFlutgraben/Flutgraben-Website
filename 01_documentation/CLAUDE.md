@@ -34,13 +34,16 @@ Entry point of the site. Introduces Flutgraben — the space, its identity, and 
 
 ### Spree
 
-Events and programming — past, current, upcoming. The name references the river Spree.
+Events and programming for the current year. The name references the river Spree — events flow through time like water.
 
-| Subpage       | Content                   |
-|---------------|---------------------------|
-| Upstream      | Past events — archive     |
-| In Flutgraben | Current / ongoing events  |
-| Downstream    | Upcoming events            |
+| Subpage       | Scope                                        |
+|---------------|----------------------------------------------|
+| Upstream      | Past events from the current year            |
+| In Flutgraben | Current month                                |
+| Downstream    | Upcoming months within the current year      |
+| Archive       | Past years — dropdown to select a year       |
+
+The subnav component (segmented button group) is the standard navigation pattern used across all interior pages.
 
 ### Eddies
 

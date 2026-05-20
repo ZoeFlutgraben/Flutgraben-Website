@@ -1,29 +1,7 @@
 /* === Spree page === */
 
-/* Main — relative for bg-grid positioning */
-main {
-  position: relative;
-  overflow: hidden;
-}
+@keyframes flow { to { stroke-dashoffset: -140; } }
 
-/* Background grid — fine, decorative */
-.bg-grid {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 3px;
-  padding: 20px 30px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.bg-cell {
-  background: var(--ochre);
-  opacity: 0.1;
-  min-width: 0;
-}
 
 /* Content — layered on top of grid */
 .spree-content {
@@ -37,7 +15,13 @@ main {
   gap: 32px;
 }
 
-/* Sub-navigation */
+/* Sub-navigation bar — main tabs left, archive right */
+.subnav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .subnav {
   display: flex;
   gap: 0;
@@ -47,7 +31,7 @@ main {
 .subnav-item {
   font-family: "DINish", sans-serif;
   font-weight: 700;
-  font-size: 10px;
+  font-size: var(--fs-label);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--rust);
@@ -60,8 +44,58 @@ main {
 }
 
 .subnav-item:first-child { margin-left: 0; }
-.subnav-item.is-active { background: var(--rust); color: var(--bg); }
+.subnav-item.is-active { background: var(--sky); border-color: var(--sky); color: var(--bg); }
 .subnav-item:hover:not(.is-active) { background: var(--ochre); border-color: var(--ochre); color: var(--bg); }
+
+/* Archive dropdown wrapper */
+.subnav-archive {
+  position: relative;
+}
+
+/* Archive dropdown panel */
+.archive-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  border: var(--border) solid var(--rust);
+  border-top: none;
+  background: var(--bg);
+  min-width: 100%;
+}
+
+.archive-dropdown.is-open { display: flex; }
+
+.archive-year {
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+  font-size: var(--fs-label);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--rust);
+  background: transparent;
+  border: none;
+  border-bottom: var(--border) solid var(--rust);
+  padding: 8px 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background .12s, color .12s;
+}
+
+.archive-year:last-child { border-bottom: none; }
+.archive-year.is-active { background: var(--rust); color: var(--bg); }
+.archive-year:hover:not(.is-active) { background: var(--ochre); color: var(--bg); }
+
+/* Archive placeholder */
+.archive-placeholder {
+  font-size: var(--fs-meta);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--terra);
+  padding: 24px 0;
+}
 
 /* Event sections — hidden by default */
 .event-section { display: none; }
@@ -75,48 +109,94 @@ main {
   gap: 24px;
   padding: 16px 0;
   border-bottom: var(--border) solid var(--rust);
+  border-left: 2px solid transparent;
+  padding-left: 8px;
+  cursor: pointer;
+  transition: background .12s, border-color .12s;
 }
 
 .event:first-child { border-top: var(--border) solid var(--rust); }
 
+.event:hover {
+  background: rgba(193, 125, 76, 0.06);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(56%) saturate(330%) hue-rotate(170deg) brightness(88%) contrast(89%);
+}
+
+.event .event-meta .tag:hover{
+  background-color: transparent;
+}
+
 .event-date {
-  font-size: 10px;
+  font-size: var(--fs-label);
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--terra);
+  color: var(--rust);
   white-space: nowrap;
 }
 
 .event-title {
   font-family: "Flutgraben", serif;
-  font-size: clamp(20px, 2.4vw, 34px);
+  font-variation-settings: "SPOT" 149;
+  font-size: var(--fs-h3);
   line-height: 0.95;
   color: var(--rust);
   margin: 0;
   letter-spacing: -0.01em;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .event-meta {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 10px;
+  font-size: var(--fs-label);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--terra);
   white-space: nowrap;
 }
 
-/* Tags */
-.tag {
-  display: inline-block;
-  font-size: 9px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  padding: 3px 8px 2px;
-  border: 1px solid currentColor;
-  color: var(--rust);
+/* ─── Residents — expandable profiles, based on event row ─── */
+
+details.resident {
+  border-bottom: var(--border) solid var(--rust);
 }
-.tag.sky   { background: var(--sky);   border-color: var(--sky);   color: var(--rust); }
-.tag.ochre { background: var(--ochre); border-color: var(--ochre); color: var(--bg);   }
-.tag.terra { background: var(--terra); border-color: var(--terra); color: var(--bg);   }
+
+details.resident:first-of-type {
+  border-top: var(--border) solid var(--rust);
+}
+
+details.resident > summary {
+  display: grid;
+  grid-template-columns: 14ch 1fr auto;
+  align-items: baseline;
+  gap: 24px;
+  padding: 16px 0;
+  padding-left: 8px;
+  border-left: 2px solid transparent;
+  list-style: none;
+  cursor: pointer;
+  transition: background .12s, border-color .12s;
+}
+
+details.resident > summary::-webkit-details-marker { display: none; }
+
+details.resident > summary:hover {
+  background: rgba(193, 125, 76, 0.06);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(56%) saturate(330%) hue-rotate(170deg) brightness(88%) contrast(89%);
+}
+
+details.resident[open] > summary {
+  border-left-color: var(--ochre);
+  background: rgba(193, 125, 76, 0.04);
+}
+
+.resident-bio {
+  padding: 12px 0 20px 8px;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--rust);
+  max-width: 60ch;
+}
+

@@ -4,9 +4,22 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Flutgraben</title>
+<meta name="description" content="Flutgraben e.V. website" />
+<meta name="author" content="Zoé Berthelot @Neutronzoo">
+
+<!-- Open Graph -->
+<meta property="og:type"        content="website" />
+<meta property="og:title"       content="" />
+<meta property="og:description" content="" />
+<meta property="og:image"       content="" />
+<meta property="og:url"         content="" />
+
+<link rel="icon" type="image/svg+xml" href="ico/F_ico.svg" />
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/spree.css" />
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
 
@@ -14,7 +27,7 @@
 <header class="topbar">
 
   <a href="index.html" class="logo logo-active">
-    <img src="logos/26-05-06_Logo_Flutgraben_DINish.svg" alt="Flutgraben">
+    <img src="logos/26-05-06_Logo_Flutgraben_DINish.svg" alt="Flutgraben Logotype">
   </a>
 
   <nav class="nav">
@@ -22,11 +35,11 @@
       <span class="nav-label">Spree</span>
       <span class="nav-desc">events & programming</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="#" class="nav-item wip">
       <span class="nav-label">Eddies</span>
       <span class="nav-desc">orbit & community</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="das-haus.html" class="nav-item">
       <span class="nav-label">Das Haus</span>
       <span class="nav-desc">the building</span>
     </a>
@@ -34,13 +47,18 @@
       <span class="nav-label">About</span>
       <span class="nav-desc">the organization</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="#" class="nav-item wip">
       <span class="nav-label">Bazar</span>
-      <span class="nav-desc">other stuff</span>
+      <span class="nav-desc">to be continued</span>
     </a>
   </nav>
 
+  <div class="header-svg" data-random-svg>
+    <img>
+  </div>
+
   <div class="lang-side">
+ 
     <div class="lang">
       <a href="#" class="lang-item lang-item--active">EN</a>
       <a href="#" class="lang-item">DE</a>
@@ -56,25 +74,92 @@
 <!-- ===================== MAIN — ACCUEIL GRID ===================== -->
 <main>
   <div class="container">
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
-    <div class="cell"></div>
+
+    <!-- col 1–2 / row 1–2 — photo -->
+    
+    <article class="cell feature center"></article>
+
+    <!-- col 3 / row 1 — prochain événement -->
+    <article class="cell cell-link">
+      <a href="spree.html">
+          <div class="tags">
+            <span class="tag ochre">Kanteen</span>
+            <span class="tag terra">Performance</span>
+            <span class="tag sky">Screening</span>
+            <span class="tag">Workshop</span>
+            <span class="tag sky">Talk</span>
+            <span class="tag ochre">Festival</span>
+            <span class="tag terra">Exhibitions</span>
+            <span class="tag">…</span>
+          </div>
+        <span class="meta">Spree →</span>
+      </a>
+    </article>
+
+    <!-- col 4 / row 1–2 — gif stars -->
+    <article class="cell gif">
+      <a href="#">
+        <span class="meta">Eddies →</span>
+      </a>
+    </article>
+
+    <!-- col 3 / row 2 — who we are -->
+    <article class="cell cell-link">
+       <a href="#">
+        <blockquote class="citation">
+          <span style="font-variation-settings: 'SPOT' 100 ">Artist</span>
+          <span style="font-variation-settings: 'SPOT' 500">run</span>
+          <span style="font-variation-settings: 'SPOT' 900">space</span>
+        </blockquote>
+        <span class="meta">About →</span>
+      </a>
+    </article>
+
+    <!-- col 1 / row 3–4 — gif homme heureux -->
+    <article class="cell gif"></article>
+
+    <!-- col 2 / row 3 — adresse -->
+    <article class="cell address cell-link">
+        <address>
+          <a href="https://maps.app.goo.gl/Afdh1nMF25LtqTrG7" target="_blank" rel="noopener noreferrer">
+            <span class="org-name">Flutgraben e. V.</span>
+            <span class="postal">Am Flutgraben 3<br>12435 Berlin</span>
+            <span class="meta">Go there →</span>
+          </a>
+        </address>
+    </article>
+
+    <!-- col 3 / row 3 — vide -->
+    <article class="cell"></article>
+
+    <!-- col 4 / row 3 — vide -->
+    <article class="cell center cell-link">
+      <a href="das-haus.html">
+        <div class="tags">
+          <span class="tag ochre">History</span>
+          <span class="tag terra">Residents</span>
+          <span class="tag sky">…</span>
+        </div>
+        <span class="meta">Das Haus →</span>
+      </a>
+    </article>
+
+    <!-- col 2 / row 4 -->
+    <article class="cell cell-link">
+      <a href="#">
+        <span class="meta">Bazar →</span>
+      </a>
+    </article>
+
+    <!-- col 3–4 / row 4 — logo -->
+    <article class="cell gif blanc">
+      <a href="#">
+        <span class="meta">Eddies →</span>
+      </a>
+    </article>
+
   </div>
 </main>
-
 <script src="js/logo.js"></script>
 <script src="js/trail.js"></script>
 </body>

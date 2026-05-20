@@ -14,14 +14,17 @@ Home page + 5 main sections + Impressum (footer). Language switcher in global he
 
 ## Spree
 
-**Concept:** Events and programming.
+**Concept:** Events and programming for the current year.
 The name references the river Spree — events flow through time like water.
 
-| Subpage        | Content                                              |
-|----------------|------------------------------------------------------|
-| Upstream       | Past events — archive                                |
-| In Flutgraben  | Current / ongoing events                             |
-| Downstream     | Upcoming events                                      |
+| Subpage        | Scope                                           |
+|----------------|-------------------------------------------------|
+| Upstream       | Past events from the current year               |
+| In Flutgraben  | Current month                                   |
+| Downstream     | Upcoming months within the current year         |
+| Archive        | Past years — dropdown to select a year          |
+
+**Navigation pattern:** segmented subnav (button group). Standard component reused across all interior pages.
 
 ---
 
@@ -43,13 +46,14 @@ The name references the river Spree — events flow through time like water.
 
 **Concept:** The building itself — its architecture, people, and relationship to its environment.
 
-| Subpage       | Content                                              |
-|---------------|------------------------------------------------------|
-| Overview      | The building, its history, its spaces                |
-| Tenants       | Artists and organizations based at Flutgraben        |
-| News          | Building-related updates                             |
-| Ecology       | Environmental practices and sustainability           |
-| Accessibility | Access information (physical, sensory, financial)    |
+| Subpage        | Content                                             |
+|--------------|---------------------------------------------------|
+| History        | The building, its history, its spaces               |
+| Residents      | Artists and organizations based at Flutgraben       |
+| News           | Building-related updates                            |
+| Ecology        | Environmental practices and sustainability          |
+| Accessibility  | Access information (physical, sensory, financial)   |
+| Communs spaces | the MZH and Pr project room (kitchen and rooftop ?) |
 
 ---
 

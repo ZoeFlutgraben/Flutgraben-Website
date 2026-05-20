@@ -45,27 +45,28 @@
   transition: border-color .15s;
 }
 .nav-label {
-  font-size: 12px;
+  font-size: var(--fs-nav);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--rust);
   transition: color .15s;
 }
 .nav-desc {
-  font-size: 10px;
+  font-size: var(--fs-label);
   letter-spacing: 0.06em;
   color: var(--terra);
   transition: color .15s;
 }
 .nav-item.is-active { border-left-color: var(--ochre); }
-.nav-item.is-active .nav-label { color: var(--ochre); }
+.nav-item.is-active .nav-label,
+.nav-item.is-active .nav-desc
+ { color: var(--ochre); }
 .nav-item:hover { border-left-color: var(--ochre); }
 .nav-item:hover .nav-label { color: var(--ochre); }
 .nav-item:hover .nav-desc  { color: var(--ochre); }
 
 /* Lang — pushed to bottom, separated from nav */
 .lang-side {
-  margin-top: auto;
   padding-top: 16px;
   border-top: var(--border) solid var(--rust);
   display: flex;
@@ -75,7 +76,7 @@
 .lang {
   display: flex;
   gap: 10px;
-  font-size: 12px;
+  font-size: var(--fs-nav);
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
@@ -89,7 +90,7 @@
 /* Impressum link */
 .impressum { margin-top: 8px; }
 .impressum a {
-  font-size: 10px;
+  font-size: var(--fs-label);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--terra);
@@ -97,6 +98,20 @@
 }
 .impressum a:hover { color: var(--ochre); }
 .impressum a.impressum-active { color: var(--ochre); }
+
+
+.header-svg {
+  margin-top: auto;
+  padding-bottom: 16px;
+}
+
+.header-svg img {
+  width: 90%;
+  max-height: 15vh;
+  height: auto;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
+}
 
 /* === Responsive === */
 @media (max-width: 640px) {
