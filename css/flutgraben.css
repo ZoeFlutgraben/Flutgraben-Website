@@ -16,20 +16,25 @@
 }
 @font-face {
   font-family: "Flutgraben";
-  src: url("../fonts/FLUTGRABEN_variable.ttf") format("truetype-variations");
-  font-weight: 100 900;
+  src: url("../fonts/05-26/FLUTGRABEN_circle_0_0.85_0.50_0.00.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Flutgraben Rect";
-  src: url("../fonts/FLUTGRABEN_variableRECT.ttf") format("truetype-variations");
-  font-weight: 100 900;
+  font-family: "Flutgraben";
+  src: url("../fonts/05-26/FLUTGRABEN_circle_0_0.85_1.40_0.00.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Flutgraben Spot";
-  src: url("../fonts/FLUTGRABEN_variableSPOT.ttf") format("truetype-variations");
-  font-weight: 100 900;
+  font-family: "Flutgraben";
+  src: url("../fonts/05-26/FLUTGRABEN_circle_0_0.85_2.70_0.00.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -63,6 +68,7 @@
 /* Firefox — standard scrollbar colors */
 * {
   scrollbar-color: var(--rust) var(--bg);
+    scrollbar-width: thin;
 }
 
 *::-webkit-scrollbar {

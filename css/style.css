@@ -17,7 +17,7 @@ main {
 }
 
 *::selection {
-  color: var(--bg);
+  color: var(--ochre);
   background: var(--sky);
 }
 

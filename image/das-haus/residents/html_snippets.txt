@@ -1,0 +1,3566 @@
+<!-- ==========================================================
+     Snippets HTML — Images WebP multi-tailles
+     Généré par convert_to_webp.py
+
+     Usage :
+       1. Copiez la balise <picture> souhaitée
+       2. Collez-la dans votre HTML
+       3. Renseignez l'attribut alt= avec votre description
+       4. Ajustez le chemin si votre dossier webp/ est ailleurs
+========================================================== -->
+
+<!-- ── acting-from-zero_01 ── original : 1500×844px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/acting-from-zero_01-400w.webp 400w,
+             webp/acting-from-zero_01-800w.webp 800w,
+             webp/acting-from-zero_01-1200w.webp 1200w,
+             webp/acting-from-zero_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/acting-from-zero_01-original.webp"
+    alt=""
+    width="1200"
+    height="675"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── acting-from-zero_02 ── original : 1444×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/acting-from-zero_02-400w.webp 400w,
+             webp/acting-from-zero_02-800w.webp 800w,
+             webp/acting-from-zero_02-1200w.webp 1200w,
+             webp/acting-from-zero_02-original.webp 1444w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/acting-from-zero_02-original.webp"
+    alt=""
+    width="1200"
+    height="1701"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── acting-from-zero_03 ── original : 1500×1398px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/acting-from-zero_03-400w.webp 400w,
+             webp/acting-from-zero_03-800w.webp 800w,
+             webp/acting-from-zero_03-1200w.webp 1200w,
+             webp/acting-from-zero_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/acting-from-zero_03-original.webp"
+    alt=""
+    width="1200"
+    height="1118"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── acting-from-zero_04 ── original : 1500×819px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/acting-from-zero_04-400w.webp 400w,
+             webp/acting-from-zero_04-800w.webp 800w,
+             webp/acting-from-zero_04-1200w.webp 1200w,
+             webp/acting-from-zero_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/acting-from-zero_04-original.webp"
+    alt=""
+    width="1200"
+    height="655"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── adrian-rovatkay_01 ── original : 1500×647px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/adrian-rovatkay_01-400w.webp 400w,
+             webp/adrian-rovatkay_01-800w.webp 800w,
+             webp/adrian-rovatkay_01-1200w.webp 1200w,
+             webp/adrian-rovatkay_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/adrian-rovatkay_01-original.webp"
+    alt=""
+    width="1200"
+    height="517"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── adrian-rovatkay_02 ── original : 1324×1536px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/adrian-rovatkay_02-400w.webp 400w,
+             webp/adrian-rovatkay_02-800w.webp 800w,
+             webp/adrian-rovatkay_02-1200w.webp 1200w,
+             webp/adrian-rovatkay_02-original.webp 1324w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/adrian-rovatkay_02-original.webp"
+    alt=""
+    width="1200"
+    height="1392"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alfonso-moral_01 ── original : 1400×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alfonso-moral_01-400w.webp 400w,
+             webp/alfonso-moral_01-800w.webp 800w,
+             webp/alfonso-moral_01-1200w.webp 1200w,
+             webp/alfonso-moral_01-original.webp 1400w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alfonso-moral_01-original.webp"
+    alt=""
+    width="1200"
+    height="857"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alfonso-moral_02 ── original : 1200×800px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alfonso-moral_02-400w.webp 400w,
+             webp/alfonso-moral_02-800w.webp 800w,
+             webp/alfonso-moral_02-1200w.webp 1200w,
+             webp/alfonso-moral_02-original.webp 1200w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alfonso-moral_02-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alfonso-moral_03 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alfonso-moral_03-400w.webp 400w,
+             webp/alfonso-moral_03-800w.webp 800w,
+             webp/alfonso-moral_03-1200w.webp 1200w,
+             webp/alfonso-moral_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alfonso-moral_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alfonso-moral_04 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alfonso-moral_04-400w.webp 400w,
+             webp/alfonso-moral_04-800w.webp 800w,
+             webp/alfonso-moral_04-1200w.webp 1200w,
+             webp/alfonso-moral_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alfonso-moral_04-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alfonso-moral_05 ── original : 1400×933px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alfonso-moral_05-400w.webp 400w,
+             webp/alfonso-moral_05-800w.webp 800w,
+             webp/alfonso-moral_05-1200w.webp 1200w,
+             webp/alfonso-moral_05-original.webp 1400w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alfonso-moral_05-original.webp"
+    alt=""
+    width="1200"
+    height="799"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alfonso-moral_06 ── original : 1400×1050px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alfonso-moral_06-400w.webp 400w,
+             webp/alfonso-moral_06-800w.webp 800w,
+             webp/alfonso-moral_06-1200w.webp 1200w,
+             webp/alfonso-moral_06-original.webp 1400w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alfonso-moral_06-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alfonso-moral_07 ── original : 1400×1377px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alfonso-moral_07-400w.webp 400w,
+             webp/alfonso-moral_07-800w.webp 800w,
+             webp/alfonso-moral_07-1200w.webp 1200w,
+             webp/alfonso-moral_07-original.webp 1400w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alfonso-moral_07-original.webp"
+    alt=""
+    width="1200"
+    height="1180"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── almuth-baumfalk_01 ── original : 1290×1536px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/almuth-baumfalk_01-400w.webp 400w,
+             webp/almuth-baumfalk_01-800w.webp 800w,
+             webp/almuth-baumfalk_01-1200w.webp 1200w,
+             webp/almuth-baumfalk_01-original.webp 1290w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/almuth-baumfalk_01-original.webp"
+    alt=""
+    width="1200"
+    height="1428"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── almuth-baumfalk_02 ── original : 1500×1011px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/almuth-baumfalk_02-400w.webp 400w,
+             webp/almuth-baumfalk_02-800w.webp 800w,
+             webp/almuth-baumfalk_02-1200w.webp 1200w,
+             webp/almuth-baumfalk_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/almuth-baumfalk_02-original.webp"
+    alt=""
+    width="1200"
+    height="808"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── almuth-baumfalk_03 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/almuth-baumfalk_03-400w.webp 400w,
+             webp/almuth-baumfalk_03-800w.webp 800w,
+             webp/almuth-baumfalk_03-1200w.webp 1200w,
+             webp/almuth-baumfalk_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/almuth-baumfalk_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── almuth-baumfalk_04 ── original : 1432×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/almuth-baumfalk_04-400w.webp 400w,
+             webp/almuth-baumfalk_04-800w.webp 800w,
+             webp/almuth-baumfalk_04-1200w.webp 1200w,
+             webp/almuth-baumfalk_04-original.webp 1432w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/almuth-baumfalk_04-original.webp"
+    alt=""
+    width="1200"
+    height="1716"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── almuth-baumfalk_05 ── original : 1500×1982px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/almuth-baumfalk_05-400w.webp 400w,
+             webp/almuth-baumfalk_05-800w.webp 800w,
+             webp/almuth-baumfalk_05-1200w.webp 1200w,
+             webp/almuth-baumfalk_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/almuth-baumfalk_05-original.webp"
+    alt=""
+    width="1200"
+    height="1585"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── almuth-baumfalk_06 ── original : 1500×1106px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/almuth-baumfalk_06-400w.webp 400w,
+             webp/almuth-baumfalk_06-800w.webp 800w,
+             webp/almuth-baumfalk_06-1200w.webp 1200w,
+             webp/almuth-baumfalk_06-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/almuth-baumfalk_06-original.webp"
+    alt=""
+    width="1200"
+    height="884"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alpha-nova-galerie-futura_01 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alpha-nova-galerie-futura_01-400w.webp 400w,
+             webp/alpha-nova-galerie-futura_01-800w.webp 800w,
+             webp/alpha-nova-galerie-futura_01-1200w.webp 1200w,
+             webp/alpha-nova-galerie-futura_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alpha-nova-galerie-futura_01-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alpha-nova-galerie-futura_02 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alpha-nova-galerie-futura_02-400w.webp 400w,
+             webp/alpha-nova-galerie-futura_02-800w.webp 800w,
+             webp/alpha-nova-galerie-futura_02-1200w.webp 1200w,
+             webp/alpha-nova-galerie-futura_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alpha-nova-galerie-futura_02-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alpha-nova-galerie-futura_03 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alpha-nova-galerie-futura_03-400w.webp 400w,
+             webp/alpha-nova-galerie-futura_03-800w.webp 800w,
+             webp/alpha-nova-galerie-futura_03-1200w.webp 1200w,
+             webp/alpha-nova-galerie-futura_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alpha-nova-galerie-futura_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alpha-nova-galerie-futura_04 ── original : 1500×380px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alpha-nova-galerie-futura_04-400w.webp 400w,
+             webp/alpha-nova-galerie-futura_04-800w.webp 800w,
+             webp/alpha-nova-galerie-futura_04-1200w.webp 1200w,
+             webp/alpha-nova-galerie-futura_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alpha-nova-galerie-futura_04-original.webp"
+    alt=""
+    width="1200"
+    height="304"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alpha-nova-galerie-futura_05 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alpha-nova-galerie-futura_05-400w.webp 400w,
+             webp/alpha-nova-galerie-futura_05-800w.webp 800w,
+             webp/alpha-nova-galerie-futura_05-1200w.webp 1200w,
+             webp/alpha-nova-galerie-futura_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alpha-nova-galerie-futura_05-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── alpha-nova-galerie-futura_06 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/alpha-nova-galerie-futura_06-400w.webp 400w,
+             webp/alpha-nova-galerie-futura_06-800w.webp 800w,
+             webp/alpha-nova-galerie-futura_06-1200w.webp 1200w,
+             webp/alpha-nova-galerie-futura_06-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/alpha-nova-galerie-futura_06-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── andres-villarreal_01 ── original : 670×371px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/andres-villarreal_01-400w.webp 400w,
+             webp/andres-villarreal_01-original.webp 670w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/andres-villarreal_01-original.webp"
+    alt=""
+    width="400"
+    height="221"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── andres-villarreal_02 ── original : 670×446px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/andres-villarreal_02-400w.webp 400w,
+             webp/andres-villarreal_02-original.webp 670w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/andres-villarreal_02-original.webp"
+    alt=""
+    width="400"
+    height="266"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── andres-villarreal_03 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/andres-villarreal_03-400w.webp 400w,
+             webp/andres-villarreal_03-800w.webp 800w,
+             webp/andres-villarreal_03-1200w.webp 1200w,
+             webp/andres-villarreal_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/andres-villarreal_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── andres-villarreal_04 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/andres-villarreal_04-400w.webp 400w,
+             webp/andres-villarreal_04-800w.webp 800w,
+             webp/andres-villarreal_04-1200w.webp 1200w,
+             webp/andres-villarreal_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/andres-villarreal_04-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── barbara-ott_01 ── original : 1500×776px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/barbara-ott_01-400w.webp 400w,
+             webp/barbara-ott_01-800w.webp 800w,
+             webp/barbara-ott_01-1200w.webp 1200w,
+             webp/barbara-ott_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/barbara-ott_01-original.webp"
+    alt=""
+    width="1200"
+    height="620"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── barbara-ott_02 ── original : 1500×943px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/barbara-ott_02-400w.webp 400w,
+             webp/barbara-ott_02-800w.webp 800w,
+             webp/barbara-ott_02-1200w.webp 1200w,
+             webp/barbara-ott_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/barbara-ott_02-original.webp"
+    alt=""
+    width="1200"
+    height="754"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── barbara-ott_03 ── original : 1366×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/barbara-ott_03-400w.webp 400w,
+             webp/barbara-ott_03-800w.webp 800w,
+             webp/barbara-ott_03-1200w.webp 1200w,
+             webp/barbara-ott_03-original.webp 1366w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/barbara-ott_03-original.webp"
+    alt=""
+    width="1200"
+    height="1799"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── barbara-ott_04 ── original : 1500×750px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/barbara-ott_04-400w.webp 400w,
+             webp/barbara-ott_04-800w.webp 800w,
+             webp/barbara-ott_04-1200w.webp 1200w,
+             webp/barbara-ott_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/barbara-ott_04-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── barbara-ott_05 ── original : 1453×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/barbara-ott_05-400w.webp 400w,
+             webp/barbara-ott_05-800w.webp 800w,
+             webp/barbara-ott_05-1200w.webp 1200w,
+             webp/barbara-ott_05-original.webp 1453w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/barbara-ott_05-original.webp"
+    alt=""
+    width="1200"
+    height="1691"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ben-cottrell_01 ── original : 1500×2024px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ben-cottrell_01-400w.webp 400w,
+             webp/ben-cottrell_01-800w.webp 800w,
+             webp/ben-cottrell_01-1200w.webp 1200w,
+             webp/ben-cottrell_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ben-cottrell_01-original.webp"
+    alt=""
+    width="1200"
+    height="1619"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ben-cottrell_02 ── original : 1450×1536px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ben-cottrell_02-400w.webp 400w,
+             webp/ben-cottrell_02-800w.webp 800w,
+             webp/ben-cottrell_02-1200w.webp 1200w,
+             webp/ben-cottrell_02-original.webp 1450w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ben-cottrell_02-original.webp"
+    alt=""
+    width="1200"
+    height="1271"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ben-cottrell_03 ── original : 1500×1967px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ben-cottrell_03-400w.webp 400w,
+             webp/ben-cottrell_03-800w.webp 800w,
+             webp/ben-cottrell_03-1200w.webp 1200w,
+             webp/ben-cottrell_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ben-cottrell_03-original.webp"
+    alt=""
+    width="1200"
+    height="1573"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ben-cottrell_04 ── original : 1500×2000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ben-cottrell_04-400w.webp 400w,
+             webp/ben-cottrell_04-800w.webp 800w,
+             webp/ben-cottrell_04-1200w.webp 1200w,
+             webp/ben-cottrell_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ben-cottrell_04-original.webp"
+    alt=""
+    width="1200"
+    height="1600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ben-cottrell_05 ── original : 1500×2000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ben-cottrell_05-400w.webp 400w,
+             webp/ben-cottrell_05-800w.webp 800w,
+             webp/ben-cottrell_05-1200w.webp 1200w,
+             webp/ben-cottrell_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ben-cottrell_05-original.webp"
+    alt=""
+    width="1200"
+    height="1600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_01 ── original : 1500×751px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_01-400w.webp 400w,
+             webp/benedikt-rugar_01-800w.webp 800w,
+             webp/benedikt-rugar_01-1200w.webp 1200w,
+             webp/benedikt-rugar_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_01-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_02 ── original : 1500×751px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_02-400w.webp 400w,
+             webp/benedikt-rugar_02-800w.webp 800w,
+             webp/benedikt-rugar_02-1200w.webp 1200w,
+             webp/benedikt-rugar_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_02-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_03 ── original : 1500×751px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_03-400w.webp 400w,
+             webp/benedikt-rugar_03-800w.webp 800w,
+             webp/benedikt-rugar_03-1200w.webp 1200w,
+             webp/benedikt-rugar_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_03-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_04 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_04-400w.webp 400w,
+             webp/benedikt-rugar_04-800w.webp 800w,
+             webp/benedikt-rugar_04-1200w.webp 1200w,
+             webp/benedikt-rugar_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_04-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_05 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_05-400w.webp 400w,
+             webp/benedikt-rugar_05-800w.webp 800w,
+             webp/benedikt-rugar_05-1200w.webp 1200w,
+             webp/benedikt-rugar_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_05-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_06 ── original : 1500×1025px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_06-400w.webp 400w,
+             webp/benedikt-rugar_06-800w.webp 800w,
+             webp/benedikt-rugar_06-1200w.webp 1200w,
+             webp/benedikt-rugar_06-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_06-original.webp"
+    alt=""
+    width="1200"
+    height="820"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_07 ── original : 1500×751px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_07-400w.webp 400w,
+             webp/benedikt-rugar_07-800w.webp 800w,
+             webp/benedikt-rugar_07-1200w.webp 1200w,
+             webp/benedikt-rugar_07-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_07-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_08 ── original : 1500×751px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_08-400w.webp 400w,
+             webp/benedikt-rugar_08-800w.webp 800w,
+             webp/benedikt-rugar_08-1200w.webp 1200w,
+             webp/benedikt-rugar_08-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_08-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── benedikt-rugar_09 ── original : 1500×751px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/benedikt-rugar_09-400w.webp 400w,
+             webp/benedikt-rugar_09-800w.webp 800w,
+             webp/benedikt-rugar_09-1200w.webp 1200w,
+             webp/benedikt-rugar_09-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/benedikt-rugar_09-original.webp"
+    alt=""
+    width="1200"
+    height="600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── claudia-mocker_01 ── original : 1500×839px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/claudia-mocker_01-400w.webp 400w,
+             webp/claudia-mocker_01-800w.webp 800w,
+             webp/claudia-mocker_01-1200w.webp 1200w,
+             webp/claudia-mocker_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/claudia-mocker_01-original.webp"
+    alt=""
+    width="1200"
+    height="671"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── claudia-mocker_02 ── original : 1500×1379px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/claudia-mocker_02-400w.webp 400w,
+             webp/claudia-mocker_02-800w.webp 800w,
+             webp/claudia-mocker_02-1200w.webp 1200w,
+             webp/claudia-mocker_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/claudia-mocker_02-original.webp"
+    alt=""
+    width="1200"
+    height="1103"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── claudia-mocker_03 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/claudia-mocker_03-400w.webp 400w,
+             webp/claudia-mocker_03-800w.webp 800w,
+             webp/claudia-mocker_03-1200w.webp 1200w,
+             webp/claudia-mocker_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/claudia-mocker_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── cornelia-herfurtner_01 ── original : 1500×1054px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/cornelia-herfurtner_01-400w.webp 400w,
+             webp/cornelia-herfurtner_01-800w.webp 800w,
+             webp/cornelia-herfurtner_01-1200w.webp 1200w,
+             webp/cornelia-herfurtner_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/cornelia-herfurtner_01-original.webp"
+    alt=""
+    width="1200"
+    height="843"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── cornelia-herfurtner_02 ── original : 1333×1333px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/cornelia-herfurtner_02-400w.webp 400w,
+             webp/cornelia-herfurtner_02-800w.webp 800w,
+             webp/cornelia-herfurtner_02-1200w.webp 1200w,
+             webp/cornelia-herfurtner_02-original.webp 1333w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/cornelia-herfurtner_02-original.webp"
+    alt=""
+    width="1200"
+    height="1200"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── cornelia-herfurtner_03 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/cornelia-herfurtner_03-400w.webp 400w,
+             webp/cornelia-herfurtner_03-800w.webp 800w,
+             webp/cornelia-herfurtner_03-1200w.webp 1200w,
+             webp/cornelia-herfurtner_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/cornelia-herfurtner_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── cornelia-herfurtner_04 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/cornelia-herfurtner_04-400w.webp 400w,
+             webp/cornelia-herfurtner_04-800w.webp 800w,
+             webp/cornelia-herfurtner_04-1200w.webp 1200w,
+             webp/cornelia-herfurtner_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/cornelia-herfurtner_04-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── cornelia-herfurtner_05 ── original : 1500×1041px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/cornelia-herfurtner_05-400w.webp 400w,
+             webp/cornelia-herfurtner_05-800w.webp 800w,
+             webp/cornelia-herfurtner_05-1200w.webp 1200w,
+             webp/cornelia-herfurtner_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/cornelia-herfurtner_05-original.webp"
+    alt=""
+    width="1200"
+    height="832"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dagmar-binder_01 ── original : 1500×500px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dagmar-binder_01-400w.webp 400w,
+             webp/dagmar-binder_01-800w.webp 800w,
+             webp/dagmar-binder_01-1200w.webp 1200w,
+             webp/dagmar-binder_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dagmar-binder_01-original.webp"
+    alt=""
+    width="1200"
+    height="400"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── daniel-franke_01 ── original : 1365×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/daniel-franke_01-400w.webp 400w,
+             webp/daniel-franke_01-800w.webp 800w,
+             webp/daniel-franke_01-1200w.webp 1200w,
+             webp/daniel-franke_01-original.webp 1365w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/daniel-franke_01-original.webp"
+    alt=""
+    width="1200"
+    height="1800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── darius-kolski_01 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/darius-kolski_01-400w.webp 400w,
+             webp/darius-kolski_01-800w.webp 800w,
+             webp/darius-kolski_01-1200w.webp 1200w,
+             webp/darius-kolski_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/darius-kolski_01-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── darius-kolski_02 ── original : 1500×1274px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/darius-kolski_02-400w.webp 400w,
+             webp/darius-kolski_02-800w.webp 800w,
+             webp/darius-kolski_02-1200w.webp 1200w,
+             webp/darius-kolski_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/darius-kolski_02-original.webp"
+    alt=""
+    width="1200"
+    height="1019"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── darius-kolski_03 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/darius-kolski_03-400w.webp 400w,
+             webp/darius-kolski_03-800w.webp 800w,
+             webp/darius-kolski_03-1200w.webp 1200w,
+             webp/darius-kolski_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/darius-kolski_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dirk-lebahn_01 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dirk-lebahn_01-400w.webp 400w,
+             webp/dirk-lebahn_01-800w.webp 800w,
+             webp/dirk-lebahn_01-1200w.webp 1200w,
+             webp/dirk-lebahn_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dirk-lebahn_01-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dirk-lebahn_02 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dirk-lebahn_02-400w.webp 400w,
+             webp/dirk-lebahn_02-800w.webp 800w,
+             webp/dirk-lebahn_02-1200w.webp 1200w,
+             webp/dirk-lebahn_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dirk-lebahn_02-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dirk-lebahn_03 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dirk-lebahn_03-400w.webp 400w,
+             webp/dirk-lebahn_03-800w.webp 800w,
+             webp/dirk-lebahn_03-1200w.webp 1200w,
+             webp/dirk-lebahn_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dirk-lebahn_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dirk-lebahn_04 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dirk-lebahn_04-400w.webp 400w,
+             webp/dirk-lebahn_04-800w.webp 800w,
+             webp/dirk-lebahn_04-1200w.webp 1200w,
+             webp/dirk-lebahn_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dirk-lebahn_04-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dirk-lebahn_05 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dirk-lebahn_05-400w.webp 400w,
+             webp/dirk-lebahn_05-800w.webp 800w,
+             webp/dirk-lebahn_05-1200w.webp 1200w,
+             webp/dirk-lebahn_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dirk-lebahn_05-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dominique-hurth_01 ── original : 1500×1001px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dominique-hurth_01-400w.webp 400w,
+             webp/dominique-hurth_01-800w.webp 800w,
+             webp/dominique-hurth_01-1200w.webp 1200w,
+             webp/dominique-hurth_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dominique-hurth_01-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── dominique-hurth_02 ── original : 1500×1042px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/dominique-hurth_02-400w.webp 400w,
+             webp/dominique-hurth_02-800w.webp 800w,
+             webp/dominique-hurth_02-1200w.webp 1200w,
+             webp/dominique-hurth_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/dominique-hurth_02-original.webp"
+    alt=""
+    width="1200"
+    height="833"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ebba-frans-n-waldh-r_01 ── original : 1500×1072px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ebba-frans-n-waldh-r_01-400w.webp 400w,
+             webp/ebba-frans-n-waldh-r_01-800w.webp 800w,
+             webp/ebba-frans-n-waldh-r_01-1200w.webp 1200w,
+             webp/ebba-frans-n-waldh-r_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ebba-frans-n-waldh-r_01-original.webp"
+    alt=""
+    width="1200"
+    height="857"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── fehras-publishing-practices_01 ── original : 1417×693px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/fehras-publishing-practices_01-400w.webp 400w,
+             webp/fehras-publishing-practices_01-800w.webp 800w,
+             webp/fehras-publishing-practices_01-1200w.webp 1200w,
+             webp/fehras-publishing-practices_01-original.webp 1417w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/fehras-publishing-practices_01-original.webp"
+    alt=""
+    width="1200"
+    height="586"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── fehras-publishing-practices_02 ── original : 1417×801px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/fehras-publishing-practices_02-400w.webp 400w,
+             webp/fehras-publishing-practices_02-800w.webp 800w,
+             webp/fehras-publishing-practices_02-1200w.webp 1200w,
+             webp/fehras-publishing-practices_02-original.webp 1417w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/fehras-publishing-practices_02-original.webp"
+    alt=""
+    width="1200"
+    height="678"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── fehras-publishing-practices_03 ── original : 1024×741px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/fehras-publishing-practices_03-400w.webp 400w,
+             webp/fehras-publishing-practices_03-800w.webp 800w,
+             webp/fehras-publishing-practices_03-original.webp 1024w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/fehras-publishing-practices_03-original.webp"
+    alt=""
+    width="800"
+    height="578"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── fehras-publishing-practices_04 ── original : 640×400px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/fehras-publishing-practices_04-400w.webp 400w,
+             webp/fehras-publishing-practices_04-original.webp 640w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/fehras-publishing-practices_04-original.webp"
+    alt=""
+    width="400"
+    height="250"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── frank-zucht_01 ── original : 1500×821px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/frank-zucht_01-400w.webp 400w,
+             webp/frank-zucht_01-800w.webp 800w,
+             webp/frank-zucht_01-1200w.webp 1200w,
+             webp/frank-zucht_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/frank-zucht_01-original.webp"
+    alt=""
+    width="1200"
+    height="656"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── frank-zucht_02 ── original : 1449×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/frank-zucht_02-400w.webp 400w,
+             webp/frank-zucht_02-800w.webp 800w,
+             webp/frank-zucht_02-1200w.webp 1200w,
+             webp/frank-zucht_02-original.webp 1449w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/frank-zucht_02-original.webp"
+    alt=""
+    width="1200"
+    height="1696"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── frank-zucht_03 ── original : 1422×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/frank-zucht_03-400w.webp 400w,
+             webp/frank-zucht_03-800w.webp 800w,
+             webp/frank-zucht_03-1200w.webp 1200w,
+             webp/frank-zucht_03-original.webp 1422w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/frank-zucht_03-original.webp"
+    alt=""
+    width="1200"
+    height="1728"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── frank-zucht_04 ── original : 1439×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/frank-zucht_04-400w.webp 400w,
+             webp/frank-zucht_04-800w.webp 800w,
+             webp/frank-zucht_04-1200w.webp 1200w,
+             webp/frank-zucht_04-original.webp 1439w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/frank-zucht_04-original.webp"
+    alt=""
+    width="1200"
+    height="1707"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── frank-zucht_05 ── original : 1500×768px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/frank-zucht_05-400w.webp 400w,
+             webp/frank-zucht_05-800w.webp 800w,
+             webp/frank-zucht_05-1200w.webp 1200w,
+             webp/frank-zucht_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/frank-zucht_05-original.webp"
+    alt=""
+    width="1200"
+    height="614"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── hannah-dougherty_01 ── original : 1333×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/hannah-dougherty_01-400w.webp 400w,
+             webp/hannah-dougherty_01-800w.webp 800w,
+             webp/hannah-dougherty_01-1200w.webp 1200w,
+             webp/hannah-dougherty_01-original.webp 1333w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/hannah-dougherty_01-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── hannah-dougherty_02 ── original : 1000×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/hannah-dougherty_02-400w.webp 400w,
+             webp/hannah-dougherty_02-800w.webp 800w,
+             webp/hannah-dougherty_02-original.webp 1000w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/hannah-dougherty_02-original.webp"
+    alt=""
+    width="800"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── hannah-dougherty_03 ── original : 1333×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/hannah-dougherty_03-400w.webp 400w,
+             webp/hannah-dougherty_03-800w.webp 800w,
+             webp/hannah-dougherty_03-1200w.webp 1200w,
+             webp/hannah-dougherty_03-original.webp 1333w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/hannah-dougherty_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── hannah-dougherty_04 ── original : 750×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/hannah-dougherty_04-400w.webp 400w,
+             webp/hannah-dougherty_04-original.webp 750w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/hannah-dougherty_04-original.webp"
+    alt=""
+    width="400"
+    height="533"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── hannah-dougherty_05 ── original : 1500×810px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/hannah-dougherty_05-400w.webp 400w,
+             webp/hannah-dougherty_05-800w.webp 800w,
+             webp/hannah-dougherty_05-1200w.webp 1200w,
+             webp/hannah-dougherty_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/hannah-dougherty_05-original.webp"
+    alt=""
+    width="1200"
+    height="648"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── hannah-dougherty_06 ── original : 784×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/hannah-dougherty_06-400w.webp 400w,
+             webp/hannah-dougherty_06-original.webp 784w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 400px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/hannah-dougherty_06-original.webp"
+    alt=""
+    width="400"
+    height="510"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── harald-birck_01 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/harald-birck_01-400w.webp 400w,
+             webp/harald-birck_01-800w.webp 800w,
+             webp/harald-birck_01-1200w.webp 1200w,
+             webp/harald-birck_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/harald-birck_01-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jasna-l-vinovr-ki-public-in-private_01 ── original : 1500×701px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jasna-l-vinovr-ki-public-in-private_01-400w.webp 400w,
+             webp/jasna-l-vinovr-ki-public-in-private_01-800w.webp 800w,
+             webp/jasna-l-vinovr-ki-public-in-private_01-1200w.webp 1200w,
+             webp/jasna-l-vinovr-ki-public-in-private_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jasna-l-vinovr-ki-public-in-private_01-original.webp"
+    alt=""
+    width="1200"
+    height="560"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jasna-l-vinovr-ki-public-in-private_02 ── original : 1500×228px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jasna-l-vinovr-ki-public-in-private_02-400w.webp 400w,
+             webp/jasna-l-vinovr-ki-public-in-private_02-800w.webp 800w,
+             webp/jasna-l-vinovr-ki-public-in-private_02-1200w.webp 1200w,
+             webp/jasna-l-vinovr-ki-public-in-private_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jasna-l-vinovr-ki-public-in-private_02-original.webp"
+    alt=""
+    width="1200"
+    height="182"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jasna-l-vinovr-ki-public-in-private_03 ── original : 1500×1001px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jasna-l-vinovr-ki-public-in-private_03-400w.webp 400w,
+             webp/jasna-l-vinovr-ki-public-in-private_03-800w.webp 800w,
+             webp/jasna-l-vinovr-ki-public-in-private_03-1200w.webp 1200w,
+             webp/jasna-l-vinovr-ki-public-in-private_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jasna-l-vinovr-ki-public-in-private_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jasna-l-vinovr-ki-public-in-private_04 ── original : 1500×1056px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jasna-l-vinovr-ki-public-in-private_04-400w.webp 400w,
+             webp/jasna-l-vinovr-ki-public-in-private_04-800w.webp 800w,
+             webp/jasna-l-vinovr-ki-public-in-private_04-1200w.webp 1200w,
+             webp/jasna-l-vinovr-ki-public-in-private_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jasna-l-vinovr-ki-public-in-private_04-original.webp"
+    alt=""
+    width="1200"
+    height="844"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jasna-l-vinovr-ki-public-in-private_05 ── original : 1500×998px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jasna-l-vinovr-ki-public-in-private_05-400w.webp 400w,
+             webp/jasna-l-vinovr-ki-public-in-private_05-800w.webp 800w,
+             webp/jasna-l-vinovr-ki-public-in-private_05-1200w.webp 1200w,
+             webp/jasna-l-vinovr-ki-public-in-private_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jasna-l-vinovr-ki-public-in-private_05-original.webp"
+    alt=""
+    width="1200"
+    height="798"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jasna-l-vinovr-ki-public-in-private_06 ── original : 1366×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jasna-l-vinovr-ki-public-in-private_06-400w.webp 400w,
+             webp/jasna-l-vinovr-ki-public-in-private_06-800w.webp 800w,
+             webp/jasna-l-vinovr-ki-public-in-private_06-1200w.webp 1200w,
+             webp/jasna-l-vinovr-ki-public-in-private_06-original.webp 1366w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jasna-l-vinovr-ki-public-in-private_06-original.webp"
+    alt=""
+    width="1200"
+    height="1799"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jo-zahn_01 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jo-zahn_01-400w.webp 400w,
+             webp/jo-zahn_01-800w.webp 800w,
+             webp/jo-zahn_01-1200w.webp 1200w,
+             webp/jo-zahn_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jo-zahn_01-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jo-zahn_02 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jo-zahn_02-400w.webp 400w,
+             webp/jo-zahn_02-800w.webp 800w,
+             webp/jo-zahn_02-1200w.webp 1200w,
+             webp/jo-zahn_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jo-zahn_02-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jo-zahn_03 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jo-zahn_03-400w.webp 400w,
+             webp/jo-zahn_03-800w.webp 800w,
+             webp/jo-zahn_03-1200w.webp 1200w,
+             webp/jo-zahn_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jo-zahn_03-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jo-zahn_04 ── original : 1500×844px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jo-zahn_04-400w.webp 400w,
+             webp/jo-zahn_04-800w.webp 800w,
+             webp/jo-zahn_04-1200w.webp 1200w,
+             webp/jo-zahn_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jo-zahn_04-original.webp"
+    alt=""
+    width="1200"
+    height="675"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── jugoslav-mitevski_01 ── original : 1500×1955px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/jugoslav-mitevski_01-400w.webp 400w,
+             webp/jugoslav-mitevski_01-800w.webp 800w,
+             webp/jugoslav-mitevski_01-1200w.webp 1200w,
+             webp/jugoslav-mitevski_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/jugoslav-mitevski_01-original.webp"
+    alt=""
+    width="1200"
+    height="1564"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── julia-lipinsky_01 ── original : 1500×995px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/julia-lipinsky_01-400w.webp 400w,
+             webp/julia-lipinsky_01-800w.webp 800w,
+             webp/julia-lipinsky_01-1200w.webp 1200w,
+             webp/julia-lipinsky_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/julia-lipinsky_01-original.webp"
+    alt=""
+    width="1200"
+    height="796"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── julia-lipinsky_02 ── original : 1500×1308px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/julia-lipinsky_02-400w.webp 400w,
+             webp/julia-lipinsky_02-800w.webp 800w,
+             webp/julia-lipinsky_02-1200w.webp 1200w,
+             webp/julia-lipinsky_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/julia-lipinsky_02-original.webp"
+    alt=""
+    width="1200"
+    height="1046"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── julia-lipinsky_03 ── original : 1500×1225px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/julia-lipinsky_03-400w.webp 400w,
+             webp/julia-lipinsky_03-800w.webp 800w,
+             webp/julia-lipinsky_03-1200w.webp 1200w,
+             webp/julia-lipinsky_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/julia-lipinsky_03-original.webp"
+    alt=""
+    width="1200"
+    height="980"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── julia-lipinsky_04 ── original : 1471×1536px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/julia-lipinsky_04-400w.webp 400w,
+             webp/julia-lipinsky_04-800w.webp 800w,
+             webp/julia-lipinsky_04-1200w.webp 1200w,
+             webp/julia-lipinsky_04-original.webp 1471w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/julia-lipinsky_04-original.webp"
+    alt=""
+    width="1200"
+    height="1253"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── julia-lipinsky_05 ── original : 1364×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/julia-lipinsky_05-400w.webp 400w,
+             webp/julia-lipinsky_05-800w.webp 800w,
+             webp/julia-lipinsky_05-1200w.webp 1200w,
+             webp/julia-lipinsky_05-original.webp 1364w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/julia-lipinsky_05-original.webp"
+    alt=""
+    width="1200"
+    height="1801"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── julia-lipinsky_06 ── original : 1500×558px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/julia-lipinsky_06-400w.webp 400w,
+             webp/julia-lipinsky_06-800w.webp 800w,
+             webp/julia-lipinsky_06-1200w.webp 1200w,
+             webp/julia-lipinsky_06-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/julia-lipinsky_06-original.webp"
+    alt=""
+    width="1200"
+    height="446"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── katja-brinkmann_01 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/katja-brinkmann_01-400w.webp 400w,
+             webp/katja-brinkmann_01-800w.webp 800w,
+             webp/katja-brinkmann_01-1200w.webp 1200w,
+             webp/katja-brinkmann_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/katja-brinkmann_01-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── lap-yip_01 ── original : 1500×617px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/lap-yip_01-400w.webp 400w,
+             webp/lap-yip_01-800w.webp 800w,
+             webp/lap-yip_01-1200w.webp 1200w,
+             webp/lap-yip_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/lap-yip_01-original.webp"
+    alt=""
+    width="1200"
+    height="493"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── lap-yip_02 ── original : 1500×1160px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/lap-yip_02-400w.webp 400w,
+             webp/lap-yip_02-800w.webp 800w,
+             webp/lap-yip_02-1200w.webp 1200w,
+             webp/lap-yip_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/lap-yip_02-original.webp"
+    alt=""
+    width="1200"
+    height="928"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── lap-yip_03 ── original : 1500×563px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/lap-yip_03-400w.webp 400w,
+             webp/lap-yip_03-800w.webp 800w,
+             webp/lap-yip_03-1200w.webp 1200w,
+             webp/lap-yip_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/lap-yip_03-original.webp"
+    alt=""
+    width="1200"
+    height="450"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── lap-yip_04 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/lap-yip_04-400w.webp 400w,
+             webp/lap-yip_04-800w.webp 800w,
+             webp/lap-yip_04-1200w.webp 1200w,
+             webp/lap-yip_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/lap-yip_04-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── lap-yip_05 ── original : 1500×785px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/lap-yip_05-400w.webp 400w,
+             webp/lap-yip_05-800w.webp 800w,
+             webp/lap-yip_05-1200w.webp 1200w,
+             webp/lap-yip_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/lap-yip_05-original.webp"
+    alt=""
+    width="1200"
+    height="628"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── lap-yip_06 ── original : 1500×1187px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/lap-yip_06-400w.webp 400w,
+             webp/lap-yip_06-800w.webp 800w,
+             webp/lap-yip_06-1200w.webp 1200w,
+             webp/lap-yip_06-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/lap-yip_06-original.webp"
+    alt=""
+    width="1200"
+    height="949"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── marei-l-llmann_01 ── original : 874×620px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/marei-l-llmann_01-400w.webp 400w,
+             webp/marei-l-llmann_01-800w.webp 800w,
+             webp/marei-l-llmann_01-original.webp 874w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/marei-l-llmann_01-original.webp"
+    alt=""
+    width="800"
+    height="567"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── margot-schmitt_01 ── original : 1500×760px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/margot-schmitt_01-400w.webp 400w,
+             webp/margot-schmitt_01-800w.webp 800w,
+             webp/margot-schmitt_01-1200w.webp 1200w,
+             webp/margot-schmitt_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/margot-schmitt_01-original.webp"
+    alt=""
+    width="1200"
+    height="608"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── margot-schmitt_02 ── original : 1500×595px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/margot-schmitt_02-400w.webp 400w,
+             webp/margot-schmitt_02-800w.webp 800w,
+             webp/margot-schmitt_02-1200w.webp 1200w,
+             webp/margot-schmitt_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/margot-schmitt_02-original.webp"
+    alt=""
+    width="1200"
+    height="476"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── margot-schmitt_03 ── original : 1500×855px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/margot-schmitt_03-400w.webp 400w,
+             webp/margot-schmitt_03-800w.webp 800w,
+             webp/margot-schmitt_03-1200w.webp 1200w,
+             webp/margot-schmitt_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/margot-schmitt_03-original.webp"
+    alt=""
+    width="1200"
+    height="684"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── margot-schmitt_04 ── original : 1500×919px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/margot-schmitt_04-400w.webp 400w,
+             webp/margot-schmitt_04-800w.webp 800w,
+             webp/margot-schmitt_04-1200w.webp 1200w,
+             webp/margot-schmitt_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/margot-schmitt_04-original.webp"
+    alt=""
+    width="1200"
+    height="735"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── margot-schmitt_05 ── original : 1500×958px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/margot-schmitt_05-400w.webp 400w,
+             webp/margot-schmitt_05-800w.webp 800w,
+             webp/margot-schmitt_05-1200w.webp 1200w,
+             webp/margot-schmitt_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/margot-schmitt_05-original.webp"
+    alt=""
+    width="1200"
+    height="766"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── maria-turik_01 ── original : 1500×968px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/maria-turik_01-400w.webp 400w,
+             webp/maria-turik_01-800w.webp 800w,
+             webp/maria-turik_01-1200w.webp 1200w,
+             webp/maria-turik_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/maria-turik_01-original.webp"
+    alt=""
+    width="1200"
+    height="774"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── maria-turik_02 ── original : 1500×968px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/maria-turik_02-400w.webp 400w,
+             webp/maria-turik_02-800w.webp 800w,
+             webp/maria-turik_02-1200w.webp 1200w,
+             webp/maria-turik_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/maria-turik_02-original.webp"
+    alt=""
+    width="1200"
+    height="774"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── maria-turik_03 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/maria-turik_03-400w.webp 400w,
+             webp/maria-turik_03-800w.webp 800w,
+             webp/maria-turik_03-1200w.webp 1200w,
+             webp/maria-turik_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/maria-turik_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── maria-turik_04 ── original : 1500×990px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/maria-turik_04-400w.webp 400w,
+             webp/maria-turik_04-800w.webp 800w,
+             webp/maria-turik_04-1200w.webp 1200w,
+             webp/maria-turik_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/maria-turik_04-original.webp"
+    alt=""
+    width="1200"
+    height="792"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── maria-turik_05 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/maria-turik_05-400w.webp 400w,
+             webp/maria-turik_05-800w.webp 800w,
+             webp/maria-turik_05-1200w.webp 1200w,
+             webp/maria-turik_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/maria-turik_05-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── maria-turik_06 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/maria-turik_06-400w.webp 400w,
+             webp/maria-turik_06-800w.webp 800w,
+             webp/maria-turik_06-1200w.webp 1200w,
+             webp/maria-turik_06-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/maria-turik_06-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── maria-turik_07 ── original : 1500×451px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/maria-turik_07-400w.webp 400w,
+             webp/maria-turik_07-800w.webp 800w,
+             webp/maria-turik_07-1200w.webp 1200w,
+             webp/maria-turik_07-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/maria-turik_07-original.webp"
+    alt=""
+    width="1200"
+    height="360"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── markus-draper_01 ── original : 1500×638px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/markus-draper_01-400w.webp 400w,
+             webp/markus-draper_01-800w.webp 800w,
+             webp/markus-draper_01-1200w.webp 1200w,
+             webp/markus-draper_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/markus-draper_01-original.webp"
+    alt=""
+    width="1200"
+    height="510"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── markus-draper_02 ── original : 1500×1125px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/markus-draper_02-400w.webp 400w,
+             webp/markus-draper_02-800w.webp 800w,
+             webp/markus-draper_02-1200w.webp 1200w,
+             webp/markus-draper_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/markus-draper_02-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── marta-lodola_01 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/marta-lodola_01-400w.webp 400w,
+             webp/marta-lodola_01-800w.webp 800w,
+             webp/marta-lodola_01-1200w.webp 1200w,
+             webp/marta-lodola_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/marta-lodola_01-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── marta-lodola_02 ── original : 1500×1001px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/marta-lodola_02-400w.webp 400w,
+             webp/marta-lodola_02-800w.webp 800w,
+             webp/marta-lodola_02-1200w.webp 1200w,
+             webp/marta-lodola_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/marta-lodola_02-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── marta-lodola_03 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/marta-lodola_03-400w.webp 400w,
+             webp/marta-lodola_03-800w.webp 800w,
+             webp/marta-lodola_03-1200w.webp 1200w,
+             webp/marta-lodola_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/marta-lodola_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── marta-lodola_04 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/marta-lodola_04-400w.webp 400w,
+             webp/marta-lodola_04-800w.webp 800w,
+             webp/marta-lodola_04-1200w.webp 1200w,
+             webp/marta-lodola_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/marta-lodola_04-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── marta-lodola_05 ── original : 1500×1002px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/marta-lodola_05-400w.webp 400w,
+             webp/marta-lodola_05-800w.webp 800w,
+             webp/marta-lodola_05-1200w.webp 1200w,
+             webp/marta-lodola_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/marta-lodola_05-original.webp"
+    alt=""
+    width="1200"
+    height="801"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── matthias-krause-hamrin_01 ── original : 1372×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/matthias-krause-hamrin_01-400w.webp 400w,
+             webp/matthias-krause-hamrin_01-800w.webp 800w,
+             webp/matthias-krause-hamrin_01-1200w.webp 1200w,
+             webp/matthias-krause-hamrin_01-original.webp 1372w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/matthias-krause-hamrin_01-original.webp"
+    alt=""
+    width="1200"
+    height="1791"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── matthias-krause-hamrin_02 ── original : 1500×2000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/matthias-krause-hamrin_02-400w.webp 400w,
+             webp/matthias-krause-hamrin_02-800w.webp 800w,
+             webp/matthias-krause-hamrin_02-1200w.webp 1200w,
+             webp/matthias-krause-hamrin_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/matthias-krause-hamrin_02-original.webp"
+    alt=""
+    width="1200"
+    height="1600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── matthias-krause-hamrin_03 ── original : 1024×1545px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/matthias-krause-hamrin_03-400w.webp 400w,
+             webp/matthias-krause-hamrin_03-800w.webp 800w,
+             webp/matthias-krause-hamrin_03-original.webp 1024w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/matthias-krause-hamrin_03-original.webp"
+    alt=""
+    width="800"
+    height="1207"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── matthias-krause-hamrin_04 ── original : 1024×1545px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/matthias-krause-hamrin_04-400w.webp 400w,
+             webp/matthias-krause-hamrin_04-800w.webp 800w,
+             webp/matthias-krause-hamrin_04-original.webp 1024w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/matthias-krause-hamrin_04-original.webp"
+    alt=""
+    width="800"
+    height="1207"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── matthias-krause-hamrin_05 ── original : 1030×687px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/matthias-krause-hamrin_05-400w.webp 400w,
+             webp/matthias-krause-hamrin_05-800w.webp 800w,
+             webp/matthias-krause-hamrin_05-original.webp 1030w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/matthias-krause-hamrin_05-original.webp"
+    alt=""
+    width="800"
+    height="533"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── mikala-hyldig-dal_01 ── original : 1500×1061px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/mikala-hyldig-dal_01-400w.webp 400w,
+             webp/mikala-hyldig-dal_01-800w.webp 800w,
+             webp/mikala-hyldig-dal_01-1200w.webp 1200w,
+             webp/mikala-hyldig-dal_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/mikala-hyldig-dal_01-original.webp"
+    alt=""
+    width="1200"
+    height="848"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── mikala-hyldig-dal_02 ── original : 1500×844px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/mikala-hyldig-dal_02-400w.webp 400w,
+             webp/mikala-hyldig-dal_02-800w.webp 800w,
+             webp/mikala-hyldig-dal_02-1200w.webp 1200w,
+             webp/mikala-hyldig-dal_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/mikala-hyldig-dal_02-original.webp"
+    alt=""
+    width="1200"
+    height="675"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── nicole-schuck_01 ── original : 1280×853px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/nicole-schuck_01-400w.webp 400w,
+             webp/nicole-schuck_01-800w.webp 800w,
+             webp/nicole-schuck_01-1200w.webp 1200w,
+             webp/nicole-schuck_01-original.webp 1280w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/nicole-schuck_01-original.webp"
+    alt=""
+    width="1200"
+    height="799"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── nicole-schuck_02 ── original : 960×1280px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/nicole-schuck_02-400w.webp 400w,
+             webp/nicole-schuck_02-800w.webp 800w,
+             webp/nicole-schuck_02-original.webp 960w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/nicole-schuck_02-original.webp"
+    alt=""
+    width="800"
+    height="1066"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── nicole-schuck_03 ── original : 903×1280px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/nicole-schuck_03-400w.webp 400w,
+             webp/nicole-schuck_03-800w.webp 800w,
+             webp/nicole-schuck_03-original.webp 903w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/nicole-schuck_03-original.webp"
+    alt=""
+    width="800"
+    height="1133"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── nora-al-badri_01 ── original : 1438×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/nora-al-badri_01-400w.webp 400w,
+             webp/nora-al-badri_01-800w.webp 800w,
+             webp/nora-al-badri_01-1200w.webp 1200w,
+             webp/nora-al-badri_01-original.webp 1438w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/nora-al-badri_01-original.webp"
+    alt=""
+    width="1200"
+    height="1709"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── nora-al-badri_02 ── original : 1500×1500px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/nora-al-badri_02-400w.webp 400w,
+             webp/nora-al-badri_02-800w.webp 800w,
+             webp/nora-al-badri_02-1200w.webp 1200w,
+             webp/nora-al-badri_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/nora-al-badri_02-original.webp"
+    alt=""
+    width="1200"
+    height="1200"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── nora-al-badri_03 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/nora-al-badri_03-400w.webp 400w,
+             webp/nora-al-badri_03-800w.webp 800w,
+             webp/nora-al-badri_03-1200w.webp 1200w,
+             webp/nora-al-badri_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/nora-al-badri_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── nora-al-badri_04 ── original : 1500×2000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/nora-al-badri_04-400w.webp 400w,
+             webp/nora-al-badri_04-800w.webp 800w,
+             webp/nora-al-badri_04-1200w.webp 1200w,
+             webp/nora-al-badri_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/nora-al-badri_04-original.webp"
+    alt=""
+    width="1200"
+    height="1600"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── open-occupy_01 ── original : 1500×785px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/open-occupy_01-400w.webp 400w,
+             webp/open-occupy_01-800w.webp 800w,
+             webp/open-occupy_01-1200w.webp 1200w,
+             webp/open-occupy_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/open-occupy_01-original.webp"
+    alt=""
+    width="1200"
+    height="628"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── quasi-objects_01 ── original : 1500×920px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/quasi-objects_01-400w.webp 400w,
+             webp/quasi-objects_01-800w.webp 800w,
+             webp/quasi-objects_01-1200w.webp 1200w,
+             webp/quasi-objects_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/quasi-objects_01-original.webp"
+    alt=""
+    width="1200"
+    height="736"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── raumlaborberlin_01 ── original : 965×643px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/raumlaborberlin_01-400w.webp 400w,
+             webp/raumlaborberlin_01-800w.webp 800w,
+             webp/raumlaborberlin_01-original.webp 965w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/raumlaborberlin_01-original.webp"
+    alt=""
+    width="800"
+    height="533"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── raumlaborberlin_02 ── original : 1353×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/raumlaborberlin_02-400w.webp 400w,
+             webp/raumlaborberlin_02-800w.webp 800w,
+             webp/raumlaborberlin_02-1200w.webp 1200w,
+             webp/raumlaborberlin_02-original.webp 1353w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/raumlaborberlin_02-original.webp"
+    alt=""
+    width="1200"
+    height="1816"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── raumlaborberlin_03 ── original : 1500×1012px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/raumlaborberlin_03-400w.webp 400w,
+             webp/raumlaborberlin_03-800w.webp 800w,
+             webp/raumlaborberlin_03-1200w.webp 1200w,
+             webp/raumlaborberlin_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/raumlaborberlin_03-original.webp"
+    alt=""
+    width="1200"
+    height="809"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── raumlaborberlin_04 ── original : 1365×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/raumlaborberlin_04-400w.webp 400w,
+             webp/raumlaborberlin_04-800w.webp 800w,
+             webp/raumlaborberlin_04-1200w.webp 1200w,
+             webp/raumlaborberlin_04-original.webp 1365w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/raumlaborberlin_04-original.webp"
+    alt=""
+    width="1200"
+    height="1800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── rilaben_01 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/rilaben_01-400w.webp 400w,
+             webp/rilaben_01-800w.webp 800w,
+             webp/rilaben_01-1200w.webp 1200w,
+             webp/rilaben_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/rilaben_01-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── roland-boden_01 ── original : 1500×1099px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/roland-boden_01-400w.webp 400w,
+             webp/roland-boden_01-800w.webp 800w,
+             webp/roland-boden_01-1200w.webp 1200w,
+             webp/roland-boden_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/roland-boden_01-original.webp"
+    alt=""
+    width="1200"
+    height="879"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── roland-boden_02 ── original : 1500×1127px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/roland-boden_02-400w.webp 400w,
+             webp/roland-boden_02-800w.webp 800w,
+             webp/roland-boden_02-1200w.webp 1200w,
+             webp/roland-boden_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/roland-boden_02-original.webp"
+    alt=""
+    width="1200"
+    height="901"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── roland-boden_03 ── original : 1500×1001px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/roland-boden_03-400w.webp 400w,
+             webp/roland-boden_03-800w.webp 800w,
+             webp/roland-boden_03-1200w.webp 1200w,
+             webp/roland-boden_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/roland-boden_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ronald-de-bloeme_01 ── original : 1417×945px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ronald-de-bloeme_01-400w.webp 400w,
+             webp/ronald-de-bloeme_01-800w.webp 800w,
+             webp/ronald-de-bloeme_01-1200w.webp 1200w,
+             webp/ronald-de-bloeme_01-original.webp 1417w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ronald-de-bloeme_01-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ronald-de-bloeme_02 ── original : 1024×690px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ronald-de-bloeme_02-400w.webp 400w,
+             webp/ronald-de-bloeme_02-800w.webp 800w,
+             webp/ronald-de-bloeme_02-original.webp 1024w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ronald-de-bloeme_02-original.webp"
+    alt=""
+    width="800"
+    height="539"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ronald-de-bloeme_03 ── original : 1440×960px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ronald-de-bloeme_03-400w.webp 400w,
+             webp/ronald-de-bloeme_03-800w.webp 800w,
+             webp/ronald-de-bloeme_03-1200w.webp 1200w,
+             webp/ronald-de-bloeme_03-original.webp 1440w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ronald-de-bloeme_03-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ronald-de-bloeme_04 ── original : 1500×998px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ronald-de-bloeme_04-400w.webp 400w,
+             webp/ronald-de-bloeme_04-800w.webp 800w,
+             webp/ronald-de-bloeme_04-1200w.webp 1200w,
+             webp/ronald-de-bloeme_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ronald-de-bloeme_04-original.webp"
+    alt=""
+    width="1200"
+    height="798"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ronald-de-bloeme_05 ── original : 1279×851px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ronald-de-bloeme_05-400w.webp 400w,
+             webp/ronald-de-bloeme_05-800w.webp 800w,
+             webp/ronald-de-bloeme_05-1200w.webp 1200w,
+             webp/ronald-de-bloeme_05-original.webp 1279w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ronald-de-bloeme_05-original.webp"
+    alt=""
+    width="1200"
+    height="798"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ronald-de-bloeme_06 ── original : 1187×929px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ronald-de-bloeme_06-400w.webp 400w,
+             webp/ronald-de-bloeme_06-800w.webp 800w,
+             webp/ronald-de-bloeme_06-original.webp 1187w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ronald-de-bloeme_06-original.webp"
+    alt=""
+    width="800"
+    height="626"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── ronald-de-bloeme_07 ── original : 1280×767px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/ronald-de-bloeme_07-400w.webp 400w,
+             webp/ronald-de-bloeme_07-800w.webp 800w,
+             webp/ronald-de-bloeme_07-1200w.webp 1200w,
+             webp/ronald-de-bloeme_07-original.webp 1280w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/ronald-de-bloeme_07-original.webp"
+    alt=""
+    width="1200"
+    height="719"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── s-nke-hallmann_01 ── original : 960×1280px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/s-nke-hallmann_01-400w.webp 400w,
+             webp/s-nke-hallmann_01-800w.webp 800w,
+             webp/s-nke-hallmann_01-original.webp 960w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/s-nke-hallmann_01-original.webp"
+    alt=""
+    width="800"
+    height="1066"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── s-nke-hallmann_02 ── original : 1280×960px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/s-nke-hallmann_02-400w.webp 400w,
+             webp/s-nke-hallmann_02-800w.webp 800w,
+             webp/s-nke-hallmann_02-1200w.webp 1200w,
+             webp/s-nke-hallmann_02-original.webp 1280w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/s-nke-hallmann_02-original.webp"
+    alt=""
+    width="1200"
+    height="900"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sheree-domingo_01 ── original : 1500×964px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sheree-domingo_01-400w.webp 400w,
+             webp/sheree-domingo_01-800w.webp 800w,
+             webp/sheree-domingo_01-1200w.webp 1200w,
+             webp/sheree-domingo_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sheree-domingo_01-original.webp"
+    alt=""
+    width="1200"
+    height="771"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sheree-domingo_02 ── original : 960×960px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sheree-domingo_02-400w.webp 400w,
+             webp/sheree-domingo_02-800w.webp 800w,
+             webp/sheree-domingo_02-original.webp 960w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sheree-domingo_02-original.webp"
+    alt=""
+    width="800"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sheree-domingo_03 ── original : 1280×907px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sheree-domingo_03-400w.webp 400w,
+             webp/sheree-domingo_03-800w.webp 800w,
+             webp/sheree-domingo_03-1200w.webp 1200w,
+             webp/sheree-domingo_03-original.webp 1280w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sheree-domingo_03-original.webp"
+    alt=""
+    width="1200"
+    height="850"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sheree-domingo_04 ── original : 853×1280px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sheree-domingo_04-400w.webp 400w,
+             webp/sheree-domingo_04-800w.webp 800w,
+             webp/sheree-domingo_04-original.webp 853w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sheree-domingo_04-original.webp"
+    alt=""
+    width="800"
+    height="1200"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sophia-elstermann_01 ── original : 1500×680px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sophia-elstermann_01-400w.webp 400w,
+             webp/sophia-elstermann_01-800w.webp 800w,
+             webp/sophia-elstermann_01-1200w.webp 1200w,
+             webp/sophia-elstermann_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sophia-elstermann_01-original.webp"
+    alt=""
+    width="1200"
+    height="544"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sophia-elstermann_02 ── original : 1500×635px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sophia-elstermann_02-400w.webp 400w,
+             webp/sophia-elstermann_02-800w.webp 800w,
+             webp/sophia-elstermann_02-1200w.webp 1200w,
+             webp/sophia-elstermann_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sophia-elstermann_02-original.webp"
+    alt=""
+    width="1200"
+    height="508"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sophia-elstermann_03 ── original : 1420×2048px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sophia-elstermann_03-400w.webp 400w,
+             webp/sophia-elstermann_03-800w.webp 800w,
+             webp/sophia-elstermann_03-1200w.webp 1200w,
+             webp/sophia-elstermann_03-original.webp 1420w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sophia-elstermann_03-original.webp"
+    alt=""
+    width="1200"
+    height="1730"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sophia-elstermann_04 ── original : 1500×1054px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sophia-elstermann_04-400w.webp 400w,
+             webp/sophia-elstermann_04-800w.webp 800w,
+             webp/sophia-elstermann_04-1200w.webp 1200w,
+             webp/sophia-elstermann_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sophia-elstermann_04-original.webp"
+    alt=""
+    width="1200"
+    height="843"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sophia-elstermann_05 ── original : 1500×3500px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sophia-elstermann_05-400w.webp 400w,
+             webp/sophia-elstermann_05-800w.webp 800w,
+             webp/sophia-elstermann_05-1200w.webp 1200w,
+             webp/sophia-elstermann_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sophia-elstermann_05-original.webp"
+    alt=""
+    width="1200"
+    height="2800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── sophia-elstermann_06 ── original : 1500×1082px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/sophia-elstermann_06-400w.webp 400w,
+             webp/sophia-elstermann_06-800w.webp 800w,
+             webp/sophia-elstermann_06-1200w.webp 1200w,
+             webp/sophia-elstermann_06-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/sophia-elstermann_06-original.webp"
+    alt=""
+    width="1200"
+    height="865"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── stephan-kurr_01 ── original : 1500×1000px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/stephan-kurr_01-400w.webp 400w,
+             webp/stephan-kurr_01-800w.webp 800w,
+             webp/stephan-kurr_01-1200w.webp 1200w,
+             webp/stephan-kurr_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/stephan-kurr_01-original.webp"
+    alt=""
+    width="1200"
+    height="800"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── stephan-kurr_02 ── original : 1500×975px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/stephan-kurr_02-400w.webp 400w,
+             webp/stephan-kurr_02-800w.webp 800w,
+             webp/stephan-kurr_02-1200w.webp 1200w,
+             webp/stephan-kurr_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/stephan-kurr_02-original.webp"
+    alt=""
+    width="1200"
+    height="780"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── stephan-kurr_03 ── original : 1500×1056px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/stephan-kurr_03-400w.webp 400w,
+             webp/stephan-kurr_03-800w.webp 800w,
+             webp/stephan-kurr_03-1200w.webp 1200w,
+             webp/stephan-kurr_03-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/stephan-kurr_03-original.webp"
+    alt=""
+    width="1200"
+    height="844"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── stephan-kurr_04 ── original : 1500×1031px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/stephan-kurr_04-400w.webp 400w,
+             webp/stephan-kurr_04-800w.webp 800w,
+             webp/stephan-kurr_04-1200w.webp 1200w,
+             webp/stephan-kurr_04-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/stephan-kurr_04-original.webp"
+    alt=""
+    width="1200"
+    height="824"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── stephan-kurr_05 ── original : 1500×669px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/stephan-kurr_05-400w.webp 400w,
+             webp/stephan-kurr_05-800w.webp 800w,
+             webp/stephan-kurr_05-1200w.webp 1200w,
+             webp/stephan-kurr_05-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/stephan-kurr_05-original.webp"
+    alt=""
+    width="1200"
+    height="535"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── wolfgang-schlegel_01 ── original : 1500×1004px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/wolfgang-schlegel_01-400w.webp 400w,
+             webp/wolfgang-schlegel_01-800w.webp 800w,
+             webp/wolfgang-schlegel_01-1200w.webp 1200w,
+             webp/wolfgang-schlegel_01-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/wolfgang-schlegel_01-original.webp"
+    alt=""
+    width="1200"
+    height="803"
+    loading="lazy"
+  />
+</picture>
+
+<!-- ── wolfgang-schlegel_02 ── original : 1500×1040px ── -->
+<picture>
+  <source
+    type="image/webp"
+    srcset="webp/wolfgang-schlegel_02-400w.webp 400w,
+             webp/wolfgang-schlegel_02-800w.webp 800w,
+             webp/wolfgang-schlegel_02-1200w.webp 1200w,
+             webp/wolfgang-schlegel_02-original.webp 1500w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 1200px"
+  />
+  <!-- Fallback pour navigateurs sans support WebP -->
+  <img
+    src="webp/wolfgang-schlegel_02-original.webp"
+    alt=""
+    width="1200"
+    height="832"
+    loading="lazy"
+  />
+</picture>

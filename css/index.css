@@ -206,12 +206,12 @@
   transform: scale(1.05);
 }
 .cell:has(.citation):hover .citation span {
-  font-variation-settings: 'SPOT' 900;
+  font-weight:  900;
 }
 
 /* Citation */
 .cell .citation {
-  font-family: "Flutgraben Spot", serif;
+  font-family: "Flutgraben", serif;
   font-size: var(--fs-h1);
   line-height: 0.88;
   letter-spacing: -0.01em;

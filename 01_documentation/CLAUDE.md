@@ -192,6 +192,28 @@ function scatterDots(cx, cy, radius, count) { ... }
 - Comment non-obvious logic, especially math related to rendering, grain, or geometry
 - Use `const` by default, `let` only when reassignment is needed, never `var`
 
+## Page types
+
+The site has two distinct page structures. Never apply interior-page patterns to `index.html`, and never omit them from interior pages.
+
+### `index.html` — Landing page
+
+Unique layout, not derived from any shared template. Has its own structure and CSS. The header is present and shared with all other pages.
+
+### Interior pages — all pages except `index.html`
+
+All non-landing pages follow a shared template defined in `css/interior.css`. Every interior page includes:
+
+| Element | Description |
+|---------|-------------|
+| Header | Shared with `index.html` |
+| `bg-grid` | Decorative 4×4 ochre grid, `position: absolute`, `z-index: 0` |
+| `gif-anchor` | Fixed circle bottom-right, mailto link |
+| `subnav-bar` | Segmented button navigation, specific to each section |
+| `details.row-item` | Expandable content rows — the core list primitive |
+
+---
+
 ## Global UI Patterns
 
 These elements appear on every interior page (all pages except `index.html`). They are defined in `css/style.css` and their JS (where applicable) lives in `js/`.
@@ -275,8 +297,10 @@ The expandable content row is the core UI primitive for all list-based interior 
 - Multiple images stack vertically inside `.row-photo` — each `<picture>` snaps into view (`scroll-snap-align: start`)
 - Prepare responsive images at 400w/800w/1200w/1920w variants; crop to landscape when the source is portrait to avoid excessive scroll height
 - `.row-text` is always required inside `.row-body` — even when empty (use a placeholder comment)
+- `.row-text` must be fully closed (`</div>`) before `.row-photo` opens — they are siblings inside `.row-body`, not nested
 - Omit `.row-photo` if not needed — the layout degrades cleanly to single-column text
 - **Never duplicate links** between `row-meta` and `row-body` — links belong in `row-meta` only (always visible), not repeated inside the expanded body
+- The last `.row-item` in any list carries `margin-bottom: 33.33vh` — ensures the final row can scroll to a comfortable reading position
 
 ### `row-meta` and `row-date` — per-section conventions
 
