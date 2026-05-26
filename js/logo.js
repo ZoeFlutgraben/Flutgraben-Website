@@ -9,6 +9,11 @@
     "elephant_souris.svg",
     "kartofel.svg",
     "keep_on.svg",
+    "birds.svg",
+    "bonhomme2.svg",
+    "bonhomme3.svg",
+    "fille_bombe.svg",
+    "lapin.svg",
   ];
   function init() {
     document.querySelectorAll("[data-random-svg]").forEach((el) => {

@@ -1,0 +1,67 @@
+CURSOR AUDIT — Flutgraben website
+2026-05-26
+=====================================
+
+ÉTAT ACTUEL (après résolution de la cascade CSS)
+
+Élément                          | Pages       | Curseur rendu          | Source
+---------------------------------|-------------|------------------------|-----------------------------------------------
+Fond de page (défaut)            | Toutes      | Pixel SVG rust         | flutgraben.css — html, body
+<a>, <button>, .clickable        | Toutes      | Pixel SVG ochre        | flutgraben.css — global
+.gif-anchor (le cercle)          | Interior    | default                | interior.css — réinitialise le global
+.back-to-top                     | Interior    | pointer natif          | interior.css — ÉCRASE le pixel ochre du global
+.subnav-item                     | Interior    | pointer natif          | interior.css — ÉCRASE le pixel ochre du global
+.archive-year                    | Interior    | pointer natif          | interior.css — ÉCRASE le pixel ochre du global
+details.row-item > summary       | Interior    | pointer natif          | interior.css — summary n'est pas un <button>
+.residents-search-clear          | Das Haus    | pointer natif          | interior.css — ÉCRASE le pixel ochre du global
+.row-photo img                   | Das Haus    | zoom-in natif          | interior.css — spécifique lightbox
+#lightbox-prev, #lightbox-next   | Das Haus    | pointer natif          | interior.css — ÉCRASE le pixel ochre du global
+#lightbox-close                  | Das Haus    | Pixel SVG ochre        | interior.css — explicitement défini
+
+
+INCOHÉRENCES
+
+Les boutons suivants sont des <button> et devraient hériter du pixel ochre
+via la règle globale "a, button, .clickable" dans flutgraben.css,
+mais sont écrasés par cursor: pointer (natif) dans interior.css :
+
+  - .back-to-top
+  - .subnav-item
+  - .archive-year
+  - .residents-search-clear
+  - #lightbox-prev
+  - #lightbox-next
+
+Seul #lightbox-close a le pixel ochre correctement, car il le redéfinit explicitement.
+
+details > summary reçoit pointer natif — cohérent visuellement
+mais pas le pixel. summary n'étant pas un <button>, la règle globale
+ne s'applique pas.
+
+
+CURSEURS DISPONIBLES
+
+  Pixel rust  — défaut, fond de page, zones non interactives
+               fill: #573835 (var --rust), stroke: #e5e9ed (var --bg)
+
+  Pixel ochre — éléments interactifs (liens, boutons)
+               fill: #c17d4c (var --ochre), stroke: #e5e9ed (var --bg)
+
+  zoom-in     — images cliquables (.row-photo img)
+               curseur natif du navigateur
+
+  default     — .gif-anchor (reset volontaire sur le conteneur)
+
+
+QUESTIONS OUVERTES
+
+  1. Appliquer le pixel ochre à tous les boutons interior
+     (supprimer les cursor: pointer redondants) ?
+
+  2. Appliquer le pixel ochre à details > summary
+     (ajouter cursor: url(...) explicitement) ?
+
+  3. .row-photo img : garder zoom-in natif ou créer un pixel personnalisé ?
+
+  4. .gif-anchor : garder default ou basculer sur le pixel ochre
+     (la règle .gif-anchor-link <a> couvre déjà la zone cliquable) ?

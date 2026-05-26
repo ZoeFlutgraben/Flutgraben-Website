@@ -10,7 +10,6 @@
 <link rel="icon" type="image/svg+xml" href="ico/F_ico.svg" />
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
-<link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/interior.css" />
 <style>
   .gif-anchor::before { background-image: url('gifs/car_fixe.png'); }
@@ -42,7 +41,7 @@
       <span class="nav-label">Das Haus</span>
       <span class="nav-desc">the building</span>
     </a>
-    <a href="#" class="nav-item">
+    <a href="about.html" class="nav-item">
       <span class="nav-label">About</span>
       <span class="nav-desc">the organization</span>
     </a>
@@ -113,14 +112,17 @@
         <button class="subnav-item" data-section="accessibility">Accessibility</button>
       </nav>
       <!-- Search input — visible only on Residents tab -->
-      <input
-        type="search"
-        id="residents-search"
-        class="residents-search is-hidden"
-        placeholder="Search"
-        aria-label="Search residents"
-        autocomplete="off"
-      >
+      <div class="residents-search-wrap is-hidden">
+        <input
+          type="search"
+          id="residents-search"
+          class="residents-search"
+          placeholder="Search"
+          aria-label="Search residents"
+          autocomplete="off"
+        >
+        <button class="residents-search-clear" aria-label="Clear search">✕</button>
+      </div>
     </div>
 
     <!-- History — the building, its history, its spaces -->
@@ -1777,6 +1779,10 @@
           <span class="row-title">Elis Hannikainen</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -1785,6 +1791,10 @@
           <span class="row-title">Enrico Centonze</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -2149,6 +2159,10 @@
           <span class="row-title">Inga Zimprich</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -2535,6 +2549,10 @@
           <span class="row-title">Katharina Schoeller</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -2729,6 +2747,10 @@
           <span class="row-title">Manuel Klauser</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -3305,6 +3327,10 @@
           <span class="row-title">Natacha Le Duff</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -3379,6 +3405,10 @@
           <span class="row-title">Nino Bulling</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -3470,6 +3500,10 @@
           <span class="row-title">Olaf Holzapfel</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -3512,6 +3546,9 @@
           <span class="row-title">Pascal Stodieck</span>
           <div class="row-meta"></div>
         </summary>
+          <div class="row-body">
+            <div class="row-text"></div>
+          </div>
       </details>
 
       <details class="row-item">
@@ -3957,6 +3994,10 @@
           <span class="row-title">Sönke Hallmann</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -4084,6 +4125,10 @@
           <span class="row-title">Sphen Heinrich</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -4227,6 +4272,10 @@
           <span class="row-title">Ute Ringel</span>
           <div class="row-meta"></div>
         </summary>
+         <div class="row-body">
+          <div class="row-text">            <!-- no bio available -->
+          </div>
+        </div>
       </details>
 
       <details class="row-item">
@@ -4482,11 +4531,62 @@
   </div>
 </main>
 
+<!-- ===================== LIGHTBOX ===================== -->
+<dialog id="lightbox">
+  <button id="lightbox-prev" aria-label="Previous image">←</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-next" aria-label="Next image">→</button>
+  <button id="lightbox-close" aria-label="Close">✕</button>
+</dialog>
+
 <script src="js/logo.js"></script>
 <script src="js/trail.js"></script>
 <script src="js/back-to-top.js"></script>
 <script>
   const searchInput = document.getElementById('residents-search');
+  const searchWrap  = document.querySelector('.residents-search-wrap');
+  const searchClear = document.querySelector('.residents-search-clear');
+
+  // Lightbox — open on .row-photo img click, navigate between sibling images, close on backdrop or button
+  const lightbox     = document.getElementById('lightbox');
+  const lightboxImg  = document.getElementById('lightbox-img');
+  const lightboxPrev = document.getElementById('lightbox-prev');
+  const lightboxNext = document.getElementById('lightbox-next');
+  let lightboxImgs = [];
+  let lightboxIdx  = 0;
+
+  // Update displayed image and hide arrows at list boundaries
+  function lightboxShow(idx) {
+    lightboxImg.src = lightboxImgs[idx].src;
+    lightboxImg.alt = lightboxImgs[idx].alt;
+    lightboxPrev.style.visibility = idx > 0 ? 'visible' : 'hidden';
+    lightboxNext.style.visibility = idx < lightboxImgs.length - 1 ? 'visible' : 'hidden';
+  }
+
+  // On click, collect all images from the same .row-photo and open at the clicked index
+  document.querySelectorAll('.row-photo img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImgs = [...img.closest('.row-photo').querySelectorAll('img')];
+      lightboxIdx  = lightboxImgs.indexOf(img);
+      lightboxShow(lightboxIdx);
+      lightbox.showModal();
+    });
+  });
+
+  lightboxPrev.addEventListener('click', () => { if (lightboxIdx > 0) lightboxShow(--lightboxIdx); });
+  lightboxNext.addEventListener('click', () => { if (lightboxIdx < lightboxImgs.length - 1) lightboxShow(++lightboxIdx); });
+
+  // Keyboard navigation — ArrowLeft / ArrowRight when lightbox is open
+  document.addEventListener('keydown', e => {
+    if (!lightbox.open) return;
+    if (e.key === 'ArrowLeft'  && lightboxIdx > 0) lightboxShow(--lightboxIdx);
+    if (e.key === 'ArrowRight' && lightboxIdx < lightboxImgs.length - 1) lightboxShow(++lightboxIdx);
+  });
+
+  // Click on the backdrop (dialog element itself, not its contents) closes it
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.close(); });
+
+  document.getElementById('lightbox-close').addEventListener('click', () => lightbox.close());
 
   // Switch between Das Haus sub-sections and toggle resident search
   document.querySelectorAll('.subnav-item').forEach(btn => {
@@ -4498,22 +4598,32 @@
 
       // Show search only on Residents tab; reset filter when leaving
       if (btn.dataset.section === 'residents') {
-        searchInput.classList.remove('is-hidden');
+        searchWrap.classList.remove('is-hidden');
       } else {
-        searchInput.classList.add('is-hidden');
+        searchWrap.classList.add('is-hidden');
         searchInput.value = '';
+        searchWrap.classList.remove('has-value');
         document.querySelectorAll('#residents details.row-item').forEach(d => d.style.display = '');
       }
     });
   });
 
-  // Filter resident rows by name on each keystroke
+  // Filter resident rows by name on each keystroke; toggle clear button visibility
   searchInput.addEventListener('input', () => {
     const query = searchInput.value.toLowerCase().trim();
+    searchWrap.classList.toggle('has-value', searchInput.value.length > 0);
     document.querySelectorAll('#residents details.row-item').forEach(detail => {
       const name = detail.querySelector('.row-title').textContent.toLowerCase();
       detail.style.display = name.includes(query) ? '' : 'none';
     });
+  });
+
+  // Clear button — reset input, filter, and has-value state
+  searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    searchWrap.classList.remove('has-value');
+    document.querySelectorAll('#residents details.row-item').forEach(d => d.style.display = '');
+    searchInput.focus();
   });
 </script>
 </body>

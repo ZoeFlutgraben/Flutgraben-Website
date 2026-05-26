@@ -214,18 +214,54 @@ All non-landing pages follow a shared template defined in `css/interior.css`. Ev
 
 ---
 
+## CSS file structure
+
+| File | Scope | Contains |
+|------|-------|---------|
+| `css/flutgraben.css` | All pages | Tokens, fonts, `html`/`body`/`main` layout, global reset, `.tags`, `.tag`, `.wip` |
+| `css/header.css` | All pages | Topbar, nav, lang switcher |
+| `css/interior.css` | Interior pages only | `bg-grid`, `gif-anchor`, `back-to-top`, `page-content`, `subnav`, `row-item`, lightbox |
+| `css/index.css` | `index.html` only | Landing page grid and cell styles |
+| `css/impressum.css` | `impressum.html` only | Impressum-specific layout |
+
+`css/style.css` no longer exists — its content was split into `flutgraben.css` (global rules) and `interior.css` (shared interior patterns) in May 2026.
+
 ## Global UI Patterns
 
-These elements appear on every interior page (all pages except `index.html`). They are defined in `css/style.css` and their JS (where applicable) lives in `js/`.
+These elements appear on every interior page (all pages except `index.html`). CSS lives in `css/interior.css`; JS (where applicable) in `js/`.
 
 | Pattern | Element | File(s) | Notes |
 |---------|---------|---------|-------|
-| Background grid | `<div class="bg-grid">` + 16× `<div class="bg-cell">` | `css/style.css` | Decorative 4×4 ochre grid, `position: absolute`, `z-index: 0` |
-| GIF anchor | see HTML below | `css/style.css` | Fixed circle bottom-right. GIF src set via `<style>` inline per page. Contains a curved SVG label + full-circle mailto link. |
-| Back to top | `<button class="back-to-top" aria-label="Back to top">↑</button>` | `css/style.css`, `js/back-to-top.js` | Appears after 150px scroll, centered above gif-anchor. Script auto-detects scroll container (`.page-content` or `.impressum-outer`) |
-| Residents search | `<input class="residents-search" type="search" placeholder="Search…" aria-label="Search residents">` | `css/interior.css` | **Das Haus only — Residents tab.** Lives in the right slot of `.subnav-bar`. Hidden via `.is-hidden` (visibility: hidden) when another tab is active. |
+| Background grid | `<div class="bg-grid">` + 16× `<div class="bg-cell">` | `css/interior.css` | Decorative 4×4 ochre grid, `position: absolute`, `z-index: 0` |
+| GIF anchor | see HTML below | `css/interior.css` | Fixed circle bottom-right. GIF src set via `<style>` inline per page. Contains a curved SVG label + full-circle mailto link. |
+| Back to top | `<button class="back-to-top" aria-label="Back to top">↑</button>` | `css/interior.css`, `js/back-to-top.js` | Appears after 150px scroll, centered above gif-anchor. Script auto-detects scroll container (`.page-content` or `.impressum-outer`) |
+| Residents search | see HTML below | `css/interior.css` | **Das Haus only — Residents tab.** Lives in the right slot of `.subnav-bar`. The wrapper `.residents-search-wrap` carries `.is-hidden` (visibility: hidden) when another tab is active, `.has-value` when the input is non-empty (shows clear button). |
+| Lightbox | `<dialog id="lightbox">` — see HTML below | `css/interior.css`, inline `<script>` | **Pages with `.row-photo` images.** Click image to open fullscreen; navigate with arrows or ← → keys; close with ✕ button, backdrop click, or Échap. |
 
-When adding a new interior page: include all three elements in the HTML and add `<script src="js/back-to-top.js"></script>`.
+When adding a new interior page: include bg-grid, gif-anchor, back-to-top in the HTML and add `<script src="js/back-to-top.js"></script>`. Add the lightbox dialog and JS only on pages that use `.row-photo`.
+
+### Residents search — full pattern
+
+```html
+<!-- Right slot of .subnav-bar — Das Haus only -->
+<div class="residents-search-wrap is-hidden">
+  <input
+    type="search"
+    id="residents-search"
+    class="residents-search"
+    placeholder="Search"
+    aria-label="Search residents"
+    autocomplete="off"
+  >
+  <button class="residents-search-clear" aria-label="Clear search">✕</button>
+</div>
+```
+
+JS (inline `<script>` at bottom of page):
+- `is-hidden` toggled on `.residents-search-wrap` (not the input) — controls visibility
+- `has-value` added to wrapper on each keystroke when input is non-empty — shows clear button
+- Clear button resets input value, removes `has-value`, restores all hidden rows, and refocuses input
+- On leaving Residents tab: input cleared, `has-value` removed, all rows shown
 
 ### GIF anchor — full pattern
 
@@ -236,7 +272,7 @@ When adding a new interior page: include all three elements in the HTML and add 
     <path id="gif-circle-path" d="M 15,75 A 60,60 0 1,1 135,75" fill="none" />
     <text>
       <textPath href="#gif-circle-path" startOffset="50%" text-anchor="middle">
-        write us →
+        contact@flutgraben.org
       </textPath>
     </text>
   </svg>
@@ -245,10 +281,34 @@ When adding a new interior page: include all three elements in the HTML and add 
 ```
 
 - The SVG `viewBox` stays at `0 0 150 150` regardless of the rendered CSS size — it scales automatically
-- The `<textPath>` text content can vary per page (e.g. `write us →`, `contact@flutgraben.org`)
+- The `<textPath>` text content is `contact@flutgraben.org` on all pages
 - `.gif-anchor-link` is a transparent full-circle overlay — the entire bubble is clickable, not just the text
 - The GIF image is set via inline `<style>` in each page (`.gif-anchor::before` and `:hover::before`)
-- Hover: text shifts from ochre → rust with slight letter-spacing expansion (defined in `style.css`)
+- Hover: text shifts from ochre → rust with slight letter-spacing expansion (defined in `css/interior.css`)
+
+### Lightbox — full pattern
+
+```html
+<!-- Single instance per page, placed before </body> -->
+<dialog id="lightbox">
+  <button id="lightbox-prev" aria-label="Previous image">←</button>
+  <img id="lightbox-img" src="" alt="">
+  <button id="lightbox-next" aria-label="Next image">→</button>
+  <button id="lightbox-close" aria-label="Close">✕</button>
+</dialog>
+```
+
+JS (inline `<script>` at bottom of page):
+- Click on `.row-photo img` → collects all sibling images from the same `.row-photo`, opens the dialog at the clicked index via `showModal()`
+- `←` / `→` buttons and `ArrowLeft` / `ArrowRight` keys navigate within the set
+- Prev/next arrows hide automatically at list boundaries (`visibility: hidden`)
+- Backdrop click or `✕` button closes the dialog; Échap is handled natively by `<dialog>`
+- `.row-photo img` carries `cursor: zoom-in` to signal the interaction
+
+**Rules:**
+- One `<dialog id="lightbox">` per page — never duplicate
+- Only add it on pages that use `.row-photo` images
+- CSS in `css/interior.css`; JS is page-specific (inline), not a shared script
 
 ## Row item pattern
 

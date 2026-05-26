@@ -2,6 +2,117 @@
 
 @keyframes flow { to { stroke-dashoffset: -140; } }
 
+/* Background grid — decorative 4×4 ochre grid, position: absolute, z-index: 0 */
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3px;
+  padding: 20px 30px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-cell {
+  background: var(--ochre);
+  opacity: 0.1;
+  min-width: 0;
+}
+
+/* GIF anchor — decorative circle, fixed bottom-right, shared across interior pages */
+.gif-anchor {
+  position: fixed;
+  bottom: 40px;
+  right: 80px;
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+  background: var(--bg);
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 0 0 1.5px var(--rust);
+  pointer-events: auto;
+  cursor: default;
+}
+
+/* ::before carries the GIF so the filter doesn't bleed onto the ring */
+.gif-anchor::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
+}
+
+/* SVG curved label inside gif-anchor — follows the circle arc */
+.gif-anchor-label {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gif-anchor-label text {
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  fill: var(--ochre);
+  transition: fill .15s, letter-spacing .15s;
+}
+
+/* Full-circle transparent link — makes the whole gif-anchor clickable */
+.gif-anchor-link {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Hover — text shifts toward rust with slight spacing expansion */
+.gif-anchor:hover .gif-anchor-label text {
+  fill: var(--rust);
+  letter-spacing: 0.3em;
+}
+
+/* Back to top — fixed, centered above gif-anchor, appears after 150px scroll */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  left: calc((clamp(180px, 18vw, 260px) + 100vw) / 2);
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--rust);
+  background: var(--bg);
+  border: var(--border) solid var(--rust);
+  cursor: pointer;
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s, background .12s, color .12s;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  background: var(--rust);
+  color: var(--bg);
+}
 
 /* Content — layered on top of grid */
 .page-content {
@@ -281,3 +392,107 @@ details.row-item > summary .row-meta .tag:hover {
 .residents-search-clear:hover { color: var(--rust); }
 
 .residents-search-wrap.has-value .residents-search-clear { display: block; }
+
+/* ─── Lightbox — native <dialog> for .row-photo images ─── */
+
+/* zoom-in cursor signals click-to-enlarge affordance */
+.row-photo img {
+  cursor: zoom-in;
+}
+
+/* Dialog backdrop — warm rust veil */
+#lightbox::backdrop {
+  background: var(--skytransparent);
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+@starting-style {
+  #lightbox::backdrop { opacity: 0; }
+}
+
+/* Dialog container — off-white, slim rust outline, no padding */
+#lightbox {
+  background: var(--bg);
+  border: none;
+  outline: var(--border) solid var(--rust);
+  padding: 0;
+  margin: auto;
+  max-width: 92vw;
+  max-height: 92vh;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+@starting-style {
+  #lightbox { opacity: 0; }
+}
+
+/* Image — natural proportions, never overflows */
+#lightbox img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Prev / next arrows — vertically centered on left and right edges */
+#lightbox-prev,
+#lightbox-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--rust);
+  background: var(--bg);
+  border: var(--border) solid var(--rust);
+  cursor: pointer;
+  z-index: 10;
+  transition: background .12s, color .12s;
+}
+
+#lightbox-prev { left: 24px; }
+#lightbox-next { right: 24px; }
+
+#lightbox-prev:hover,
+#lightbox-next:hover {
+  background: var(--ochre);
+  border-color: var(--ochre);
+  color: var(--bg);
+}
+
+/* Close button — matches back-to-top sizing and typographic language */
+#lightbox-close {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 36px;
+  height: 36px;
+  font-family: "DINish", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--rust);
+  background: var(--bg);
+  border: var(--border) solid var(--rust);
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='0.5'/></svg>") 2 1, pointer;
+  z-index: 10;
+  transition: background .12s, color .12s;
+}
+
+#lightbox-close:hover {
+  background: var(--ochre);
+  border-color: var(--ochre);
+  color: var(--bg);
+}
