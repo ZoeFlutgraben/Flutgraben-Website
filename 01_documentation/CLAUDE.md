@@ -284,6 +284,7 @@ JS (inline `<script>` at bottom of page):
 - The `<textPath>` text content is `contact@flutgraben.org` on all pages
 - `.gif-anchor-link` is a transparent full-circle overlay — the entire bubble is clickable, not just the text
 - The GIF image is set via inline `<style>` in each page (`.gif-anchor::before` and `:hover::before`)
+- Static image uses `background-size: 105%` (slightly enlarged, slight edge crop) — hover GIF reverts to `contain` (defined in `css/interior.css`)
 - Hover: text shifts from ochre → rust with slight letter-spacing expansion (defined in `css/interior.css`)
 
 ### Lightbox — full pattern

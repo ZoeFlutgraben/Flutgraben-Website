@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eddies Flutgraben</title>
+<meta name="description" content="Flutgraben e.V. — everything that orbits the space" />
+<meta name="author" content="Zoé Berthelot @Neutronzoo">
+<link rel="icon" type="image/svg+xml" href="ico/F_ico.svg" />
+<link rel="stylesheet" href="css/flutgraben.css" />
+<link rel="stylesheet" href="css/header.css" />
+<link rel="stylesheet" href="css/interior.css" />
+<style>
+  /* Placeholder — replace with a dedicated gif when available */
+  .gif-anchor::before { background-image: url('image/gifs/stars-fixe.png'); }
+  .gif-anchor:hover::before { background-image: url('image/gifs/stars.gif'); }
+  @media (prefers-reduced-motion: reduce) {
+    .gif-anchor:hover::before { background-image: url('image/gifs/stars-fixe.png'); }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== SIDEBAR ===================== -->
+<header class="topbar">
+
+  <a href="index.html" class="logo">
+    <img src="image/logos/26-05-06_Logo_Flutgraben_DINish.svg" alt="Flutgraben">
+  </a>
+
+  <nav class="nav">
+    <a href="spree.html" class="nav-item">
+      <span class="nav-label">Spree</span>
+      <span class="nav-desc">events & programming</span>
+    </a>
+    <a href="eddies.html" class="nav-item is-active">
+      <span class="nav-label">Eddies</span>
+      <span class="nav-desc">orbit & community</span>
+    </a>
+    <a href="das-haus.html" class="nav-item">
+      <span class="nav-label">Das Haus</span>
+      <span class="nav-desc">the building</span>
+    </a>
+    <a href="about.html" class="nav-item">
+      <span class="nav-label">About</span>
+      <span class="nav-desc">the organization</span>
+    </a>
+    <a href="#" class="nav-item wip">
+      <span class="nav-label">Bazar</span>
+      <span class="nav-desc">to be continued</span>
+    </a>
+  </nav>
+
+  <div class="header-svg" data-random-svg>
+    <img>
+  </div>
+
+  <div class="lang-side">
+    <div class="lang">
+      <a href="#" class="lang-item lang-item--active">EN</a>
+      <a href="#" class="lang-item">DE</a>
+      <a href="#" class="lang-item">AR</a>
+    </div>
+  </div>
+  <div class="impressum">
+    <a href="impressum.html">Impressum</a>
+  </div>
+
+</header>
+
+<!-- ===================== MAIN — EDDIES ===================== -->
+<main>
+
+  <!-- Decorative background grid -->
+  <div class="bg-grid">
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+    <div class="bg-cell"></div><div class="bg-cell"></div>
+  </div>
+
+  <!-- GIF anchor — bottom-right corner -->
+  <div class="gif-anchor">
+    <svg class="gif-anchor-label" viewBox="0 0 150 150" aria-hidden="true" focusable="false">
+      <!-- Circular path along which the text travels — bottom arc, clockwise -->
+      <path id="gif-circle-path" d="M 15,75 A 60,60 0 1,1 135,75" fill="none" />
+      <text>
+        <textPath href="#gif-circle-path" startOffset="50%" text-anchor="middle">
+          contact@flutgraben.org
+        </textPath>
+      </text>
+    </svg>
+    <a href="mailto:contact@flutgraben.org" class="gif-anchor-link" aria-label="Write us — contact@flutgraben.org"></a>
+  </div>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Content -->
+  <div class="page-content">
+
+    <!-- Sub-navigation -->
+    <div class="subnav-bar">
+      <nav class="subnav" aria-label="Eddies sections">
+        <button class="subnav-item is-active" data-section="overview">Overview</button>
+        <button class="subnav-item" data-section="moons">Moons</button>
+        <button class="subnav-item" data-section="canteen">Canteen</button>
+        <button class="subnav-item" data-section="rhizotype">Rhizotype</button>
+        <button class="subnav-item" data-section="friends">Friends</button>
+      </nav>
+    </div>
+
+    <!-- Overview — what Flutgraben generates and offers -->
+    <section class="row-section is-active" id="overview">
+      <details class="row-item" open>
+        <summary>
+          <span class="row-date">Community</span>
+          <span class="row-title">The Canteen</span>
+          <div class="row-meta">
+            <span class="tag ochre">Kanteen</span>
+            <span>every Tuesday</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Every Tuesday, an artist in residence cooks for the whole community. A shared table — open, pay-what-you-can, no reservation needed.</p>
+          </div>
+        </div>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Typography</span>
+          <span class="row-title">Rhizotype</span>
+          <div class="row-meta">
+            <span class="tag sky">Typeface</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>A display typeface developed by and for Flutgraben. Built from atomic circular elements — dots and spots whose edges dissolve outward like spray paint or halftone ink.</p>
+          </div>
+        </div>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Network</span>
+          <span class="row-title">Friends</span>
+          <div class="row-meta">
+            <span class="tag">Collaborators</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Partner organizations, friendly structures, and collaborators — the wider orbit of Flutgraben.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Moons — how to gravitate around Flutgraben -->
+    <section class="row-section" id="moons">
+      <details class="row-item" open>
+        <summary>
+          <span class="row-date">Residency</span>
+          <span class="row-title">Apply for a studio</span>
+          <div class="row-meta">
+            <span class="tag ochre">Open call</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Flutgraben offers studios to artists and practitioners. Open calls are published here and on our mailing list.</p>
+          </div>
+        </div>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Membership</span>
+          <span class="row-title">Become a member</span>
+          <div class="row-meta">
+            <span class="tag sky">Mitglied</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Flutgraben e.V. is a member-run association. Members shape the direction of the space, participate in the general assembly (MVV), and vote on decisions.</p>
+          </div>
+        </div>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Mailing list</span>
+          <span class="row-title">Stay in orbit</span>
+          <div class="row-meta">
+            <span class="tag">Newsletter</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Subscribe to the Flutgraben mailing list to receive updates on events, open calls, and community news.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Canteen — upcoming meals -->
+    <section class="row-section" id="canteen">
+      <details class="row-item" open>
+        <summary>
+          <span class="row-date">Tue 27 May · 19h</span>
+          <span class="row-title">Canteen with Aïcha N.</span>
+          <div class="row-meta">
+            <span class="tag ochre">Kanteen</span>
+            <span>kitchen · pay-what</span>
+          </div>
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Tue 03 Jun · 19h</span>
+          <span class="row-title">Canteen with Luca M.</span>
+          <div class="row-meta">
+            <span class="tag ochre">Kanteen</span>
+            <span>kitchen · pay-what</span>
+          </div>
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Tue 10 Jun · 19h</span>
+          <span class="row-title">Canteen with Yuki T.</span>
+          <div class="row-meta">
+            <span class="tag ochre">Kanteen</span>
+            <span>kitchen · pay-what</span>
+          </div>
+        </summary>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Tue 17 Jun · 19h</span>
+          <span class="row-title">Canteen — artist TBC</span>
+          <div class="row-meta">
+            <span class="tag ochre">Kanteen</span>
+            <span>kitchen · pay-what</span>
+          </div>
+        </summary>
+      </details>
+    </section>
+
+    <!-- Rhizotype — typeface presentation -->
+    <section class="row-section" id="rhizotype">
+      <details class="row-item" open>
+        <summary>
+          <span class="row-date">Origin</span>
+          <span class="row-title">A typeface born at Flutgraben</span>
+          <div class="row-meta">
+            <span class="tag sky">Display</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Rhizotype is a variable display typeface developed by and for Flutgraben. Its construction logic is geometric and modular — influenced by Bauhaus and Futura — but the visual result is organic and material.</p>
+            <p>Characters are built from atomic circular elements whose edges dissolve outward, suggesting connection and trans-individuality rather than isolated, self-contained forms.</p>
+          </div>
+        </div>
+      </details>
+      <details class="row-item">
+        <summary>
+          <span class="row-date">Use</span>
+          <span class="row-title">Variable axes</span>
+          <div class="row-meta">
+            <span class="tag">WGHT · SPOT · RECT</span>
+          </div>
+        </summary>
+        <div class="row-body">
+          <div class="row-text">
+            <p>Three variable axes: weight, spot density, and rectangular variant. The typeface is used across Flutgraben's visual identity — website, print, and event materials.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Friends — partner organizations (placeholder) -->
+    <section class="row-section" id="friends">
+      <p class="archive-placeholder">Coming soon.</p>
+    </section>
+
+  </div>
+</main>
+
+<script src="js/logo.js"></script>
+<script src="js/trail.js"></script>
+<script src="js/back-to-top.js"></script>
+<script>
+  // Switch between Eddies sub-sections
+  document.querySelectorAll('.subnav-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.subnav-item').forEach(b => b.classList.remove('is-active'));
+      document.querySelectorAll('.row-section').forEach(s => s.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      document.getElementById(btn.dataset.section).classList.add('is-active');
+    });
+  });
+</script>
+</body>
+</html>

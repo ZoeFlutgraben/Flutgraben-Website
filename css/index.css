@@ -85,19 +85,19 @@
 }
 
 /* GIF images — hover swap */
-.container article:nth-of-type(3)::before { background-image: url('../gifs/stars-fixe.png'); }
-.container article:nth-of-type(3):hover::before { background-image: url('../gifs/stars.gif'); }
+.container article:nth-of-type(3)::before { background-image: url('../image/index/stars-fixe.png'); }
+.container article:nth-of-type(3):hover::before { background-image: url('../image/index/stars.gif'); }
 
-.container article:nth-of-type(5)::before { background-image: url('../gifs/lhomme_heureux-fixe.png'); }
-.container article:nth-of-type(5):hover::before { background-image: url('../gifs/homme-heureux.gif'); }
+.container article:nth-of-type(5)::before { background-image: url('../image/index/lhomme_heureux-fixe.png'); }
+.container article:nth-of-type(5):hover::before { background-image: url('../image/index/homme-heureux.gif'); }
 
-.container article:nth-of-type(10)::before { background-image: url('../gifs/logo/logo-fixe.png'); }
-.container article:nth-of-type(10):hover::before { background-image: url('../gifs/logo/04-28_flutgraben.gif'); }
+.container article:nth-of-type(10)::before { background-image: url('../image/logos/logo-fixe.png'); }
+.container article:nth-of-type(10):hover::before { background-image: url('../image/logos/05-28_Flutgraben_gif.gif'); }
 
 @media (prefers-reduced-motion: reduce) {
-  .container article:nth-of-type(3):hover::before { background-image: url('../gifs/stars-fixe.png'); }
-  .container article:nth-of-type(5):hover::before { background-image: url('../gifs/lhomme_heureux-fixe.png'); }
-  .container article:nth-of-type(10):hover::before { background-image: url('../gifs/logo/logo-fixe.png'); }
+  .container article:nth-of-type(3):hover::before { background-image: url('../image/index/stars-fixe.png'); }
+  .container article:nth-of-type(5):hover::before { background-image: url('../image/index/lhomme_heureux-fixe.png'); }
+  .container article:nth-of-type(10):hover::before { background-image: url('../image/logos/logo-fixe.png'); }
 }
 
 /* Center utility */
