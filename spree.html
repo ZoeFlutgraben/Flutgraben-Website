@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
 <link rel="stylesheet" href="css/interior.css" />
+<link rel="stylesheet" href="css/spree.css" />
 <style>
   .gif-anchor::before { background-image: url('image/gifs/chapo_fixe.png'); }
   .gif-anchor:hover::before { background-image: url('image/gifs/chapo.gif'); }
@@ -28,11 +29,11 @@
   <nav class="nav">
     <a href="spree.html" class="nav-item is-active">
       <span class="nav-label">Spree</span>
-      <span class="nav-desc">events & programming</span>
+      <span class="nav-desc">events &amp; programming</span>
     </a>
     <a href="eddies.html" class="nav-item">
       <span class="nav-label">Eddies</span>
-      <span class="nav-desc">orbit & community</span>
+      <span class="nav-desc">orbit &amp; community</span>
     </a>
     <a href="das-haus.html" class="nav-item">
       <span class="nav-label">Das Haus</span>
@@ -80,11 +81,9 @@
     <div class="bg-cell"></div><div class="bg-cell"></div>
   </div>
 
-
   <!-- GIF anchor — bottom-right corner -->
   <div class="gif-anchor">
     <svg class="gif-anchor-label" viewBox="0 0 150 150" aria-hidden="true" focusable="false">
-      <!-- Circular path along which the text travels — bottom arc, clockwise -->
       <path id="gif-circle-path" d="M 15,75 A 60,60 0 1,1 135,75" fill="none" />
       <text>
         <textPath href="#gif-circle-path" startOffset="50%" text-anchor="middle">
@@ -106,195 +105,536 @@
         <button class="subnav-item is-active" data-section="in-flutgraben">In Flutgraben</button>
         <button class="subnav-item" data-section="downstream">Downstream →</button>
       </nav>
-      <div class="subnav-archive wip">
+      <div class="subnav-archive">
         <button class="subnav-item" data-section="archive">Archive ↓</button>
         <div class="archive-dropdown" aria-hidden="true">
+          <button class="archive-year" data-year="2025">2025</button>
           <button class="archive-year" data-year="2024">2024</button>
           <button class="archive-year" data-year="2023">2023</button>
           <button class="archive-year" data-year="2022">2022</button>
           <button class="archive-year" data-year="2021">2021</button>
+          <button class="archive-year" data-year="2020">2020</button>
+          <button class="archive-year" data-year="2019">2019</button>
         </div>
       </div>
     </div>
 
     <!-- Upstream — past events -->
     <section class="row-section" id="upstream">
-      <details class="row-item" open>
-        <summary>
-        <span class="row-date">Sat 03 May · 20h</span>
-        <span class="row-title">Night of open studios</span>
-        <div class="row-meta">
-          <span class="tag">Whole house</span>
-          <span>free · all spaces</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Wed 07 May · 19h</span>
-        <span class="row-title">Screening: Borders & Bodies</span>
-        <div class="row-meta">
-          <span class="tag sky">Screening</span>
-          <span>Hall 2</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Sat 10 May · 14h</span>
-        <span class="row-title">Canteen with Yuki T.</span>
-        <div class="row-meta">
-          <span class="tag ochre">Kanteen</span>
-          <span>kitchen · pay-what</span>
-        </div>
-        </summary>
-      </details>
+      <div class="events-grid">
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Night of open studios"
+          data-date="Sat 03 May · 20h"
+          data-location="All spaces · free entry"
+          data-tag="Whole house"
+          data-tag-class=""
+          data-desc="A night of open studios across all floors. Resident artists and collectives open their doors to the public. Free entry."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Whole house</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Sat 03 May · 20h</div>
+            <h3 class="event-card__title">Night of open studios</h3>
+            <div class="event-card__meta">
+              <span class="tag">Whole house</span>
+              <span class="event-card__location">All spaces</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Screening: Borders &amp; Bodies"
+          data-date="Wed 07 May · 19h"
+          data-location="Hall 2"
+          data-tag="Screening"
+          data-tag-class="sky"
+          data-desc="Film screening exploring borders, migration, and bodily autonomy. Selected short films by independent filmmakers. Followed by open discussion."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Screening</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Wed 07 May · 19h</div>
+            <h3 class="event-card__title">Screening: Borders &amp; Bodies</h3>
+            <div class="event-card__meta">
+              <span class="tag sky">Screening</span>
+              <span class="event-card__location">Hall 2</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Canteen with Yuki T."
+          data-date="Sat 10 May · 14h"
+          data-location="Kitchen · pay-what-you-can"
+          data-tag="Kanteen"
+          data-tag-class="ochre"
+          data-desc="A shared meal prepared by Yuki T., resident at Flutgraben. Japanese-inspired seasonal food. Pay what you can."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Kanteen</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Sat 10 May · 14h</div>
+            <h3 class="event-card__title">Canteen with Yuki T.</h3>
+            <div class="event-card__meta">
+              <span class="tag ochre">Kanteen</span>
+              <span class="event-card__location">Kitchen · pay-what-you-can</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <!-- In Flutgraben — current events (active by default) -->
     <section class="row-section is-active" id="in-flutgraben">
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Sat 17 May · 14–22h</span>
-        <span class="row-title">Open studios & summer kanteen</span>
-        <div class="row-meta">
-          <span class="tag sky">Whole house</span>
-          <span>free · all spaces open</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Thu 22 May · 19h</span>
-        <span class="row-title">Stille Wasser — performance</span>
-        <div class="row-meta">
-          <span class="tag terra">Performance</span>
-          <span>Hall 3</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Tue 27 May · 19h</span>
-        <span class="row-title">Canteen with Aïcha N.</span>
-        <div class="row-meta">
-          <span class="tag ochre">Kanteen</span>
-          <span>kitchen · pay-what</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Fri 30 May · 20h</span>
-        <span class="row-title">Rhizotype — typeface release</span>
-        <div class="row-meta">
-          <span class="tag sky">Talk</span>
-          <span>Atelier B</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Sat 31 May · 16h</span>
-        <span class="row-title">Spree swim & reading group</span>
-        <div class="row-meta">
-          <span class="tag terra">Outside</span>
-          <span>at the dock</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Sun 01 Jun · 11h</span>
-        <span class="row-title">Quiet morning, drawing</span>
-        <div class="row-meta">
-          <span class="tag">Workshop</span>
-          <span>limited 12 ppl</span>
-        </div>
-        </summary>
-      </details>
-    </section>
+      <div class="events-grid">
 
-    <!-- Archive — past years (placeholder) -->
-    <section class="row-section" id="archive">
-      <p class="archive-placeholder">Select a year above.</p>
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Open studios &amp; summer kanteen"
+          data-date="Sat 17 May · 14–22h"
+          data-location="All spaces · free entry"
+          data-tag="Whole house"
+          data-tag-class="sky"
+          data-desc="A full day of open studios and a summer kanteen on the terrace. Resident artists open their spaces. Live music in the courtyard from 18h. Free entry."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Whole house</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Sat 17 May · 14–22h</div>
+            <h3 class="event-card__title">Open studios &amp; summer kanteen</h3>
+            <div class="event-card__meta">
+              <span class="tag sky">Whole house</span>
+              <span class="event-card__location">All spaces · free</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Stille Wasser — performance"
+          data-date="Thu 22 May · 19h"
+          data-location="Hall 3 · limited capacity"
+          data-tag="Performance"
+          data-tag-class="terra"
+          data-desc="Durational performance work exploring water, stillness, and movement. Hall 3 capacity is limited — arrive early."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Performance</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Thu 22 May · 19h</div>
+            <h3 class="event-card__title">Stille Wasser — performance</h3>
+            <div class="event-card__meta">
+              <span class="tag terra">Performance</span>
+              <span class="event-card__location">Hall 3</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Canteen with Aïcha N."
+          data-date="Tue 27 May · 19h"
+          data-location="Kitchen · pay-what-you-can"
+          data-tag="Kanteen"
+          data-tag-class="ochre"
+          data-desc="North African-inspired cooking by Aïcha N., resident at Flutgraben. Tables set outside if weather permits. Pay what you can."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Kanteen</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Tue 27 May · 19h</div>
+            <h3 class="event-card__title">Canteen with Aïcha N.</h3>
+            <div class="event-card__meta">
+              <span class="tag ochre">Kanteen</span>
+              <span class="event-card__location">Kitchen · pay-what-you-can</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Rhizotype — typeface release"
+          data-date="Fri 30 May · 20h"
+          data-location="Atelier B"
+          data-tag="Talk"
+          data-tag-class="sky"
+          data-desc="Release event for Rhizotype, a new typeface grown from the Flutgraben community. Short presentation, printed materials, and Q&amp;A."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Talk</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Fri 30 May · 20h</div>
+            <h3 class="event-card__title">Rhizotype — typeface release</h3>
+            <div class="event-card__meta">
+              <span class="tag sky">Talk</span>
+              <span class="event-card__location">Atelier B</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Spree swim &amp; reading group"
+          data-date="Sat 31 May · 16h"
+          data-location="At the dock"
+          data-tag="Outside"
+          data-tag-class="terra"
+          data-desc="Informal swimming and reading at the dock. Bring a text to share, or just come to swim. Towels recommended."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Outside</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Sat 31 May · 16h</div>
+            <h3 class="event-card__title">Spree swim &amp; reading group</h3>
+            <div class="event-card__meta">
+              <span class="tag terra">Outside</span>
+              <span class="event-card__location">At the dock</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
     <!-- Downstream — upcoming events -->
     <section class="row-section" id="downstream">
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Sat 07 Jun · 20h</span>
-        <span class="row-title">Summer gathering</span>
-        <div class="row-meta">
-          <span class="tag sky">Whole house</span>
-          <span>free · open to all</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Thu 12 Jun · 19h</span>
-        <span class="row-title">Artist talk — residency open call</span>
-        <div class="row-meta">
-          <span class="tag terra">Talk</span>
-          <span>Atelier B</span>
-        </div>
-        </summary>
-      </details>
-      <details class="row-item">
-        <summary>
-        <span class="row-date">Sat 21 Jun · 16h</span>
-        <span class="row-title">Sound walk along the Spree</span>
-        <div class="row-meta">
-          <span class="tag ochre">Outside</span>
-          <span>meet at the dock</span>
-        </div>
-        </summary>
-      </details>
+      <div class="events-grid">
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Quiet morning, drawing"
+          data-date="Sun 01 Jun · 11h"
+          data-location="Limited · 12 spots"
+          data-tag="Workshop"
+          data-tag-class=""
+          data-desc="A quiet morning of drawing from observation. No instruction, no theme. Materials provided. Limited to 12 participants — register by email."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Workshop</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Sun 01 Jun · 11h</div>
+            <h3 class="event-card__title">Quiet morning, drawing</h3>
+            <div class="event-card__meta">
+              <span class="tag">Workshop</span>
+              <span class="event-card__location">Limited · 12 spots</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Summer gathering"
+          data-date="Sat 07 Jun · 20h"
+          data-location="All spaces · free entry"
+          data-tag="Whole house"
+          data-tag-class="sky"
+          data-desc="Annual summer gathering open to the whole community. All studios open, drinks on the terrace, DJ set from 22h. Free entry."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Whole house</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Sat 07 Jun · 20h</div>
+            <h3 class="event-card__title">Summer gathering</h3>
+            <div class="event-card__meta">
+              <span class="tag sky">Whole house</span>
+              <span class="event-card__location">All spaces · free</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Artist talk — residency open call"
+          data-date="Thu 12 Jun · 19h"
+          data-location="Atelier B"
+          data-tag="Talk"
+          data-tag-class="terra"
+          data-desc="Presentation of the next residency open call with Q&amp;A. Learn about the application process and meet current residents."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Talk</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Thu 12 Jun · 19h</div>
+            <h3 class="event-card__title">Artist talk — residency open call</h3>
+            <div class="event-card__meta">
+              <span class="tag terra">Talk</span>
+              <span class="event-card__location">Atelier B</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="event-card" tabindex="0" role="button"
+          data-title="Sound walk along the Spree"
+          data-date="Sat 21 Jun · 16h"
+          data-location="Meet at the dock"
+          data-tag="Outside"
+          data-tag-class="ochre"
+          data-desc="A guided sound walk following the Spree. Field recordings, live listening, and discussion. Meet at the Flutgraben dock."
+        >
+          <div class="event-card__img">
+            <span class="event-card__category">Outside</span>
+          </div>
+          <div class="event-card__info">
+            <div class="event-card__date">Sat 21 Jun · 16h</div>
+            <h3 class="event-card__title">Sound walk along the Spree</h3>
+            <div class="event-card__meta">
+              <span class="tag ochre">Outside</span>
+              <span class="event-card__location">Meet at the dock</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Archive — populated dynamically from ARCHIVE_EVENTS on year selection -->
+    <section class="row-section" id="archive">
+      <p class="archive-placeholder" id="archive-placeholder">Select a year above.</p>
     </section>
 
   </div>
+
+  <!-- ── Event dialog ── -->
+  <dialog id="event-dialog" aria-modal="true" aria-labelledby="dialog-title-el">
+    <div class="dialog-inner">
+
+      <div class="dialog-img">
+        <span class="dialog-img__category" id="dialog-category-bg"></span>
+      </div>
+
+      <div class="dialog-text">
+        <button id="dialog-close" aria-label="Close">×</button>
+        <div class="dialog-scrollable">
+          <h2 class="dialog-title" id="dialog-title-el"></h2>
+          <div class="dialog-date" id="dialog-date-el"></div>
+          <div class="dialog-location" id="dialog-location-el"></div>
+          <div class="dialog-tag-row"><span class="tag" id="dialog-tag-el"></span></div>
+          <hr class="dialog-divider">
+          <p class="dialog-desc" id="dialog-desc-el"></p>
+        </div>
+        <div class="dialog-nav">
+          <button id="dialog-prev">← Prev</button>
+          <button id="dialog-next">Next →</button>
+        </div>
+      </div>
+
+    </div>
+  </dialog>
+
 </main>
 
+<script type="application/json" id="archive-data">
+[{"year": "2025", "title": "(NON) PRESENCE", "date": "25. October 2025", "location": "Friday / October 24, 2025 / FLUTGRABEN e. V.", "tag": "News", "tagClass": "", "desc": "Festival of Polish Performance Fr.24.+ Sa.25. October 2025  PROGRAM OCTOBER 24 + 25  Friday / October 24, 2025 / FLUTGRABEN e. V.  4:00 \u2013 4:30 pm. Screenings of archival footage of Polish performance art from the MSN archive  4:30 \u2013 5:30 pm. Discussion \u201cProtect Me from What I Want\u201d  5:30 \u2013 8:30 pm. Performance program  Saturday / October 25, 2025 / FLUTGRABEN e. V.  4:30 \u2013 5:00 pm. Screenings of a", "imgs": ["image/spree/archives/2025/non-presence_01_flutgraben-wwwscreende-1500x785-800w.webp"]}, {"year": "2025", "title": "DOUBLE HEADER PYROLATOR AND GUDRUN GUT", "date": "", "location": "Seats are very limited for this special Berlin Art Week presentation.", "tag": "News", "tagClass": "", "desc": "intimate double bill of electro acoustic excellence with two revered veterans of the scene  SUNDAY, SEPTEMBER 14, 20:00 TICKETS @KOKASECHSUNDDREISIG KOKA36.DE  Flutgraben will host an intimate double bill of electro acoustic excellence with two revered veterans of the scene, Pyrolator and Gudrun Gut. Performing back to back sets, these champions of innovative music will fill Flutgraben\u2019s Mehrzweck", "imgs": ["image/spree/archives/2025/double-header-pyrolator-and-gu_01_flutgraben-ggbymvkummer0777neu-1030x687-1-800w.webp", "image/spree/archives/2025/double-header-pyrolator-and-gu_02_pyrolator-image-pyrolator-800w.webp", "image/spree/archives/2025/double-header-pyrolator-and-gu_03_gudrun-gut-image-mara-von-krummer-400w.webp", "image/spree/archives/2025/double-header-pyrolator-and-gu_04_pyrolator-image-pyrolator-400w.webp"]}, {"year": "2023", "title": "RESIDENCY YEBBA COLLECTIVE (SLN)", "date": "", "location": "Flutgraben e.V.", "tag": "News", "tagClass": "", "desc": "Performances Nov. 30 + Dec. 01, 20.00, Public in Private  PERFORMANCES NOV. 30 + DEC. 01, 20.00  REGISTRATION LINK \u2013 LIMITED PLACES  Together with Flutgraben e.V. and Public in Private, Cultural Workers Studio is proud to host \u201cYebba\u201d collective from Slovenia on the dates November 19 \u2013 December 1.  YEBBA collective was initially founded in 2023 by three younger artists in the Slovenian scene (Lack", "imgs": ["image/spree/archives/2025/residency-yebba-collective-sln_01_flutgraben-lpyebba-jan-3-scaled-e1763303673380-150-800w.webp", "image/spree/archives/2025/residency-yebba-collective-sln_02_flutgraben-logos-800w.webp"]}, {"year": "2025", "title": "THE DELUGE", "date": "12. September 2025", "location": "Im Rahmen von Berlin Art Week Featured 2025 | Kuratiert von Lee Plested in Zusammenarbeit mit Matthias Krause Hamrin", "tag": "News", "tagClass": "", "desc": "Im Rahmen von Berlin Art Week Featured 2025 | Kuratiert von Lee Plested in Zusammenarbeit mit Matthias Krause Hamrin  BERLIN ART WEEK FEATURED 2025  The Deluge ist ein Ausstellungsprojekt, das die Pr\u00e4sentationsr\u00e4ume des Flutgrabens mit einer Flut von k\u00fcnstlerischen Positionen und deren Publikum f\u00fcllen will. Ziel ist es, sowohl die kritische Produktion durch Pr\u00e4sentation zu unterst\u00fctzen als auch di", "imgs": ["image/spree/archives/2025/the-deluge_01_flutgraben-zywcvs5x-800w.webp", "image/spree/archives/2025/the-deluge_02_the-deluge-400w.webp"]}, {"year": "2025", "title": "LYUDSKA PODOBA (UKR)", "date": "23. Nov. 2025", "location": "", "tag": "News", "tagClass": "", "desc": "Music video premiere + PARTY w. livesets from Axxi Oma/be_ca_di (UKR/DE) So., 23. Nov. 2025 19:00 - 22:30  MUSIC VIDEO PREMIERE + PARTY W. LIVESETS FROM AXXI OMA/BE_CA_DI (UKR/DE), SO., 23. NOV. 2025 19:00 - 22:30  We will witness the premiere of the music video \u2013 \u201cHes gonna Suck\u201c by Ukrainian pop-queer band Lyudska Podoba!  The video was filmed over two years in Portugal, Germany, and Norway.  Ax", "imgs": ["image/spree/archives/2025/lyudska-podoba-ukr_01_flutgraben-photo2025-11-1417-11-44-e1763303359707-800w.webp"]}, {"year": "2025", "title": "MOONSTRUCK", "date": "20.07.2025", "location": "\u201eMOONSTRUCK\u201c 12.-20.07.2025 im Flutgraben e.V. Opening: 12.07., 18:00-late", "tag": "News", "tagClass": "", "desc": "\u201eMOONSTRUCK\u201c 12.-20.07.2025 im Flutgraben e.V. Opening: 12.07., 18:00-late  \u00d6ffnungszeiten: 13.-20.07. 12\u201319:00 Amrita Dhillon | Ferdinand D\u00f6lberg | Jonathan Joosten | Sarah Neumann | Coco Sch\u00fctte | Zandile Tshabalala | Jenna Westra  Kunzten MOONSTRUCK  at Flutgraben e.V.  Opening: 12.07., 18:00-late  Opening Times: 13.-20.07. 12\u201319:00  Amrita Dhillon | Ferdinand D\u00f6lberg | Jonathan Joosten | Sarah", "imgs": ["image/spree/archives/2025/moonstruck_01_flutgraben-plakatyellowred-e1751528864885-1500x106-800w.webp"]}, {"year": "2025", "title": "PASSING THE LOVE \u0623\u0636\u064a\u0626\u0648\u0627 \u0628\u0627\u0644\u062d\u0628 \u0642\u0644\u0648\u0628\u0643\u0645", "date": "", "location": "at Flutgraben e.V.", "tag": "News", "tagClass": "", "desc": "Passing the Love \u0623\u0636\u064a\u0626\u0648\u0627 \u0628\u0627\u0644\u062d\u0628 \u0642\u0644\u0648\u0628\u0643\u0645 SCREENING & MUSIC PERFORMANCE SET LOVE. RESISTANCE. TENDERNESS. LIADLAND \u2013 Live! Friday, 27th of June 2025 Starts 20:30 Screening 21:30 Performance 22:00 at Flutgraben e.V. Am Flutgraben 3, 12435 Berlin Accessible for people with disabilities  Video still, Is care a Chore, Julietta Acevedo, 2025, Switzerland (\u00a9 the artist, courtesy by The One Minutes Foundation", "imgs": ["image/spree/archives/2025/passing-the-love_01_flutgraben-image-01-400w.webp", "image/spree/archives/2025/passing-the-love_02_liad-hussein-kantorowicz-aka-liadland-800w.webp"]}, {"year": "2019", "title": "KUNZTEN NON PROFIT KUNST- UND KULTURPLATTFORM ZUR F\u00d6RDERUNG JUNGER KUNST", "date": "", "location": "", "tag": "News", "tagClass": "", "desc": "\u201eKUNZTEN ist eine 2019 in Berlin gegr\u00fcndete nicht profitorientierte Kunst- und Kulturplattform zur F\u00f6rderung junger Kunst. Seit 2023 veranstalten wir j\u00e4hrlich die KUNZTEN Gruppenausstellung im Projektraum des Flutgraben e.V. Mit unserer kulturellen Arbeit verkn\u00fcpfen wir Kunsthochschulen, Ausstellungsorte und die aufstrebende Generation talentierter K\u00fcnstler:innen und schaffen dabei neue Kollaborat", "imgs": ["image/spree/archives/2023/kunzten-non-profit-kunst-und-k_01_flutgraben-unnamed-3-1500x1000-800w.webp", "image/spree/archives/2023/kunzten-non-profit-kunst-und-k_02_flutgraben-unnamed-2-1500x1000-800w.webp", "image/spree/archives/2023/kunzten-non-profit-kunst-und-k_03_flutgraben-unnamed-1380x2048-800w.webp"]}, {"year": "2025", "title": "OSTKREUZSCHULE F\u00dcR FOTOGRAFIE GRUPPENAUSSTELLUNG THE SPACE IN BETWEEN", "date": "15.05.2025", "location": "// Magda Maciaszczyk Berlin Schwarz Rot // Sophia Malaika", "tag": "Exhibition", "tagClass": "sky", "desc": "Gruppenausstellung The Space In Between  THE SPACE IN BETWEEN Die Gruppenausstellung The Space In Between erkundet jene Zwischenr\u00e4ume, die oft unbeachtet bleiben \u2013 zwischen Vergangenheit und Gegenwart, Realit\u00e4t und Erinnerung, K\u00f6rper und Identit\u00e4t, Widerstand und Alltag. Mit unterschiedlichen fotografischen Perspektiven erz\u00e4hlen acht Fotografinnen in dieser Ausstellung von vergessenen Orten und ve", "imgs": ["image/spree/archives/2025/ostkreuzschule-fur-fotografie-_01_flutgraben-charlottekunstmann-1500x1000-800w.webp", "image/spree/archives/2025/ostkreuzschule-fur-fotografie-_02_the-space-in-between-die-gruppenausstellung-the-sp-800w.webp"]}, {"year": "2022", "title": "\u201cTHE HORROR IN US\u201d, PUBLIC UNDERGROUND LECTURE SERIES, DEC 8-22", "date": "", "location": "Public in Private Studio, Flutgraben e.V.", "tag": "Exhibition", "tagClass": "sky", "desc": "This series of accessible presentations dissects contemporary media trends and revisits some \u2018old friends\u2019 \u2013 with a particular focus on Hollywood film. Critic/theorist Richard Pettifer (AUS/GER) will discuss trends in anti-misogyny, collectivity, trauma recovery, and modes of spectatorship.  Sundays in December (8th, 15th, 22nd) from 19.00, lectures start 19.30  Public in Private Studio, Flutgrabe", "imgs": ["image/spree/archives/2022/the-horror-in-us-public-underg_01_flutgraben-img8990-800w.webp"]}, {"year": "2024", "title": "STUDIO TENDER", "date": "01.12.2024", "location": "At Flutgraben e.V. one studio will become available from 01.12.2024 and two studios will be released for tender from 01.01.2025", "tag": "News", "tagClass": "", "desc": "At Flutgraben e.V. one studio will become available from 01.12.2024 and two studios will be released for tender from 01.01.2025  The studios can be visited on Monday, September 02, 2024 at 3 pm and Tuesday, September 03, 2024 at 11 am. Meeting point is at the entrance of Flutgraben 3  Here you can find the links to all information about the tender and the online forms to fill out  __Ausschreibung_", "imgs": ["image/spree/archives/2025/studio-tender_01_flutgraben-wwwscreende-1500x785-800w.webp"]}, {"year": "2023", "title": "OPEN CALL", "date": "", "location": "", "tag": "News", "tagClass": "", "desc": "ANTI/INTERconnections", "imgs": ["image/spree/archives/2023/open-call_01_flutgraben-part2-1500x1500-800w.webp", "image/spree/archives/2023/open-call_02_flutgraben-part3-1500x1500-800w.webp", "image/spree/archives/2023/open-call_03_flutgraben-part4-1500x1500-800w.webp"]}, {"year": "2022", "title": "FEST! WITH CULTURAL WORKERS STUDIO", "date": "", "location": "Am Flutgraben 3, 12435 Berlin", "tag": "Exhibition", "tagClass": "sky", "desc": "Um unsere Kollegin, die Filmregisseurin Anna Chasova (@chasiki.tikayut auf Instagram), in ihrem Kampf gegen den Brustkrebs in Charkiw zu unterst\u00fctzen, l\u00e4dt das Cultural Workers Studio zu einer informellen Markt- und Performance-Veranstaltung ein, bei der ihr euch an lustigen Aktivit\u00e4ten beteiligen  Support Anna\u2019s treatent and recovery costs!  Events are running all day with no entry fee \u2013 be welco", "imgs": ["image/spree/archives/2022/cultural-workers-studio_01_flutgraben-culturalworkersstudio07-800w.webp"]}, {"year": "2024", "title": "IMPORT/EXPORT \u2013 NOMADIC PERFORMANCE ART PLATFORM", "date": "", "location": "13.00 \u2013 Community lunch at Flutgraben e.V", "tag": "Exhibition", "tagClass": "sky", "desc": "16 - 21 September 2024  From Sept. 16 to Sept. 21, IMPORT/EXPORT, a Creative Europe project, founded by a collective of 6 independent artists in collaboration with Berlin\u2019s Flutgraben e.V., activates the city\u2019s architectural sites with 10 live works by international and local artists, workshops, residencies and architecture-panels, and 2 performance evenings open to the public of Berlin-Kreuzberg.", "imgs": ["image/spree/archives/2024/importexport-nomadic-performan_01_flutgraben-poster-importexport-berlin-2024-1448x20-800w.webp"]}, {"year": "2023", "title": "MULTI \u2013 EINE PERFORMANCE AM FLUTGRABEN / A STORY ABOUT A BORDERLINE", "date": "", "location": "MULTI \u2013 EINE PERFORMANCE AM FLUTGRABEN / A STORY ABOUT A BORDERLINE", "tag": "Events", "tagClass": "terra", "desc": "They are back: from 13 to 16 August, the special species called Sprewanians will once again make a stop at the multi-purpose hall at Flutgraben between Treptow and Kreuzberg. Because this building has it all: no other building protruded so far into the death strip during the Wall era. As a result, people repeatedly tried to escape from the factory building to the West. After each escape attempt, t", "imgs": ["image/spree/archives/2023/multi-eine-performance-am-flut_01_flutgraben-multi-dashposterwa-1448x2048-800w.webp", "image/spree/archives/2023/multi-eine-performance-am-flut_02_flutgraben-dsc7141-1500x999-800w.webp", "image/spree/archives/2023/multi-eine-performance-am-flut_03_flutgraben-dsc7208-1500x999-800w.webp"]}, {"year": "2023", "title": "OPEN STUDIO", "date": "", "location": "", "tag": "News", "tagClass": "", "desc": "Hilf mir hier raus - Radicalised care / Death partners", "imgs": ["image/spree/archives/2023/open-studio_01_flutgraben-img1743-1500x1875-800w.webp", "image/spree/archives/2023/open-studio_02_flutgraben-img1727-800w.webp", "image/spree/archives/2023/open-studio_03_flutgraben-img1741-800w.webp", "image/spree/archives/2023/open-studio_04_flutgraben-img1742-800w.webp"]}, {"year": "2024", "title": "KUNZTEN SHOW #3 \u2013 BLOSSOMING", "date": "", "location": "", "tag": "Exhibition", "tagClass": "sky", "desc": "Group Show 11.\u201319. Mai 2024 Opening 11. Mai 18:0  Opening 11. Mai 18:00  Billie Clarken | Johannes Daniel | Lunita-July Dorn | Jonas Fahrenberger | Laust H\u00f8jgaard | Daniel H\u00f6lzl | Stefanie Moshammer | Emil Urbanek  We are pleased to present BLOSSOMING, our third group show with KUNZTEN artists, at Flutgraben e.V.. BLOSSOMING unites a wonderful variety of outstanding artistic positions, with the pa", "imgs": ["image/spree/archives/2024/kunzten-show-3-blossoming_01_flutgraben-kunzten-800w.webp"]}, {"year": "2024", "title": "DRUCKPLATZ", "date": "19.04.2024", "location": "DRUCKPLATZ", "tag": "Exhibition", "tagClass": "sky", "desc": "Mapping Wrangelkiez  Freitag, 19.04.2024  16 Uhr bis 18 Uhr  Die K\u00fcnstler*innen Aliyah, Carlotta, Emma, Emma, Eliza, Frances, Gloria, H\u00fcdanur, Ilja, Joshua, Karline, Lilly, Mara, Merle, Mio, Nino, Plume, Rabia, Toni, Yaren und Zelda stellen aus: Sie sammelten in ihrem Kiez und experimentierten k\u00fcnstlerisch mit ihren Fundst\u00fccken und Eindr\u00fccken. Unter anderem mit Siebdrucktechnik stellten sie w\u00e4hren", "imgs": ["image/spree/archives/2024/druckplatz_01_flutgraben-flyer-druckplatz-1-1500x922-800w.webp"]}, {"year": "2019", "title": "STATEMENT FROM THE BOARD OF FLUTGRABEN E.V.", "date": "", "location": "STATEMENT FROM THE BOARD OF FLUTGRABEN E.V.", "tag": "News", "tagClass": "", "desc": "Stellungnahme des Vorstands des Flutgraben e.V.  Statement from the board of Flutgraben e.V.  Six artists from Flutgraben e.V. have brought a conflict over the allocation of a studio to the public with a petition on Change.org, which has been burdening the association and the studio house for more than three years. With this statement we are responding to the petition addressed to us in order to o"}, {"year": "2024", "title": "TAKE YOUR PLACE! OPEN WORKSHOPS OF UKRAINIAN DIGITAL CULTURES", "date": "", "location": "Where: Am Flutgraben 3, 12435 Berlin (Project Space)", "tag": "Exhibition", "tagClass": "sky", "desc": "24-25th February, marking the 2-year anniversary of full-scale invasion  \u201cTake Your Place!\u201d is a weekend series of lectures and art workshops using digital storytelling tools for displaced people from Ukraine, open to all supporters. The workshops are also open to those who are interested in exploring the historical consequences of forced displacement from their homes.  The workshops are led by me", "imgs": ["image/spree/archives/2024/take-your-place-open-workshops_01_flutgraben-img-20230311-wa0003-richard-pettifer-1--800w.webp"]}, {"year": "2023", "title": "GATHERING DRINKING MY TEA, SEWING MY SKIN BODY-SCRIPTED-SCULPTURES___FABRICS OF TOUCH", "date": "16.12.2023", "location": "Address: Flutgraben 3,Berlin", "tag": "News", "tagClass": "", "desc": "Hosted by Reya, Yaoer, Julia  Dear friends (+friends of friends) we invite you to a gathering in which through body exercises with staged photography and a writing/painting process\u2026( In the scenography of everyday life we are labratorically examining reciprocity.)  There will be snacks, fruits and tea.  1:00pm-5:00pm_Samstag 16.12.2023  Address: Flutgraben 3,Berlin  To register contact us via this", "imgs": ["image/spree/archives/2023/gathering-drinking-my-tea-sewi_01_flutgraben-img8953-1362x1536-800w.webp"]}, {"year": "2023", "title": "\u00a1RESONANCE!", "date": "", "location": "BERliN/T0KY0", "tag": "Events", "tagClass": "terra", "desc": "\u00a1Resonance! iS A MUlTi DiSCiPliNARY EVENT R00TED iN ThE Phil0S0PHY 0f \"EClECTiC DiVERSE C0MMUNiTYCATi0N\u201d ViA MUSiC  \u00a1RESONANCE! IS A MULTI DISCIPLINARY EVENT R00TED IN THE PHIL0S0PHY 0F \"ECLECTIC DIVERSE C0MMUNITYCATI0N\u201d VIA MUSIC  SEPTEMbER 7 & 8 MMXXIII  M0dUlAR SYNTh W0RkSh0PS With:  LUCA L0NGBARdi-PiANiST & MUlTi MEdiA ARTiST  Luca shares insight into his production process  using less convent", "imgs": ["image/spree/archives/2023/resonance_01_flutgraben-matthiaskrausehamrinericdclark-800w.webp"]}, {"year": "2023", "title": "] OQBO [ RAUM F\u00dcR BILD WORT TON \u2013 15TH OQBOVERSARY", "date": "6. Juli 2023", "location": "Daniela Seel, geboren 1974, in Frankfurt am Main, ist Lyrikerin, \u00dcbersetzerin und Verlegerin von kookbooks Berlin.", "tag": "Exhibition", "tagClass": "sky", "desc": "Ausstellung \\ Diskussion \\ Lesungen \\ Konzerte \\ Performance \\ Tombola 23. Juni \u2014 6. Juli 2023 VERNISSAGE Freitag 23. Juni 19 Uhr Projektraum Flutgraben Seraphina Lenz \\ Julia Ziegler \\ Michael Bause \\ Christian Bilger \\ Frank Eltner \\ Dirk Lebahn \\ oqbo History Pr\u00e4sentation der Tombola  Mittwoch 28. Juni 19 Uhr  Diskussionsrunde \\ Archiv heute\u2009?  mit Prof. Dr. Susanne Freund,  Prof. Dr. Marcel Le", "imgs": ["image/spree/archives/2023/oqbo-raum-fur-bild-wort-ton-15_01_oqboflutgrabenwebsitebanner-copy-1-1500x867-800w.webp"]}, {"year": "2023", "title": "AUSSER BALANCE \u2013 OUT OF BALANCE", "date": "Thursday, April 27, 2023", "location": "Location Flutgraben e. V., Am Flutgraben 3, 12435 Berlin-Treptow (behind the Festsaal Kreuzberg).", "tag": "Exhibition", "tagClass": "sky", "desc": "Vernissage Thursday, April 27, 2023, 6-10 p.m. Exhibition hours April 28 to May 2, 2023, 1-8 p.m.  Can humans learn from mushrooms and their subterranean networks? Together with sound and film artists, we have created Au\u00dfer Balance (Out of Balance) \u2013 an installative space for the artistic exploration of communication networks, their threads, positions and possible configurations, as we can find th", "imgs": ["image/spree/archives/2023/ausser-balance-out-of-balance_01_flutgraben-leuchtende-pilzec-risto-avramovski-400w.webp"]}, {"year": "2023", "title": "EXHIBITION AND EVENT SERIES OF UKRAINIAN CULTURE", "date": "", "location": "", "tag": "Exhibition", "tagClass": "sky", "desc": "Cultural Workers Studio: Ausstellung und Veranstaltungsreihe zur ukrainischen Kultur  February 14th \u2013 March 5th, 2023  *Ukrainian and German Under*  (Can\u2019t read the text? Try turning your phone horizontally! // \u041d\u0435 \u043c\u043e\u0436\u0435\u0442\u0435 \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u0438 \u0442\u0435\u043a\u0441\u0442? \u041f\u0435\u0440\u0435\u0432\u0435\u0440\u043d\u0456\u0442\u044c \u0435\u043a\u0440\u0430\u043d \u0433\u043e\u0440\u0438\u0437\u043e\u043d\u0442\u0430\u043b\u044c\u043d\u043e!)  We are pleased to invite you to this series of events celebrating Ukrainian cultures from Cultural Workers Studio, a studio in", "imgs": ["image/spree/archives/2023/exhibition-and-event-series-of_01_flutgraben-main-image-800w.webp", "image/spree/archives/2023/exhibition-and-event-series-of_02_flutgraben-test43trilanguage-400w.webp"]}, {"year": "2022", "title": "CINEMATOGRAPHY + LIGHTING CLUB", "date": "", "location": "W\u00f6chentliches Treffen f\u00fcr Filmemacher*innen in Flutgraben, von Cultural Workers Studio", "tag": "News", "tagClass": "", "desc": "W\u00f6chentliches Treffen f\u00fcr Filmemacher*innen in Flutgraben, von Cultural Workers Studio  Weekly meeting for cinematographers in the factory Flutgraben, from Cultural Workers Studio  We invite filmmakers with experience working with cameras and lighting, who wish to improve their skills and enhance their craft, to become a part of our Cinematographers Club.  Our workshop offers hands-on experience w", "imgs": ["image/spree/archives/2022/cinematography-lighting-club_01_flutgraben-img-20230311-wa0003-richard-pettifer-15-800w.webp", "image/spree/archives/2023/cinematography-lighting-club_02_flutgraben-photo2023-03-0801-16-43-800w.webp"]}, {"year": "2023", "title": "CULTURAL WORKERS LEARNS UKRAINIAN!", "date": "", "location": "\u2026at our Ukrainian classes in Berlin! Learn the basics of our beautiful language with \u201cCW Learns Ukrainian!\u201d", "tag": "News", "tagClass": "", "desc": "ONGOING (UNTIL MARCH 1, 2023)  Cultural Workers Learns Ukrainian! (Classes Wednesdays at 18.30, Space Meduza, last class 1st March)  *Ukrainian below*  \u201cPryvit\u201d, \u201cVitayemo\u201d, \u201cSho?\u201d and a lot more!  \u2026at our Ukrainian classes in Berlin! Learn the basics of our beautiful language with \u201cCW Learns Ukrainian!\u201d  We will have a warm drink together and learn to read in Ukrainian, to sing and of course to s", "imgs": ["image/spree/archives/2023/cultural-workers-learns-ukrain_01_flutgraben-cultural-workers-learn-ukrainian-800w.webp", "image/spree/archives/2023/cultural-workers-learns-ukrain_02_flutgraben-arlogosquare-1-1500x961-800w.webp", "image/spree/archives/2023/cultural-workers-learns-ukrain_03_flutgraben-gilogohorizontalblacksrgb-1000x468-800w.webp", "image/spree/archives/2023/cultural-workers-learns-ukrain_04_flutgraben-main-image-800w.webp"]}, {"year": "2023", "title": "KUNZTEN \u2013 SUMMER INTERLUDE", "date": "", "location": "SUMMER INTERLUDE is an oasis in the summer dry spell of Berlin\u2019s cultural life. In", "tag": "Exhibition", "tagClass": "sky", "desc": "KUNZTEN show#2 \u2013 SUMMER INTERLUDE 8 \u2013 16 JUL 2023  SUMMER INTERLUDE is an oasis in the summer dry spell of Berlin\u2019s cultural life. In  the group exhibition we bring together nine outstanding artistic positions from diverse  disciplines, and thus continue the exhibition series \u201cKUNZTEN shows\u201d. The presented  works include figurative as well as abstract painting, video and installation art,  photogr", "imgs": ["image/spree/archives/2023/kunzten-summer-interlude_01_flutgraben-invitationengredorange-1500x1875-800w.webp"]}, {"year": "2022", "title": "RE.FRAU ANDERS", "date": "Friday, July 1st, 2022", "location": "With the support of the grant for historical and commemorative projects 2022 of the Berlin Senate.", "tag": "Events", "tagClass": "terra", "desc": "We are pleased to invite you to the first chapter of the project \"re.frau anders - lesbian and feminist activism of the 1980s in East-Berlin\"! Opening: Friday, July 1st, 2022, 6pm Exhibition: July 1st - November 9th, 2022 Former Watchtower Puschkinallee 55, 12435 Berlin  With the temporary setup of several counter- commemorative interventions near the former watchtower at Schlesischer Busch, the p", "imgs": ["image/spree/archives/2022/refrau-anders_01_flutgraben-refrauandersintrode-1500x1042-800w.webp"]}, {"year": "2022", "title": "CULTURAL WORKERS STUDIO", "date": "", "location": "", "tag": "News", "tagClass": "", "desc": "Cultural Workers Studio centres cultural workers who relocated temporarily from Ukraine. We run the collective studio at Flutgraben e.V. from May to July 2022.  Cultural Workers Studio is a co-working space, a place for community and for collective as well as individual projects. It is open for participation and free of charge.  (img: Cultural Workers against the Ongoing War in Ukraine 2022)", "imgs": ["image/spree/archives/2022/cultural-workers-studio_01_flutgraben-culturalworkersstudio07-800w.webp"]}, {"year": "2022", "title": "CULTURAL WORKERS CAF\u00c9", "date": "", "location": "Cultural Workers Caf\u00e9 is a place for community and support for cultural producers from Ukraine, Berlin and other places.", "tag": "News", "tagClass": "", "desc": "Cultural Workers Caf\u00e9 is a place for community and support for cultural producers from Ukraine, Berlin and other places.  Cultural Workers Caf\u00e9  With Cultural Workers Caf\u00e9 we have offered a place for community and support for cultural producers from Ukraine, Berlin and other places. Cultural Workers Against the Ongoing War in Ukraine is running a Telegram group and compiles useful information: www", "imgs": ["image/spree/archives/2022/cultural-workers-cafe_01_flutgraben-culturalworkerscafe05-800w.webp"]}, {"year": "2022", "title": "READY MAKING #5 RESONANZK\u00d6RPER UND MEDIALE APPARATUREN", "date": "27.3.2022", "location": "27.3.2022, Mehrzweckhalle am Flutgraben", "tag": "Events", "tagClass": "terra", "desc": "READY MAKING #5 Resonanzk\u00f6rper und mediale Apparaturen\u00a0 Konzert/ Performance und Diskurs 27.3.2022, Mehrzweckhalle am Flutgraben mit Arbeiten von Daniela Fromberg & Stefan Roigk, Cathy van Eck, Antje Vowinckel & Chris Heenan, Ioana Vreme Moser, Steffi Weismann, und einem Vortrag von Golo F\u00f6llm  READY MAKING #5 Resonanzk\u00f6rper und mediale Apparaturen  Konzert/ Performance und Diskurs  27.3.2022, Meh", "imgs": ["image/spree/archives/2022/ready-making-5-resonanzkorper-_01_flutgraben-frombergroigkreadyforcardboardingstrip-400w.webp"]}, {"year": "2021", "title": "OPEN/OCCUPY 2021 FLUTGRABEN ARTIST HOUSE", "date": "", "location": "OPEN/OCCUPY 2021 FLUTGRABEN ARTIST HOUSE", "tag": "News", "tagClass": "", "desc": "OPEN/OCCUPY 2021  OPENING: December 10th 7pm  with activists from Kunstblock, Lauratibor and Oyoun, artists from Open/Occupy and Flutgraben, and curator Tirdad Zolghadr  OPEN STUDIOS: December 11th 12-6 pm  Join us at Flutgraben, Berlin\u2019s artist-run studio building: Artists, activists and scholars have created (art)works that spans the entire architecture of the building, integrating public and pr", "imgs": ["image/spree/archives/2021/openoccupy-2021-flutgraben-art_01_flutgraben-facebook-banner2-1500x785-800w.webp"]}, {"year": "2021", "title": "FLUTGRABEN HAS A NEW WEBSITE", "date": "", "location": "FLUTGRABEN HAS A NEW WEBSITE", "tag": "News", "tagClass": "", "desc": "We are very happy that our new website is online! It was developed by a group of people in the house in collaboration with studio fertig design. Design by fertigdesign.com Programmed by rassohilber.com", "imgs": ["image/spree/archives/2021/flutgraben-has-a-new-website_01_2021-flutgraben-has-a-new-website-1-1500x840-800w.webp"]}, {"year": "2021", "title": "ROOF RESTORATION", "date": "", "location": "", "tag": "News", "tagClass": "", "desc": "All roof areas are insulated and re-covered.  The approx. 2,300 m2 roof area has only been poorly repaired over the past few decades and has repeatedly shown leaks. All roof areas are insulated and re-covered. As part of the measure, the landmarked border post walkway, the attachment points of which have so far penetrated the roof membrane and caused notorious leaks, will be removed and re-install", "imgs": ["image/spree/archives/2021/roof-restoration_01_2021-dachansichtklein-1500x896-800w.webp", "image/spree/archives/2021/roof-restoration_02_2021-kfgdach2sw-1500x981-800w.webp"]}, {"year": "2020", "title": "AFROP\u00c9ENNES \u2013 AFROPEAN WOMEN", "date": "14.03.2020", "location": "", "tag": "Events", "tagClass": "terra", "desc": "14.03.2020 | 20:30 \u2013 21:30 Event Series of Afrodiasporic Drama from France and Belgium  With a total of four staged readings, the association Drama Panorama: Forum for Translation and Theatre is presenting a new literary-performative event series in cooperation with, among others, Label Noir and the Lettr\u00e9tage. Between March and July 2020, the organizers are inviting public panel discussions, stag", "imgs": ["image/spree/archives/2020/afropeennes-afropean-women_01_2021-afropeennes-800w.webp"]}]
+</script>
 <script src="js/logo.js"></script>
 <script src="js/trail.js"></script>
 <script src="js/back-to-top.js"></script>
 <script>
-  const archiveBtn = document.querySelector('[data-section="archive"]');
-  const dropdown = document.querySelector('.archive-dropdown');
+  const ARCHIVE_EVENTS = JSON.parse(document.getElementById('archive-data').textContent);
 
-  // Switch between Spree sub-sections
-  document.querySelectorAll('.subnav-item').forEach(btn => {
+  // ── Subnav "In Flutgraben" — append current month, updates each month ──
+  const currentMonth = new Date().toLocaleString('en-GB', { month: 'long' });
+  document.querySelector('[data-section="in-flutgraben"]').textContent =
+    `In Flutgraben in ${currentMonth}`;
+
+  // ── Event dialog ──
+  const dialog       = document.getElementById('event-dialog');
+  const dialogTitle  = document.getElementById('dialog-title-el');
+  const dialogDate   = document.getElementById('dialog-date-el');
+  const dialogLoc    = document.getElementById('dialog-location-el');
+  const dialogTag    = document.getElementById('dialog-tag-el');
+  const dialogCatBg  = document.getElementById('dialog-category-bg');
+  const dialogDesc   = document.getElementById('dialog-desc-el');
+  const dialogScroll = dialog.querySelector('.dialog-scrollable');
+  const prevBtn      = document.getElementById('dialog-prev');
+  const nextBtn      = document.getElementById('dialog-next');
+
+  let currentCards = [];
+  let currentIdx   = 0;
+
+  const dialogImgPane = dialog.querySelector('.dialog-img');
+  let imgIdx = 0;
+
+  function renderDialogImage(imgs, title) {
+    // Clear previous img + dots
+    dialogImgPane.querySelectorAll('img, .dialog-img-dots').forEach(el => el.remove());
+    if (!imgs.length) return;
+    const img = document.createElement('img');
+    img.src     = imgs[imgIdx];
+    img.alt     = title;
+    img.loading = 'lazy';
+    dialogImgPane.prepend(img);
+    if (imgs.length > 1) {
+      const dots = document.createElement('div');
+      dots.className = 'dialog-img-dots';
+      imgs.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'dialog-img-dot' + (i === imgIdx ? ' is-active' : '');
+        dot.setAttribute('aria-label', `Image ${i + 1}`);
+        dot.addEventListener('click', e => {
+          e.stopPropagation();
+          imgIdx = i;
+          renderDialogImage(imgs, title);
+        });
+        dots.appendChild(dot);
+      });
+      dialogImgPane.appendChild(dots);
+      // click image to advance
+      img.addEventListener('click', () => {
+        imgIdx = (imgIdx + 1) % imgs.length;
+        renderDialogImage(imgs, title);
+      });
+    }
+  }
+
+  function renderDialog() {
+    const d = currentCards[currentIdx].dataset;
+    dialogTitle.textContent = d.title;
+    dialogDate.textContent  = d.date;
+    dialogLoc.textContent   = d.location;
+    dialogTag.textContent   = d.tag;
+    dialogTag.className     = 'tag' + (d.tagClass ? ' ' + d.tagClass : '');
+    dialogCatBg.textContent = d.tag;
+    dialogDesc.textContent  = d.desc;
+    dialogScroll.scrollTop  = 0;
+    prevBtn.disabled = currentIdx === 0;
+    nextBtn.disabled = currentIdx === currentCards.length - 1;
+    imgIdx = 0;
+    const imgs = d.imgs ? JSON.parse(d.imgs) : [];
+    renderDialogImage(imgs, d.title);
+  }
+
+  // Attach click + keyboard handlers to a card (used for both static and dynamic cards)
+  function setupCard(card) {
+    card.addEventListener('click', () => {
+      currentCards = Array.from(card.closest('.events-grid').querySelectorAll('.event-card'));
+      currentIdx   = currentCards.indexOf(card);
+      renderDialog();
+      dialog.showModal();
+    });
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+    });
+  }
+
+  // Wire up static cards (upstream, in-flutgraben, downstream)
+  document.querySelectorAll('.event-card').forEach(setupCard);
+
+  // ── Archive — render event cards for a selected year ──
+  function renderArchiveYear(year) {
+    const section = document.getElementById('archive');
+    const events  = ARCHIVE_EVENTS.filter(e => e.year === year);
+
+    // Remove previous grid if any
+    const prev = section.querySelector('.events-grid');
+    if (prev) prev.remove();
+
+    const placeholder = document.getElementById('archive-placeholder');
+
+    if (events.length === 0) {
+      placeholder.textContent = 'No events found for ' + year + '.';
+      placeholder.style.display = '';
+      return;
+    }
+
+    placeholder.style.display = 'none';
+
+    const grid = document.createElement('div');
+    grid.className = 'events-grid';
+
+    events.forEach(ev => {
+      const article = document.createElement('article');
+      article.className  = 'event-card';
+      article.tabIndex   = 0;
+      article.setAttribute('role', 'button');
+      const imgs = ev.imgs || [];
+      Object.assign(article.dataset, {
+        title:    ev.title,
+        date:     ev.date,
+        location: ev.location,
+        tag:      ev.tag,
+        tagClass: ev.tagClass,
+        desc:     ev.desc,
+        ...(imgs.length ? { imgs: JSON.stringify(imgs) } : {})
+      });
+
+      const tagSpan  = `<span class="tag${ev.tagClass ? ' ' + ev.tagClass : ''}">${ev.tag}</span>`;
+      const imgInner = imgs[0]
+        ? `<img src="${imgs[0]}" alt="${ev.title.replace(/"/g,'&quot;')}" loading="lazy">`
+        : '';
+      article.innerHTML = `
+        <div class="event-card__img">
+          ${imgInner}
+          <span class="event-card__category">${ev.tag}</span>
+        </div>
+        <div class="event-card__info">
+          <div class="event-card__date">${ev.date}</div>
+          <h3 class="event-card__title">${ev.title}</h3>
+          <div class="event-card__meta">
+            ${tagSpan}
+            <span class="event-card__location">${ev.location}</span>
+          </div>
+        </div>`;
+
+      setupCard(article);
+      grid.appendChild(article);
+    });
+
+    section.appendChild(grid);
+  }
+
+  // ── Subnav section switching — Upstream / In Flutgraben / Downstream ──
+  const archiveBtn = document.querySelector('[data-section="archive"]');
+
+  document.querySelectorAll('.subnav-item:not([data-section="archive"])').forEach(btn => {
     btn.addEventListener('click', () => {
-      // Close archive dropdown if switching away from it
-      if (btn !== archiveBtn) {
-        dropdown.classList.remove('is-open');
-        dropdown.setAttribute('aria-hidden', 'true');
-        archiveBtn.textContent = 'Archive ↓';
-      }
       document.querySelectorAll('.subnav-item').forEach(b => b.classList.remove('is-active'));
       document.querySelectorAll('.row-section').forEach(s => s.classList.remove('is-active'));
       btn.classList.add('is-active');
       document.getElementById(btn.dataset.section).classList.add('is-active');
-
-      // Toggle archive dropdown
-      if (btn === archiveBtn) {
-        const isOpen = dropdown.classList.toggle('is-open');
-        dropdown.setAttribute('aria-hidden', String(!isOpen));
-        archiveBtn.textContent = isOpen ? 'Archive ↑' : 'Archive ↓';
-      }
+      archiveBtn.textContent = 'Archive ↓';
+      document.querySelectorAll('.archive-year').forEach(b => b.classList.remove('is-active'));
     });
   });
 
-  // Select a year from archive dropdown
+  // ── Archive — year hover-dropdown, click on year shows that year's events ──
   document.querySelectorAll('.archive-year').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.archive-year').forEach(b => b.classList.remove('is-active'));
       btn.classList.add('is-active');
-      archiveBtn.textContent = btn.dataset.year + ' ↑';
-      // Future: load events for selected year
+      // Switch active section to archive
+      document.querySelectorAll('.subnav-item').forEach(b => b.classList.remove('is-active'));
+      document.querySelectorAll('.row-section').forEach(s => s.classList.remove('is-active'));
+      archiveBtn.classList.add('is-active');
+      archiveBtn.textContent = btn.dataset.year;
+      document.getElementById('archive').classList.add('is-active');
+      renderArchiveYear(btn.dataset.year);
     });
+  });
+
+  prevBtn.addEventListener('click', () => { if (currentIdx > 0) { currentIdx--; renderDialog(); } });
+  nextBtn.addEventListener('click', () => { if (currentIdx < currentCards.length - 1) { currentIdx++; renderDialog(); } });
+
+  document.getElementById('dialog-close').addEventListener('click', () => dialog.close());
+
+  // Close on backdrop click
+  dialog.addEventListener('click', e => {
+    const r = dialog.getBoundingClientRect();
+    if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) {
+      dialog.close();
+    }
+  });
+
+  // Keyboard arrow navigation
+  document.addEventListener('keydown', e => {
+    if (!dialog.open) return;
+    if (e.key === 'ArrowLeft'  && currentIdx > 0)                       { currentIdx--; renderDialog(); }
+    if (e.key === 'ArrowRight' && currentIdx < currentCards.length - 1) { currentIdx++; renderDialog(); }
   });
 </script>
 </body>

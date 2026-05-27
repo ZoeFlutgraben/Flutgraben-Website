@@ -222,9 +222,11 @@ All non-landing pages follow a shared template defined in `css/interior.css`. Ev
 | `css/header.css` | All pages | Topbar, nav, lang switcher |
 | `css/interior.css` | Interior pages only | `bg-grid`, `gif-anchor`, `back-to-top`, `page-content`, `subnav`, `row-item`, lightbox |
 | `css/index.css` | `index.html` only | Landing page grid and cell styles |
-| `css/impressum.css` | `impressum.html` only | Impressum-specific layout |
+| `css/spree.css` | `spree.html` only | Event card grid (`.events-grid`, `.event-card`), event dialog (`#event-dialog`) |
 
 `css/style.css` no longer exists — its content was split into `flutgraben.css` (global rules) and `interior.css` (shared interior patterns) in May 2026.
+
+`css/impressum.css` no longer exists — `impressum.html` was rebuilt using `interior.css` patterns only (May 2026).
 
 ## Global UI Patterns
 
@@ -237,6 +239,7 @@ These elements appear on every interior page (all pages except `index.html`). CS
 | Back to top | `<button class="back-to-top" aria-label="Back to top">↑</button>` | `css/interior.css`, `js/back-to-top.js` | Appears after 150px scroll, centered above gif-anchor. Script auto-detects scroll container (`.page-content` or `.impressum-outer`) |
 | Residents search | see HTML below | `css/interior.css` | **Das Haus only — Residents tab.** Lives in the right slot of `.subnav-bar`. The wrapper `.residents-search-wrap` carries `.is-hidden` (visibility: hidden) when another tab is active, `.has-value` when the input is non-empty (shows clear button). |
 | Lightbox | `<dialog id="lightbox">` — see HTML below | `css/interior.css`, inline `<script>` | **Pages with `.row-photo` images.** Click image to open fullscreen; navigate with arrows or ← → keys; close with ✕ button, backdrop click, or Échap. |
+| Event cards + dialog | `<div class="events-grid">` + `<article class="event-card">` + `<dialog id="event-dialog">` — see section below | `css/spree.css`, inline `<script>` | **Spree only.** Replaces `details.row-item` for event listing. 3-column grid, first card spans 2 cols. Click any card to open dialog. |
 
 When adding a new interior page: include bg-grid, gif-anchor, back-to-top in the HTML and add `<script src="js/back-to-top.js"></script>`. Add the lightbox dialog and JS only on pages that use `.row-photo`.
 
@@ -369,7 +372,6 @@ The meaning of `row-date` and `row-meta` varies by section. Do not assume a sing
 
 | Section | `row-date` | `row-meta` |
 |---------|-----------|------------|
-| Spree (events) | Event date (italic, left-anchored) | Tags (type/format): `.tag`, `.tag.sky`, `.tag.ochre` |
 | Das Haus — History | Year / area / label | Tag (`.tag`) |
 | Das Haus — Communs | Area in m² | Tag (floor: `.tag`) |
 | Das Haus — Residents | Studio number (e.g. `"Studio 3A"`) — **pending, currently empty** | Links only: website ↗ and/or email ↗ — no tags |
@@ -380,6 +382,104 @@ The meaning of `row-date` and `row-meta` varies by section. Do not assume a sing
 - `row-meta` contains only link spans (`<span><a href="…">label ↗</a></span>`) — no `.tag` pills
 - Tags (`.tag`, `.tag.sky`, `.tag.ochre`) are not used in the residents section
 - Keywords describing an artist's practice will be added to `row-meta` alongside links once the studio-number system is finalized
+
+## Event card pattern — Spree only
+
+Event cards replace `details.row-item` on the Spree page. Each card is an `<article>` with all event data in `data-*` attributes, consumed by the dialog JS at click time.
+
+```html
+<article class="event-card" tabindex="0" role="button"
+  data-title="Event title"
+  data-date="Day DD Mon · HHh"
+  data-location="Venue · extra info"
+  data-tag="Category"
+  data-tag-class=""
+  data-desc="Description shown in the dialog."
+  data-imgs='["image/spree/archives/2023/slug_01_...-800w.webp"]'
+>
+  <div class="event-card__img">
+    <!-- Real photo when available — injected as <img> covering the hatch -->
+    <img src="image/spree/archives/2023/slug_01_...-800w.webp" alt="Event title" loading="lazy">
+    <span class="event-card__category">Category</span>
+  </div>
+  <div class="event-card__info">
+    <div class="event-card__date">Day DD Mon · HHh</div>
+    <h3 class="event-card__title">Event title</h3>
+    <div class="event-card__meta">
+      <span class="tag [tagClass]">Category</span>
+      <span class="event-card__location">Venue</span>
+    </div>
+  </div>
+</article>
+```
+
+- `data-tag-class` — one of: empty (outline only) · `sky` · `ochre` · `terra`
+- `data-imgs` — JSON-stringified array of image paths (all sizes use `-800w.webp`). Omit entirely if no images. For static cards, set manually; for archive cards, injected by `renderArchiveYear`.
+- When no image is available, `.event-card__img` shows a diagonal hatch background + category watermark
+- Cards sit inside `.events-grid` (3-column grid, `css/spree.css`)
+- First card in each `.events-grid` spans 2 columns (lead card) — no extra class needed
+- `&` in data attribute values must be written as `&amp;`
+
+### Event dialog
+
+One `<dialog id="event-dialog">` per page, placed before `</main>`. Opened by clicking any `.event-card`. Navigation stays within the current section's `.events-grid`.
+
+```html
+<dialog id="event-dialog" aria-modal="true" aria-labelledby="dialog-title-el">
+  <div class="dialog-inner">
+    <div class="dialog-img">
+      <span class="dialog-img__category" id="dialog-category-bg"></span>
+    </div>
+    <div class="dialog-text">
+      <button id="dialog-close" aria-label="Close">×</button>
+      <div class="dialog-scrollable">
+        <h2 class="dialog-title" id="dialog-title-el"></h2>
+        <div class="dialog-date" id="dialog-date-el"></div>
+        <div class="dialog-location" id="dialog-location-el"></div>
+        <div class="dialog-tag-row"><span class="tag" id="dialog-tag-el"></span></div>
+        <hr class="dialog-divider">
+        <p class="dialog-desc" id="dialog-desc-el"></p>
+      </div>
+      <div class="dialog-nav">
+        <button id="dialog-prev">← Prev</button>
+        <button id="dialog-next">Next →</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+```
+
+- Layout: image pane left 55% + text pane right 45% (scrollable middle, fixed nav bottom)
+- `::backdrop` uses `--skytransparent`
+- `←` / `→` keyboard arrows navigate between events within the open section
+- Backdrop click or `×` button closes; Échap is handled natively by `<dialog>`
+- CSS in `css/spree.css`; JS inline in `spree.html`
+- **Multi-image carousel**: when `data-imgs` contains more than one path, ochre dot indicators appear at the bottom of the image pane. Clicking a dot jumps to that image; clicking the image itself cycles to the next. Dots: `border var(--ochre)` inactive, filled `var(--ochre)` active, `background: var(--bg)` always.
+
+### Archive section — data & rendering
+
+The archive section (`#archive`) is populated dynamically. Data lives in a `<script type="application/json">` block to avoid JS string-escaping issues with quotes and non-ASCII characters:
+
+```html
+<script type="application/json" id="archive-data">
+[{"year":"2025","title":"…","date":"…","location":"…","tag":"News","tagClass":"","desc":"…","imgs":["image/spree/archives/2025/slug_01_…-800w.webp"]}]
+</script>
+```
+
+JS reads it as: `const ARCHIVE_EVENTS = JSON.parse(document.getElementById('archive-data').textContent);`
+
+**Data source:** `03_data_oldwebsite/archive_events_safe.json` — 36 events, years 2019–2025, generated from the scraped `flutgraben_events.json` with `ensure_ascii=True`. Fields: `year`, `title`, `date`, `location`, `tag`, `tagClass`, `desc`, `imgs[]`.
+
+**Image paths:** `image/spree/archives/{year}/{slug}_NN_{...}-800w.webp`. Images organized by year subfolder. Each event's `imgs` array contains all available images in index order (`_01_`, `_02_`, …); `imgs[0]` is used for the card thumbnail.
+
+**Archive button behavior:**
+- Hover over Archive button → year dropdown appears (CSS only, no JS)
+- Click a year → archive section activates, button label changes to the selected year
+- Click Upstream / In Flutgraben / Downstream → archive button label resets to `"Archive ↓"`, active year dot cleared
+
+**Subnav "In Flutgraben":** label updated dynamically to `"In Flutgraben in [month]"` via `new Date().toLocaleString('en-GB', { month: 'long' })` — auto-updates each month.
+
+---
 
 ## General Rules
 

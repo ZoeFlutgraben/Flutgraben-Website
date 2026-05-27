@@ -12,7 +12,11 @@
     "birds.svg",
     "bonhomme2.svg",
     "bonhomme3.svg",
+    "bonhomme4.svg",
+    "chat_araignee.svg",
+    "fille_ballon.svg",
     "fille_bombe.svg",
+    "garf.svg",
     "lapin.svg",
   ];
   function init() {
