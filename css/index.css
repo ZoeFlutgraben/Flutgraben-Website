@@ -100,6 +100,22 @@
   .container article:nth-of-type(10):hover::before { background-image: url('../image/logos/logo-fixe.png'); }
 }
 
+/* col 2 / row 4 — hello_people SVG */
+.container article:nth-of-type(9)::before {
+  content: '';
+  position: absolute;
+  inset: 22px;
+  background-image: url('../image/index/hello_people.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(29%) saturate(674%) hue-rotate(318deg) brightness(98%) contrast(86%);
+  transition: transform .3s ease;
+  z-index: 0;
+}
+.container article:nth-of-type(9):hover::before { transform: scale(1.1); }
+.container article:nth-of-type(9) > * { position: relative; z-index: 1; }
+
 /* Center utility */
 .center { display: flex; justify-content: center; align-items: center;  padding: 0;}
 
@@ -239,6 +255,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--rust);
+  margin-bottom: 5px;
 }
 
 .cell.address .postal {

@@ -100,7 +100,7 @@
   color: var(--rust);
   background: var(--bg);
   border: var(--border) solid var(--rust);
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='1'/></svg>") 2 1, pointer;
   z-index: 3;
   opacity: 0;
   pointer-events: none;
@@ -154,7 +154,7 @@
   border: var(--border) solid var(--rust);
   padding: 8px 16px;
   margin-left: -1.5px;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='1'/></svg>") 2 1, pointer;
   transition: background .12s, color .12s;
 }
 
@@ -195,7 +195,7 @@
   border-bottom: var(--border) solid var(--rust);
   padding: 8px 16px;
   text-align: left;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='1'/></svg>") 2 1, pointer;
   transition: background .12s, color .12s;
 }
 
@@ -239,7 +239,7 @@ details.row-item > summary {
   padding-left: 8px;
   border-left: 2px solid transparent;
   list-style: none;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='1'/></svg>") 2 1, pointer;
   transition: background .12s, border-color .12s;
 }
 
@@ -386,7 +386,7 @@ details.row-item > summary .row-meta .tag:hover {
   background: none;
   border: none;
   padding: 0;
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='1'/></svg>") 2 1, pointer;
   color: var(--terra);
   line-height: 0;
   transition: color .12s;
@@ -460,7 +460,7 @@ details.row-item > summary .row-meta .tag:hover {
   color: var(--rust);
   background: var(--bg);
   border: var(--border) solid var(--rust);
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='1'/></svg>") 2 1, pointer;
   z-index: 10;
   transition: background .12s, color .12s;
 }
@@ -489,7 +489,7 @@ details.row-item > summary .row-meta .tag:hover {
   color: var(--rust);
   background: var(--bg);
   border: var(--border) solid var(--rust);
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='0.5'/></svg>") 2 1, pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='%23c17d4c' stroke='%23e5e9ed' stroke-width='1'/></svg>") 2 1, pointer;
   z-index: 10;
   transition: background .12s, color .12s;
 }

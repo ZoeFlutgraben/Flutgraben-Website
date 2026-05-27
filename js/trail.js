@@ -6,8 +6,8 @@
 
   const GHOST_COUNT = 10;
   const SVG = "data:image/svg+xml;utf8," + encodeURIComponent(
-    `<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' shape-rendering='crispEdges'>
-       <path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='#573835' stroke='#e5e9ed' stroke-width='0.5'/>
+    `<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'>
+       <path d='M2 1 L2 14 L5 11 L7 16 L10 15 L8 10 L13 10 Z' fill='#573835' stroke='#e5e9ed' stroke-width='1'/>
      </svg>`
   );
 
