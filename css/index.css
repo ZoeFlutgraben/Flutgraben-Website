@@ -30,7 +30,6 @@
 .cell.address:hover,
 .cell.center:hover,
 .cell.feature:hover,
-.cell.gif:hover,
 .cell:has(.citation):hover { background: inherit; }
 
 /* Cell placement */
@@ -43,7 +42,6 @@
 .container article:nth-of-type(8)  { grid-row-start: 3; }
 .container article:nth-of-type(9)  { grid-column-start: 2; grid-row-start: 4; }
 .container article:nth-of-type(10) { grid-column: span 2 / span 2; grid-column-start: 3; grid-row-start: 4; }
-
 
 /* Feature cell — photo 2×2 */
 .cell.feature {
@@ -69,8 +67,10 @@
 
 /* GIF cells */
 .cell.gif { background: var(--paper); padding: 0; }
-.cell.gif:hover { background: var(--paper); }
+.cell.gif:hover,
+.cell.gif.cell-link:hover { background: var(--paper); }
 .cell.gif.blanc { background: var(--bg); }
+.cell.gif.blanc.cell-link:hover { background: var(--bg); }
 .cell.gif a { padding: 16px 18px 14px; }
 
 .cell.gif::before {
@@ -117,7 +117,7 @@
 .container article:nth-of-type(9) > * { position: relative; z-index: 1; }
 
 /* Center utility */
-.center { display: flex; justify-content: center; align-items: center;  padding: 0;}
+.center { display: flex; justify-content: center; align-items: center; padding: 0; }
 
 /* Image cell with overlay label */
 .cell.center.cell-link::before {
@@ -151,14 +151,6 @@
   z-index: 1;
 }
 
-/* Logo cell */
-.logo-grille img {
-  width: 70%;
-  filter: brightness(0) saturate(100%) invert(49%) sepia(44%) saturate(555%) hue-rotate(342deg) brightness(100%) contrast(88%);
-}
-
-
-
 /* All linked cells — items stack from top, .meta pushed to bottom via margin-top: auto */
 .cell a {
   display: flex;
@@ -173,13 +165,6 @@
 .cell.cell-link:hover { background: var(--ochre); }
 .cell.cell-link:hover .title { color: var(--rust); }
 .cell.cell-link:hover .meta { color: var(--rust); letter-spacing: 0.3em; }
-
-.cell .date {
-  font-size: var(--fs-label);
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--terra);
-}
 
 .cell .title {
   font-family: "Flutgraben", serif;
@@ -202,29 +187,6 @@
   margin-top: auto;
 }
 
-.cell.next-event:hover .meta {
-  color: var(--rust);
-  letter-spacing: 0.3em;
-}
-
-.cell.address:hover .postal {
-  letter-spacing: 0.3em;
-}
-
-/* Citation — hover */
-.cell .citation {
-  transition: transform .3s ease;
-}
-.cell .citation span {
-  transition: font-variation-settings .3s ease;
-}
-.cell:has(.citation):hover .citation {
-  transform: scale(1.05);
-}
-.cell:has(.citation):hover .citation span {
-  font-weight:  900;
-}
-
 /* Citation */
 .cell .citation {
   font-family: "Flutgraben", serif;
@@ -237,7 +199,13 @@
   display: flex;
   flex-direction: column;
   gap: 0;
+  transition: transform .3s ease;
 }
+.cell .citation span {
+  transition: font-variation-settings .3s ease;
+}
+.cell:has(.citation):hover .citation { transform: scale(1.05); }
+.cell:has(.citation):hover .citation span { font-weight: 900; }
 
 .cell.address address {
   font-style: normal;
@@ -246,24 +214,4 @@
   gap: 6px;
   margin-top: 0;
   flex: 1;
-}
-
-.cell.address .org-name {
-  font-family: "Flutgraben", serif;
-  font-size: var(--fs-body);
-  line-height: 1;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--rust);
-  margin-bottom: 5px;
-}
-
-.cell.address .postal {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  line-height: 1.9;
-  color: var(--terra);
-  transition: letter-spacing .15s;
 }

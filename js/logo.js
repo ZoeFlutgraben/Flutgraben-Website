@@ -13,11 +13,17 @@
     "bonhomme2.svg",
     "bonhomme3.svg",
     "bonhomme4.svg",
+    "bonhomme5.svg",
+    "chat.svg",
     "chat_araignee.svg",
+    "face_a_face.svg",
     "fille_ballon.svg",
     "fille_bombe.svg",
     "garf.svg",
     "lapin.svg",
+    "ours.svg",
+    "visage.svg",
+    "baby_02.svg",
   ];
   function init() {
     document.querySelectorAll("[data-random-svg]").forEach((el) => {

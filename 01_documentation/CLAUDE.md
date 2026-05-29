@@ -218,15 +218,16 @@ All non-landing pages follow a shared template defined in `css/interior.css`. Ev
 
 | File | Scope | Contains |
 |------|-------|---------|
-| `css/flutgraben.css` | All pages | Tokens, fonts, `html`/`body`/`main` layout, global reset, `.tags`, `.tag`, `.wip` |
+| `css/flutgraben.css` | All pages | Tokens (incl. `--cursor-pointer`), fonts, `html`/`body`/`main` layout, global reset, `.tags`, `.tag`, `.wip` |
 | `css/header.css` | All pages | Topbar, nav, lang switcher |
-| `css/interior.css` | Interior pages only | `bg-grid`, `gif-anchor`, `back-to-top`, `page-content`, `subnav`, `row-item`, lightbox |
+| `css/interior.css` | Interior pages only | `bg-grid`, `gif-anchor`, `back-to-top`, `page-content`, `subnav`, `row-item`, lightbox, event card grid, event dialog |
 | `css/index.css` | `index.html` only | Landing page grid and cell styles |
-| `css/spree.css` | `spree.html` only | Event card grid (`.events-grid`, `.event-card`), event dialog (`#event-dialog`) |
 
 `css/style.css` no longer exists — its content was split into `flutgraben.css` (global rules) and `interior.css` (shared interior patterns) in May 2026.
 
 `css/impressum.css` no longer exists — `impressum.html` was rebuilt using `interior.css` patterns only (May 2026).
+
+`css/spree.css` no longer exists — merged into `interior.css` in May 2026. Event card grid and dialog styles now live in the shared interior stylesheet.
 
 ## Global UI Patterns
 
@@ -239,7 +240,7 @@ These elements appear on every interior page (all pages except `index.html`). CS
 | Back to top | `<button class="back-to-top" aria-label="Back to top">↑</button>` | `css/interior.css`, `js/back-to-top.js` | Appears after 150px scroll, centered above gif-anchor. Script auto-detects scroll container (`.page-content` or `.impressum-outer`) |
 | Residents search | see HTML below | `css/interior.css` | **Das Haus only — Residents tab.** Lives in the right slot of `.subnav-bar`. The wrapper `.residents-search-wrap` carries `.is-hidden` (visibility: hidden) when another tab is active, `.has-value` when the input is non-empty (shows clear button). |
 | Lightbox | `<dialog id="lightbox">` — see HTML below | `css/interior.css`, inline `<script>` | **Pages with `.row-photo` images.** Click image to open fullscreen; navigate with arrows or ← → keys; close with ✕ button, backdrop click, or Échap. |
-| Event cards + dialog | `<div class="events-grid">` + `<article class="event-card">` + `<dialog id="event-dialog">` — see section below | `css/spree.css`, inline `<script>` | **Spree only.** Replaces `details.row-item` for event listing. 3-column grid, first card spans 2 cols. Click any card to open dialog. |
+| Event cards + dialog | `<div class="events-grid">` + `<article class="event-card">` + `<dialog id="event-dialog">` — see section below | `css/interior.css`, inline `<script>` | **Spree + Das Haus (Residents).** 3-column grid, first card spans 2 cols (overridden in Das Haus — see below). Click any card to open dialog. |
 
 When adding a new interior page: include bg-grid, gif-anchor, back-to-top in the HTML and add `<script src="js/back-to-top.js"></script>`. Add the lightbox dialog and JS only on pages that use `.row-photo`.
 
@@ -308,6 +309,7 @@ JS (inline `<script>` at bottom of page):
 - Prev/next arrows hide automatically at list boundaries (`visibility: hidden`)
 - Backdrop click or `✕` button closes the dialog; Échap is handled natively by `<dialog>`
 - `.row-photo img` carries `cursor: zoom-in` to signal the interaction
+- **`<picture>` elements:** lightbox uses `img.currentSrc || img.src` — always loads the best-quality source the browser selected, not the fallback `src` attribute
 
 **Rules:**
 - One `<dialog id="lightbox">` per page — never duplicate
@@ -374,16 +376,12 @@ The meaning of `row-date` and `row-meta` varies by section. Do not assume a sing
 |---------|-----------|------------|
 | Das Haus — History | Year / area / label | Tag (`.tag`) |
 | Das Haus — Communs | Area in m² | Tag (floor: `.tag`) |
-| Das Haus — Residents | Studio number (e.g. `"Studio 3A"`) — **pending, currently empty** | Links only: website ↗ and/or email ↗ — no tags |
+| Das Haus — Residents | **Replaced by `.event-card` grid** — no longer uses `row-item` | — |
 | Das Haus — Accessibility | — | Tag (`.tag`) |
 
-**Residents-specific rules:**
-- `row-date` is reserved for studio numbers. Leave empty until studio numbers are confirmed.
-- `row-meta` contains only link spans (`<span><a href="…">label ↗</a></span>`) — no `.tag` pills
-- Tags (`.tag`, `.tag.sky`, `.tag.ochre`) are not used in the residents section
-- Keywords describing an artist's practice will be added to `row-meta` alongside links once the studio-number system is finalized
+**Residents note:** the Residents section no longer uses `row-item`. It uses the `.event-card` grid pattern — see "Event card pattern" section above.
 
-## Event card pattern — Spree only
+## Event card pattern — Spree + Das Haus (Residents)
 
 Event cards replace `details.row-item` on the Spree page. Each card is an `<article>` with all event data in `data-*` attributes, consumed by the dialog JS at click time.
 
@@ -400,7 +398,6 @@ Event cards replace `details.row-item` on the Spree page. Each card is an `<arti
   <div class="event-card__img">
     <!-- Real photo when available — injected as <img> covering the hatch -->
     <img src="image/spree/archives/2023/slug_01_...-800w.webp" alt="Event title" loading="lazy">
-    <span class="event-card__category">Category</span>
   </div>
   <div class="event-card__info">
     <div class="event-card__date">Day DD Mon · HHh</div>
@@ -419,6 +416,19 @@ Event cards replace `details.row-item` on the Spree page. Each card is an `<arti
 - Cards sit inside `.events-grid` (3-column grid, `css/spree.css`)
 - First card in each `.events-grid` spans 2 columns (lead card) — no extra class needed
 - `&` in data attribute values must be written as `&amp;`
+- **`data-tag` content:** on Spree, holds the event category (e.g. "Concert"). On Das Haus Residents, holds a one-word practice keyword extracted from the description (e.g. "photography", "felt", "sound") — or `"undef"` when no clear keyword is available.
+- **`data-location` as link:** the dialog renders `data-location` as a clickable `<a>` (JS creates the element dynamically). `mailto:` and `https://` prefixes are stripped for display; the full URL is used as `href`. CSS in `css/spree.css` under `.dialog-location a`.
+
+### Das Haus Residents overrides
+
+`das-haus.html` adds one page-scoped override in its inline `<style>`:
+
+```css
+/* No lead card — all residents cells equal width */
+#residents .event-card:first-child { grid-column: span 1; }
+```
+
+Residents `data-date` holds the type label (`"artist"` / `"collective"` / `"initiative"`), shown in `.event-card__date`.
 
 ### Event dialog
 
@@ -428,7 +438,6 @@ One `<dialog id="event-dialog">` per page, placed before `</main>`. Opened by cl
 <dialog id="event-dialog" aria-modal="true" aria-labelledby="dialog-title-el">
   <div class="dialog-inner">
     <div class="dialog-img">
-      <span class="dialog-img__category" id="dialog-category-bg"></span>
     </div>
     <div class="dialog-text">
       <button id="dialog-close" aria-label="Close">×</button>
@@ -453,7 +462,7 @@ One `<dialog id="event-dialog">` per page, placed before `</main>`. Opened by cl
 - `::backdrop` uses `--skytransparent`
 - `←` / `→` keyboard arrows navigate between events within the open section
 - Backdrop click or `×` button closes; Échap is handled natively by `<dialog>`
-- CSS in `css/spree.css`; JS inline in `spree.html`
+- CSS in `css/interior.css`; JS inline in `spree.html`
 - **Multi-image carousel**: when `data-imgs` contains more than one path, ochre dot indicators appear at the bottom of the image pane. Clicking a dot jumps to that image; clicking the image itself cycles to the next. Dots: `border var(--ochre)` inactive, filled `var(--ochre)` active, `background: var(--bg)` always.
 
 ### Archive section — data & rendering
@@ -478,6 +487,16 @@ JS reads it as: `const ARCHIVE_EVENTS = JSON.parse(document.getElementById('arch
 - Click Upstream / In Flutgraben / Downstream → archive button label resets to `"Archive ↓"`, active year dot cleared
 
 **Subnav "In Flutgraben":** label updated dynamically to `"In Flutgraben in [month]"` via `new Date().toLocaleString('en-GB', { month: 'long' })` — auto-updates each month.
+
+---
+
+## Shared scripts
+
+| Script | Scope | Purpose |
+|--------|-------|---------|
+| `js/logo.js` | All interior pages | Picks a random SVG from `image/svg/` and sets it as `src` on any `[data-random-svg] img`. Pool is defined as an array inside the IIFE — update when new SVGs are added to `image/svg/`. |
+| `js/trail.js` | All interior pages | Mouse trail effect |
+| `js/back-to-top.js` | All interior pages | Back-to-top button behaviour |
 
 ---
 

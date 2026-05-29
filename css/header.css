@@ -17,7 +17,7 @@
   border-bottom: var(--border) solid;
   padding-bottom: 16px;
   margin-bottom: 20px;
-filter: brightness(0) saturate(100%) invert(47%) sepia(52%) saturate(349%) hue-rotate(319deg) brightness(84%) contrast(83%);
+  filter: brightness(0) saturate(100%) invert(47%) sepia(52%) saturate(349%) hue-rotate(319deg) brightness(84%) contrast(83%);
   transition: opacity .15s;
 }
 .logo:hover { opacity: 0.75; }
@@ -62,8 +62,8 @@ filter: brightness(0) saturate(100%) invert(47%) sepia(52%) saturate(349%) hue-r
 .nav-item.is-active .nav-desc
  { color: var(--ochre); }
 .nav-item:hover { border-left-color: var(--ochre); }
-.nav-item:hover .nav-label { color: var(--ochre); }
-.nav-item:hover .nav-desc  { color: var(--ochre); }
+.nav-item:hover .nav-label,
+.nav-item:hover .nav-desc { color: var(--ochre); }
 
 /* Lang — pushed to bottom, separated from nav */
 .lang-side {
@@ -98,7 +98,6 @@ filter: brightness(0) saturate(100%) invert(47%) sepia(52%) saturate(349%) hue-r
 }
 .impressum a:hover { color: var(--ochre); }
 .impressum a.impressum-active { color: var(--ochre); }
-
 
 .header-svg {
   margin-top: auto;

@@ -1,5 +1,6 @@
-00_recherche/*
-02_archives/*
-03_data_oldwebsite/*
-fonts/00_archives/*
-*py
+00_recherche/
+02_archives/
+03_data_oldwebsite/
+fonts/00_archives/
+*.py
+01_documentation/*.png

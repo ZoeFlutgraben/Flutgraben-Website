@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="css/flutgraben.css" />
 <link rel="stylesheet" href="css/header.css" />
 <link rel="stylesheet" href="css/interior.css" />
-<link rel="stylesheet" href="css/spree.css" />
 <style>
   .gif-anchor::before { background-image: url('image/gifs/chapo_fixe.png'); }
   .gif-anchor:hover::before { background-image: url('image/gifs/chapo.gif'); }
@@ -132,7 +131,6 @@
           data-desc="A night of open studios across all floors. Resident artists and collectives open their doors to the public. Free entry."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Whole house</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Sat 03 May · 20h</div>
@@ -153,7 +151,6 @@
           data-desc="Film screening exploring borders, migration, and bodily autonomy. Selected short films by independent filmmakers. Followed by open discussion."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Screening</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Wed 07 May · 19h</div>
@@ -174,7 +171,6 @@
           data-desc="A shared meal prepared by Yuki T., resident at Flutgraben. Japanese-inspired seasonal food. Pay what you can."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Kanteen</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Sat 10 May · 14h</div>
@@ -202,7 +198,6 @@
           data-desc="A full day of open studios and a summer kanteen on the terrace. Resident artists open their spaces. Live music in the courtyard from 18h. Free entry."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Whole house</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Sat 17 May · 14–22h</div>
@@ -223,7 +218,6 @@
           data-desc="Durational performance work exploring water, stillness, and movement. Hall 3 capacity is limited — arrive early."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Performance</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Thu 22 May · 19h</div>
@@ -244,7 +238,6 @@
           data-desc="North African-inspired cooking by Aïcha N., resident at Flutgraben. Tables set outside if weather permits. Pay what you can."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Kanteen</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Tue 27 May · 19h</div>
@@ -265,7 +258,6 @@
           data-desc="Release event for Rhizotype, a new typeface grown from the Flutgraben community. Short presentation, printed materials, and Q&amp;A."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Talk</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Fri 30 May · 20h</div>
@@ -286,7 +278,6 @@
           data-desc="Informal swimming and reading at the dock. Bring a text to share, or just come to swim. Towels recommended."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Outside</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Sat 31 May · 16h</div>
@@ -314,7 +305,6 @@
           data-desc="A quiet morning of drawing from observation. No instruction, no theme. Materials provided. Limited to 12 participants — register by email."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Workshop</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Sun 01 Jun · 11h</div>
@@ -335,7 +325,6 @@
           data-desc="Annual summer gathering open to the whole community. All studios open, drinks on the terrace, DJ set from 22h. Free entry."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Whole house</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Sat 07 Jun · 20h</div>
@@ -356,7 +345,6 @@
           data-desc="Presentation of the next residency open call with Q&amp;A. Learn about the application process and meet current residents."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Talk</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Thu 12 Jun · 19h</div>
@@ -377,7 +365,6 @@
           data-desc="A guided sound walk following the Spree. Field recordings, live listening, and discussion. Meet at the Flutgraben dock."
         >
           <div class="event-card__img">
-            <span class="event-card__category">Outside</span>
           </div>
           <div class="event-card__info">
             <div class="event-card__date">Sat 21 Jun · 16h</div>
@@ -404,7 +391,6 @@
     <div class="dialog-inner">
 
       <div class="dialog-img">
-        <span class="dialog-img__category" id="dialog-category-bg"></span>
       </div>
 
       <div class="dialog-text">
@@ -448,7 +434,6 @@
   const dialogDate   = document.getElementById('dialog-date-el');
   const dialogLoc    = document.getElementById('dialog-location-el');
   const dialogTag    = document.getElementById('dialog-tag-el');
-  const dialogCatBg  = document.getElementById('dialog-category-bg');
   const dialogDesc   = document.getElementById('dialog-desc-el');
   const dialogScroll = dialog.querySelector('.dialog-scrollable');
   const prevBtn      = document.getElementById('dialog-prev');
@@ -499,7 +484,6 @@
     dialogLoc.textContent   = d.location;
     dialogTag.textContent   = d.tag;
     dialogTag.className     = 'tag' + (d.tagClass ? ' ' + d.tagClass : '');
-    dialogCatBg.textContent = d.tag;
     dialogDesc.textContent  = d.desc;
     dialogScroll.scrollTop  = 0;
     prevBtn.disabled = currentIdx === 0;
@@ -570,7 +554,6 @@
       article.innerHTML = `
         <div class="event-card__img">
           ${imgInner}
-          <span class="event-card__category">${ev.tag}</span>
         </div>
         <div class="event-card__info">
           <div class="event-card__date">${ev.date}</div>
